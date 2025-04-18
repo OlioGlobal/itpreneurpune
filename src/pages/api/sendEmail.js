@@ -21,15 +21,23 @@ export default async function handler(req, res) {
     });
 
     await transporter.sendMail({
-      from: `"Website Form" <${process.env.EMAIL_USER}>`,
+      from: `"itpreneurpune" <${process.env.EMAIL_USER}>`,
       to: email,
       subject: "Thanks for Contacting Us!",
       text: `Hi ${name},\n\nThanks for reaching out!\n\nWe have received your details:\n\nName: ${name}\nEmail: ${email}\nMobile: ${mobile}\n\nWe'll be in touch soon!`,
     });
 
-    res.status(200).json({ message: "Email sent!" });
+    const sheet = await fetch(process.env.GS, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ name, email, mobile }),
+    });
+
+    res.status(200).json({ message: "Email sent and data stored!" });
   } catch (error) {
-    console.error("Email error:", error);
-    res.status(500).json({ message: "Email failed" });
+    console.error("Handler error:", error);
+    res.status(500).json({ message: "Something went wrong!" });
   }
 }
