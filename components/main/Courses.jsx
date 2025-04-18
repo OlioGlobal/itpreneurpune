@@ -16,7 +16,7 @@ const courses = [
 
 const CourseGrid = () => {
   return (
-    <div className="bg-[#EDF2E4] py-10 px-[5%] ">
+    <div className="bg-[#EFF7FA] py-10 px-[5%] ">
       <div className=" ">
         <div className="mb-8">
           <p className="text-[#26784e] mb-2 text-[18px] md:text-[22px] font-bold">
@@ -47,7 +47,12 @@ const CourseGrid = () => {
           ))}
         </div>
 
-        <div className="bg-gradient-to-r from-[#26784E] to-[#1F5D40] mt-10 rounded-lg p-5 md:p-8 flex flex-col gap-5 md:flex-row justify-between items-start sm:items-center text-white">
+        <div
+          style={{
+            background: "linear-gradient(90deg, #34A76C 0%, #26784E 100%)",
+          }}
+          className=" mt-10 md:mt-20 rounded-lg p-5 md:p-8 flex flex-col gap-5 md:flex-row justify-between items-start sm:items-center text-white"
+        >
           <div className=" ">
             <p className="font-bold text-[24px]  sm:text-[32px] md:text-[35px] lg:text-[40px]  leading-[1.2]">
               💬 Chat with Our Career Advisor Now!
@@ -59,7 +64,7 @@ const CourseGrid = () => {
 
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="bg-[#29E81C] text-[17px] cursor-pointer text-white hover:text-green-700 p-4 rounded-lg font-semibold hover:bg-[#3cd031] transition"
+            className="bg-[#29E81C] text-[17px] cursor-pointer text-white hover:text-black p-4 rounded-lg font-semibold hover:bg-[#DBECBE] transition"
           >
             Talk to a Career Advisor
           </button>

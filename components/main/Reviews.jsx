@@ -159,8 +159,8 @@ export default function EmblaCarousel() {
                           <div className="flex justify-between items-center mb-3">
                             <div className="flex gap-3">
                               <img
-                                src={review.avatar}
-                                alt={review.name}
+                                src={"/icon/google.png"}
+                                alt="google"
                                 className="w-10 h-10 rounded-full"
                               />
                               <div>
@@ -172,11 +172,6 @@ export default function EmblaCarousel() {
                                 </p>
                               </div>
                             </div>
-                            <img
-                              src="/icon/google.png"
-                              alt="Google"
-                              className="w-5 h-5"
-                            />
                           </div>
 
                           {/* Rating */}

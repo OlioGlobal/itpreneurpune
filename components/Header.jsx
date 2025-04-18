@@ -10,8 +10,8 @@ export default function Header() {
             <Image
               src="/itpreneur-pune-logo-img.png"
               alt="Logo"
-              width={220}
-              height={220}
+              width={180}
+              height={180}
             />
           </Link>
         </div>
