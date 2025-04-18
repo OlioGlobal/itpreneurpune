@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { useRouter } from "next/router";
 export default function Form() {
   const [formData, setFormData] = useState({
     name: "",
@@ -10,6 +10,7 @@ export default function Form() {
   const [errors, setErrors] = useState({});
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState("");
+  const router = useRouter();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -67,6 +68,9 @@ export default function Form() {
         if (res.ok) {
           setSuccess("Form Successfully Submitted");
           setFormData({ name: "", email: "", mobile: "" });
+          setTimeout(() => {
+            router.push("/thank-you");
+          }, 2000);
         } else {
           const errorText = await res.text();
           console.error("Failed to send email:", res.status, errorText);

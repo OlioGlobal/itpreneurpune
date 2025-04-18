@@ -5,11 +5,13 @@ import StickyFooter from "../../components/StickyFooter";
 
 export default function App({ Component, pageProps }) {
   return (
-    <>
+    <div className="min-h-screen flex flex-col">
       <Header />
-      <Component {...pageProps} />
+      <main className="flex-grow">
+        <Component {...pageProps} />
+      </main>
       <Footer />
       <StickyFooter />
-    </>
+    </div>
   );
 }
