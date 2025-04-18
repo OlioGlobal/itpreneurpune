@@ -6,12 +6,14 @@ export default function Header() {
     <header className="sticky  top-0 z-50 bg-white shadow-md">
       <div className="  flex items-center justify-center sm:justify-between py-4 px-[5%]">
         <div className="text-xl font-bold text-blue-600">
-          <Image
-            src="/itpreneur-pune-logo-img.png"
-            alt="Logo"
-            width={220}
-            height={220}
-          />
+          <Link href={"/"}>
+            <Image
+              src="/itpreneur-pune-logo-img.png"
+              alt="Logo"
+              width={220}
+              height={220}
+            />
+          </Link>
         </div>
 
         <div className="   text-[18px] items-center font-medium text-[#26784E] ">
@@ -34,7 +36,10 @@ export default function Header() {
               </div>
 
               {/* Enroll Button */}
-              <button className="group hidden sm:flex bg-[#26784E] gap-2 justify-center items-center text-white py-2 px-10 2xl:px-14 hover:bg-white hover:text-[#26784E] border-[2px] cursor-pointer rounded-[10px]">
+              <button
+                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                className="group hidden sm:flex bg-[#26784E] gap-2 justify-center items-center text-white py-2 px-10 2xl:px-14 hover:bg-white hover:text-[#26784E] border-[2px] cursor-pointer rounded-[10px]"
+              >
                 Enroll Now
                 <img
                   src="/icon/chat-box.png"

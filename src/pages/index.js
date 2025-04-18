@@ -3,6 +3,7 @@ import AboutUs from "../../components/main/about-us";
 import BenefitsSection from "../../components/main/Benefits";
 import StatsSection from "../../components/main/counts";
 import CourseGrid from "../../components/main/Courses";
+import Enroll from "../../components/main/Enroll";
 import Hero from "../../components/main/Hero";
 import Placement from "../../components/main/Placement";
 import ProcessSection from "../../components/main/Process";
@@ -21,6 +22,7 @@ export default function Home() {
       <BenefitsSection />
       <AboutUs />
       <ProcessSection />
+      <Enroll />
     </>
   );
 }
