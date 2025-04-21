@@ -6,7 +6,7 @@ export default function Hero() {
       <div className="lg:w-[70%] flex flex-col gap-6 justify-center">
         <h1 className="text-[38px] sm:text-[42px] md:text-[45px] lg:text-[50px] leading-[50px] font-bold ">
           <span className="text-[28px] sm:text-[32px] md:text-[35px] lg:text-[40px] leading-[30px] font-bold text-white">
-            Kickstart Your IT Career
+            Kickstart Your IT Career. Career.
           </span>
           <br />
           with 100% Job Guarantee.
