@@ -1,9 +1,16 @@
-import React, { useCallback } from "react";
+"use client";
+import React, { useCallback, useEffect } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function EmblaCarousel() {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   const [emblaRef, emblaApi] = useEmblaCarousel(
     {
       loop: true,
@@ -23,7 +30,7 @@ export default function EmblaCarousel() {
 
   return (
     <div className="text-center py-16 flex flex-col gap-8 bg-[#EDF2E4] px-[5%]">
-      <div>
+      <div data-aos="fade-up">
         <p className="text-[#26784e] mb-2 text-[18px] md:text-[22px] font-bold">
           100% PLACEMENT
         </p>
@@ -32,21 +39,22 @@ export default function EmblaCarousel() {
           with Impressive <br /> Salary Packages
         </h2>
       </div>
-      <div className="relative w-full overflow-hidden">
+      <div className="relative w-full overflow-hidden" data-aos="fade-up">
         <div className="embla" ref={emblaRef}>
           <div className="embla__container flex">
             {slides.map((slide) => (
               <div
                 key={slide.id}
                 className="embla__slide shrink-0 w-1/2 md:w-1/4 lg:w-1/6 px-2"
+                data-aos="fade-up"
               >
-                <div className=" overflow-hidden">
+                <div className="overflow-hidden">
                   <Image
                     src={slide.src}
                     alt={`ITpreneur Placement ${slide.id}`}
                     width={500}
                     height={300}
-                    className="w-full h-auto object-cover "
+                    className="w-full h-auto object-cover"
                   />
                 </div>
               </div>

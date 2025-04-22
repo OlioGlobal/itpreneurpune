@@ -10,7 +10,7 @@ const reasons = [
 
 export default function CyberSecurityBenefits() {
   return (
-    <div className="px-[5%] rm ">
+    <div className="px-[5%] rm  " data-aos="zoom-in">
       <div className="text-center mb-8">
         <h2 className="font-bold text-[#163123] h2t leading-[1.2]">
           Cyber Security Course Is For You If...

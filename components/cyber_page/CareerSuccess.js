@@ -30,6 +30,8 @@ const CareerSuccessComponents = () => {
       <div className="flex flex-wrap justify-center gap-4 px-[1%]">
         {features.map((feature, index) => (
           <div
+            data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom"
             key={index}
             className="flex items-center gap-2 border border-[#D7D7D7] rounded-md p-4 w-full sm:w-auto cursor-pointer  transition-all duration-300 hover:shadow-md hover:border-green-500"
           >

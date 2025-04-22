@@ -21,10 +21,10 @@ export default async function handler(req, res) {
     });
 
     await transporter.sendMail({
-      from: `"itpreneurpune" <${process.env.EMAIL_USER}>`,
-      to: email,
-      subject: "Thanks for Contacting Us!",
-      text: `Hi ${name},\n\nThanks for reaching out!\n\nWe have received your details:\n\nName: ${name}\nEmail: ${email}\nMobile: ${mobile}\n\nWe'll be in touch soon!`,
+      from: `iTpreneur <${process.env.EMAIL_USER}>`,
+      to: "olioclientwebsiteleads@gmail.com",
+      subject: "📣 Enquiry from iTPreneur Pune",
+      text: `Name : ${name}\n \n Email: ${email}\n \n Mobile: ${mobile}\n\n`,
     });
 
     const sheet = await fetch(process.env.GS, {

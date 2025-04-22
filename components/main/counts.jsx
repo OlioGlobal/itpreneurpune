@@ -11,7 +11,7 @@ const stats = [
 
 const StatsSection = () => {
   return (
-    <div className="bg-[#f3f7eb] py-12 px-[5%]">
+    <div className="bg-[#f3f7eb] py-12 px-[5%] " data-aos="zoom-in">
       <div className="mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6 text-center">
         {stats.map((stat, index) => (
           <div

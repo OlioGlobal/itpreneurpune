@@ -47,7 +47,10 @@ export default function Hero2() {
           <Form2 />
         </div>
       </div>
-      <div className="flex flex-col gap-2 lg:flex-row bg-[#F1F3EF] justify-center items-center py-4 px-[5%]">
+      <div
+        data-aos="zoom-in"
+        className="flex flex-col gap-2 lg:flex-row bg-[#F1F3EF] justify-center items-center py-4 px-[5%]"
+      >
         <div className="lg:w-[50%]">
           <p className="text-[#0A1F14] text-[16px] font-semibold md:text-[24px] text-center">
             iTpreneur - A hallmark of quality and <br /> highly regarded IT

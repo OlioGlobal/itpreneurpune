@@ -42,7 +42,7 @@ const BenefitsSection = () => {
   ];
 
   return (
-    <div className="bg-[#EFF7FA] py-14 px-[5%] ">
+    <div className="bg-[#EFF7FA] py-14 px-[5%]  ">
       <p className="text-[#26784e] mb-2 text-[18px] text-center md:text-[22px] font-bold">
         BENEFITS
       </p>
@@ -74,6 +74,7 @@ const BenefitsSection = () => {
         style={{
           background: "linear-gradient(90deg, #34A76C 0%, #26784E 100%)",
         }}
+        data-aos="zoom-in"
         className=" mt-10 md:mt-20 rounded-lg p-5 md:p-8 flex flex-col gap-5 md:flex-row justify-between items-start sm:items-center text-white"
       >
         <div className=" ">

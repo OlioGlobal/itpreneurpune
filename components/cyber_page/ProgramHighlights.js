@@ -45,6 +45,7 @@ export default function ProgramHighlights() {
         {services.map((service, index) => (
           <div
             key={service.id}
+            data-aos="zoom-in"
             className={`w-full md:w-1/2 lg:w-1/3 sm:px-4  mb-8 ${
               index > 2 ? "lg:w-1/2" : ""
             }`}

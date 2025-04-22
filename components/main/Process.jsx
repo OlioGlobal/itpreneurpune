@@ -40,6 +40,7 @@ const ProcessSection = () => {
         {processSteps.map((step, index) => (
           <div
             key={index}
+            data-aos="zoom-in"
             className="bg-gray-100 rounded-lg p-4 cursor-default  shadow-sm border-[1px] border-gray-300 transition-all duration-300 hover:shadow-lg hover:bg-[#e0f2e9]"
           >
             <div className="flex  mb-4">

@@ -32,6 +32,7 @@ const CourseGrid = () => {
           {courses.map((course, index) => (
             <div
               key={index}
+              data-aos="zoom-in"
               className="bg-white shadow-md rounded-lg p-4 flex gap-2 flex-col items-center justify-center text-sm hover:scale-105 transition-transform"
             >
               <Image

@@ -3,28 +3,45 @@ import CountUp from "../utils/CountUp";
 
 export default function WhyChooseITpreneur() {
   const stats = [
-    { to: 40000, label: "Happy Students" },
-
-    { to: 13, label: "Years of Experience" },
-    { to: 4000, label: "Hiring Companies" },
-    { to: 2000, label: "Off Campus Drives" },
+    {
+      to: 40000,
+      label: "Happy Students",
+      img: "/icon/happystud.png",
+    },
+    {
+      to: 13,
+      label: "Years of Experience",
+      img: "/icon/yearsexp.png",
+    },
+    {
+      to: 4000,
+      label: "Hiring Companies",
+      img: "/icon/hiringcom.png",
+    },
+    {
+      to: 2000,
+      label: "Off Campus Drives",
+      img: "/icon/offcam.png",
+    },
   ];
+
   return (
     <div
       id="about"
-      className="flex px-[5%] flex-col md:flex-row items-center justify-between  py-16 bg-white gap-3 md:gap-10"
+      className="flex px-[5%] flex-col md:flex-row items-center justify-between py-16 bg-white gap-3 md:gap-10"
     >
-      <div className="w-full  md:w-[40%]">
+      {/* Left Image */}
+      <div className="w-full md:w-[40%]">
         <Image
-          src="/icon/why.png" // ⬅️ Replace this with your actual image path (e.g., '/images/cyber-training.jpg')
+          src="/icon/why.png"
           alt="IT Training"
           width={1000}
           height={1000}
-          className="rounded-xl  w-full h-auto object-cover"
+          className="rounded-xl w-full h-auto object-cover"
         />
       </div>
 
-      {/* Right Side - Text */}
+      {/* Right Content */}
       <div className="w-full md:w-[60%] flex gap-5 md:gap-10 flex-col">
         <div>
           <h2 className="h2t font-bold text-[#163123]">
@@ -39,21 +56,29 @@ export default function WhyChooseITpreneur() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 gap-8  ">
+        {/* Stats Section */}
+        <div className="grid grid-cols-2 gap-8">
           {stats.map((stat, index) => (
-            <div key={index}>
-              <div className="font-bold  text-[#163123]  text-[24px]  sm:text-[32px]  md:text-[32px] lg:text-[36px]  leading-[1.2]">
-                <CountUp
-                  from={stat.from}
-                  to={stat.to}
-                  duration={2}
-                  direction="up"
-                  className="inline"
-                />
-                <span>{stat.suffix}+</span>
+            <div key={index} className="flex gap-4 items-center">
+              <div>
+                <Image src={stat.img} height={60} width={60} alt={stat.label} />
               </div>
-              <div className="text-[#26784E] font-bold mt-2 text-[15px] leading-[1.3]  sm:text-[17px] md:text-[18px] lg:text-[20px]">
-                {stat.label}
+              <div className="flex flex-col">
+                <div className="flex items-center gap-2">
+                  <div className="font-bold text-[#163123] text-[24px] sm:text-[32px] md:text-[32px] lg:text-[36px] leading-[1.2]">
+                    <CountUp
+                      from={stat.from}
+                      to={stat.to}
+                      duration={2}
+                      direction="up"
+                      className="inline"
+                    />
+                    <span>+</span>
+                  </div>
+                </div>
+                <div className="text-[#26784E] font-bold mt-2 text-[15px] leading-[1.3] sm:text-[17px] md:text-[18px] lg:text-[20px]">
+                  {stat.label}
+                </div>
               </div>
             </div>
           ))}

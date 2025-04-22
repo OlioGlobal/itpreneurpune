@@ -1,11 +1,11 @@
 {
-  "/_document": "pages/_document.js",
-  "/api/hello": "pages/api/hello.js",
-  "/": "pages/index.html",
-  "/cyber-security": "pages/cyber-security.html",
-  "/thank-you": "pages/thank-you.html",
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/api/sendEmail": "pages/api/sendEmail.js",
+  "/": "pages/index.html",
+  "/cyber-security": "pages/cyber-security.html",
+  "/_document": "pages/_document.js",
+  "/api/hello": "pages/api/hello.js",
+  "/thank-you": "pages/thank-you.html",
   "/404": "pages/404.html"
 }

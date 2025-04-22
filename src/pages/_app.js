@@ -1,9 +1,21 @@
 import "@/styles/globals.css";
+import "aos/dist/aos.css";
+import AOS from "aos";
+import { useEffect } from "react";
+
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import StickyFooter from "../../components/StickyFooter";
 import Head from "next/head";
+
 export default function App({ Component, pageProps }) {
+  useEffect(() => {
+    AOS.init({
+      duration: 500, // Animation duration in ms
+      once: true, // Whether animation should happen only once
+    });
+  }, []);
+
   return (
     <>
       <Head>

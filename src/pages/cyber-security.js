@@ -29,7 +29,6 @@ export default function Cyber() {
       <ProgramHighlights />
       <ToolsCarousel />
       <WhyChooseITpreneur />
-
       <HearformStud />
       <CareerSuccess />
       <FaqSection />
