@@ -97,7 +97,7 @@ export default function Form2() {
               id="name"
               value={formData.name}
               onChange={handleChange}
-              className="w-full border border-[#26784E] px-4 pt-5 pb-2 focus:outline-none focus:ring-1 focus:ring-green-600 peer"
+              className="w-full border text-black border-[#26784E] px-4 pt-5 pb-2 focus:outline-none focus:ring-1 focus:ring-green-600 peer"
               placeholder=" "
             />
             <label
@@ -120,7 +120,7 @@ export default function Form2() {
               maxLength={10}
               value={formData.mobile}
               onChange={handleChange}
-              className="w-full border border-[#26784E] px-4 pt-5 pb-2 focus:outline-none focus:ring-1 focus:ring-green-600 peer"
+              className="w-full border text-black border-[#26784E] px-4 pt-5 pb-2 focus:outline-none focus:ring-1 focus:ring-green-600 peer"
               placeholder=" "
             />
             <label
@@ -142,7 +142,7 @@ export default function Form2() {
               id="email"
               value={formData.email}
               onChange={handleChange}
-              className="w-full border border-[#26784E]   px-4 pt-5 pb-2 focus:outline-none focus:ring-1 focus:ring-green-600 peer"
+              className="w-full border text-black border-[#26784E]   px-4 pt-5 pb-2 focus:outline-none focus:ring-1 focus:ring-green-600 peer"
               placeholder=" "
             />
             <label

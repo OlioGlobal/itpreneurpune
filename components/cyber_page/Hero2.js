@@ -5,7 +5,6 @@ export default function Hero2() {
   return (
     <>
       <div className="relative bg-[#26784E] lg:h-[650px] text-white flex-col lg:flex-row flex px-[5%] py-10 gap-12 overflow-hidden">
-        {/* Gradient Background Image Overlay */}
         <div className="absolute inset-0 z-0">
           <div
             className="w-full h-full bg-cover bg-center bg-no-repeat"
@@ -30,7 +29,11 @@ export default function Hero2() {
             Start your cyber security journey today.{" "}
           </p>
 
-          <p className="text-[16px] font-bold">
+          <p className="text-[16px] font-bold flex items-center gap-2 animate-floatText">
+            <span className="relative flex h-3 w-3">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-3 w-3 bg-green-600"></span>
+            </span>
             Reserve Your Spot — Next Batch Filling Fast
           </p>
 

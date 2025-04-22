@@ -1,38 +1,73 @@
 import React from "react";
 import Image from "next/image";
-const highlightItems = Array(6).fill({
-  title: "120 Days of Intensive Training",
-  subtitle: "85% practical, 15% theory",
-  icon: "/icon/work-1.png",
-});
+
+const services = [
+  {
+    id: 1,
+    title: "120 Days of Intensive Training",
+    description: "85% practical, 15% theory",
+    image: "/icon/h1.png",
+  },
+  {
+    id: 2,
+    title: "Live Sessions + Video Lectures",
+    description: "Learn at your own pace",
+    image: "/icon/h2.png",
+  },
+  {
+    id: 3,
+    title: "Hands-On Labs",
+    description: "Build real-world projects and showcase them on GitHub",
+    image: "/icon/h3.png",
+  },
+  {
+    id: 4,
+    title: "Mock Interviews",
+    description: "Prepare for technical and HR rounds with confidence",
+    image: "/icon/h1.png",
+  },
+  {
+    id: 5,
+    title: "Placement Assistance",
+    description: "100% job guarantee with access to 300+ hiring partners",
+    image: "/icon/h2.png",
+  },
+];
 
 export default function ProgramHighlights() {
   return (
-    <section className="px-[5%] py-16 bg-white">
-      <h2 className="font-bold mb-8  text-[#163123]  text-[24px]  sm:text-[32px] text-center md:text-[32px] lg:text-[36px]  leading-[1.2] ">
+    <section className="px-[5%] rm bg-white">
+      <h2 className="font-bold mb-8 text-[#163123] text-[24px] sm:text-[32px] text-center md:text-[32px] lg:text-[36px] leading-[1.2]">
         Cyber Security and Ethical Hacking <br /> Program Highlights
       </h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {highlightItems.map((item, index) => (
+      <div className="flex flex-wrap  cursor-pointer justify-center">
+        {services.map((service, index) => (
           <div
-            key={index}
-            className="flex justify-center md:justify-start items-center md:items-start gap-4 border  border-[#D7D7D7] p-5 rounded-xl hover:shadow-md transition-all duration-200"
+            key={service.id}
+            className={`w-full md:w-1/2 lg:w-1/3 sm:px-4  mb-8 ${
+              index > 2 ? "lg:w-1/2" : ""
+            }`}
           >
-            <div className="bg-[#198754] p-3 rounded-lg">
-              <Image
-                src={item.icon}
-                alt="icon"
-                width={24}
-                height={24}
-                className="w-6 h-6"
-              />
-            </div>
-            <div>
-              <h3 className="text-[16px] font-semibold text-[#163123]">
-                {item.title}
-              </h3>
-              <p className="text-[16px] text-[#4D5C54]">{item.subtitle}</p>
+            <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 h-full">
+              <div className="relative h-44 w-full">
+                <Image
+                  src={service.image}
+                  alt={service.title}
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className="object-cover"
+                  priority={index < 3}
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="font-semibold text-[24px] text-[#163123] mb-2">
+                  {service.title}
+                </h3>
+                <p className="text-[#163123] text-[16px]">
+                  {service.description}
+                </p>
+              </div>
             </div>
           </div>
         ))}

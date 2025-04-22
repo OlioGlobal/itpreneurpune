@@ -10,7 +10,7 @@ const reasons = [
 
 export default function CyberSecurityBenefits() {
   return (
-    <div className="px-[5%] py-16 ">
+    <div className="px-[5%] rm ">
       <div className="text-center mb-8">
         <h2 className="font-bold text-[#163123] text-[24px] sm:text-[32px] md:text-[32px] lg:text-[36px] leading-[1.2]">
           Cyber Security Course Is For You If...
@@ -42,8 +42,11 @@ export default function CyberSecurityBenefits() {
       </div>
 
       <div className="flex justify-center mt-8">
-        <button className="bg-[#5BD253] py-3 cursor-pointer rounded-[5px] px-8">
-          click
+        <button
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          className="bg-[#5BD253] text-[#0A1F14] text-[16px] font-bold py-3 cursor-pointer rounded-[5px] px-8"
+        >
+          Get Free Career Consultation
         </button>
       </div>
     </div>

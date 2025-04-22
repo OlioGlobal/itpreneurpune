@@ -105,7 +105,7 @@ const LogoCarouselRow1 = ({ logos, reverse = false }) => {
 
 export default function Partner_slider() {
   return (
-    <div className="py-16 space-y-6 px-4  ">
+    <div className="rm space-y-6 px-4  ">
       <div className="text-center mb-8">
         <h2 className="font-bold  text-[#163123]  text-[24px]  sm:text-[32px] text-center md:text-[32px] lg:text-[36px]  leading-[1.2] ">
           Our Placement Partners

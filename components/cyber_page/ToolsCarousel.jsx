@@ -1,6 +1,7 @@
 "use client";
 
 import useEmblaCarousel from "embla-carousel-react";
+import Autoplay from "embla-carousel-autoplay";
 import { useCallback } from "react";
 
 const tools = [
@@ -16,12 +17,34 @@ const tools = [
   { title: "Salesforce", icon: "/icon/salesforce.webp" },
   { title: "MERN Stack", icon: "/icon/mearn-stack.webp" },
   { title: "MEAN Stack", icon: "/icon/mean-stack.webp" },
+  { title: "Java Full Stack", icon: "/icon/java.webp" },
+  { title: "Python Full Stack", icon: "/icon/python.webp" },
+  { title: ".Net Full Stack", icon: "/icon/dot-net.webp" },
+  { title: "UI/UX Web Development", icon: "/icon/ui-ux.webp" },
+  { title: "Business Analysis", icon: "/icon/business-analysic.webp" },
+  { title: "Data Science", icon: "/icon/data-science.webp" },
+  { title: "Data Analysis", icon: "/icon/data-analyst.webp" },
+  { title: "Business Intelligence", icon: "/icon/bus.png" },
+  { title: "Software Testing", icon: "/icon/testing.webp" },
+  { title: "Salesforce", icon: "/icon/salesforce.webp" },
+  { title: "MERN Stack", icon: "/icon/mearn-stack.webp" },
+  { title: "MEAN Stack", icon: "/icon/mean-stack.webp" },
 ];
 
 export default function ToolsCarousel() {
-  const [emblaRef, emblaApi] = useEmblaCarousel({
-    align: "start",
-  });
+  const [emblaRef, emblaApi] = useEmblaCarousel(
+    {
+      align: "start",
+      loop: true,
+    },
+    [
+      Autoplay({
+        delay: 2500,
+        stopOnInteraction: false,
+        stopOnMouseEnter: false,
+      }),
+    ]
+  );
 
   const scrollPrev = useCallback(
     () => emblaApi && emblaApi.scrollPrev(),
@@ -33,7 +56,7 @@ export default function ToolsCarousel() {
   );
 
   return (
-    <section className="px-[5%] py-16 bg-white">
+    <section className="px-[5%] rm bg-white">
       <div className="flex flex-col sm:flex-row gap-3 items-start sm:items-center justify-between mb-6 leading-[1.2]">
         <div>
           <h2 className="text-[22px] md:text-[28px] font-bold text-[#163123]">

@@ -1,3 +1,4 @@
+import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import AboutUs from "../../components/main/about-us";
 import BenefitsSection from "../../components/main/Benefits";
@@ -13,6 +14,7 @@ import Testimonials from "../../components/main/Reviews";
 export default function Home() {
   return (
     <>
+      <Header />
       <Hero />
       <Placement />
       <CompanyLogoDoubleCarousel />

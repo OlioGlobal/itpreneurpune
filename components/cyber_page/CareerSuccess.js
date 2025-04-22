@@ -23,7 +23,7 @@ const CareerSuccessComponents = () => {
   ];
 
   return (
-    <div className="px-[5%] py-16">
+    <div className="px-[5%] rm" id="benefits">
       <h2 className=" font-bold text-[#163123] text-[24px] mb-8  sm:text-[32px] text-center md:text-[32px] lg:text-[36px]  leading-[1.2]">
         Everything you need for a successful career
       </h2>

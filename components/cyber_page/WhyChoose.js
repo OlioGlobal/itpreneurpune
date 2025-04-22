@@ -2,13 +2,16 @@ import Image from "next/image";
 
 export default function WhyChooseITpreneur() {
   return (
-    <div className="flex px-[5%] flex-col md:flex-row items-center justify-between  py-16 bg-white gap-3 md:gap-8">
+    <div
+      id="about"
+      className="flex px-[5%] flex-col md:flex-row items-center justify-between  py-16 bg-white gap-3 md:gap-8"
+    >
       <div className="w-full  md:w-1/2">
         <Image
           src="/icon/why.png" // ⬅️ Replace this with your actual image path (e.g., '/images/cyber-training.jpg')
           alt="IT Training"
-          width={200}
-          height={200}
+          width={1000}
+          height={1000}
           className="rounded-xl  w-full h-auto object-cover"
         />
       </div>

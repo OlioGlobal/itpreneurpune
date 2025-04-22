@@ -2,3 +2,22 @@
 body {
   font-family: "Inter", sans-serif;
 }
+html {
+  scroll-padding-top: 50px; /* Adjust 100px to match your header height */
+}
+@keyframes floatText {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2px);
+  }
+}
+
+.animate-floatText {
+  animation: floatText 2s ease-in-out infinite;
+}
+.rm {
+  @apply py-8 sm:py-10 md:py-14 lg:py-16;
+}

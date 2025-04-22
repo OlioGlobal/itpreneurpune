@@ -12,11 +12,13 @@ import Students from "../../components/cyber_page/Students";
 import ToolsCarousel from "../../components/cyber_page/ToolsCarousel";
 import WhyChooseITpreneur from "../../components/cyber_page/WhyChoose";
 import WhyCyberSecurity from "../../components/cyber_page/WhyCyberSecurity";
+import Header2 from "../../components/header2";
 import Enroll from "../../components/main/Enroll";
 
 export default function Cyber() {
   return (
     <>
+      <Header2 />
       <Hero2 />
       <Students />
       <Partner_slider />

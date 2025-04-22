@@ -14,34 +14,34 @@ const FaqSection = () => {
       id: 2,
       question: "Will I get a job after completing the course?",
       answer:
-        "We have a high placement rate for our graduates. Our career services team works with you on resume building, interview preparation, and connecting with our industry partners to maximize your employment opportunities.",
+        "Absolutely. iTpreneur has a strong placement track record and dedicated support to help you land interviews with top IT companies.",
     },
     {
       id: 3,
       question:
         "How is your course different from online tutorials or YouTube videos?",
       answer:
-        "Our structured curriculum is designed by industry experts, includes hands-on projects, personalized feedback, and mentorship. Unlike free resources, we provide a comprehensive learning path with accountability and support throughout your journey.",
+        "We offer structured learning, real-time mentoring, live projects, and doubt-solving — everything you won’t get from scattered online content.",
     },
     {
       id: 4,
       question: "What kind of practical training will I get?",
       answer:
-        "You'll work on real-world projects, industry-relevant case studies, and gain hands-on experience with the latest tools and technologies. Our curriculum includes lab exercises, hackathons, and capstone projects that simulate actual workplace scenarios.",
+        "You’ll work on real-life projects, simulated cyber attacks (in Cyber Security), and industry case studies to gain hands-on experience.",
     },
     {
       id: 5,
       question:
         "Do you offer EMI or financial support options for course fees?",
       answer:
-        "Yes, we offer flexible payment plans including EMI options through our banking partners. We also have scholarship programs for deserving candidates. Our admissions team can guide you through the available financial support options.",
+        "Yes, we have easy EMI plans and guidance to make learning affordable for every student.",
     },
     {
       id: 6,
       question:
-        "I'm preparing for government exams but not getting results. Should I consider IT as a career?",
+        "I’m preparing for government exams but not getting results. Should I consider IT as a career?",
       answer:
-        "IT offers excellent career growth and stability. Many of our successful students have transitioned from government exam preparation. We recommend scheduling a career counseling session with our advisors to explore if your aptitude and interests align with an IT career path.",
+        "Definitely. IT offers faster growth, stable job opportunities, and a future-proof career — even if you're switching from a different path.",
     },
   ];
 
@@ -54,7 +54,7 @@ const FaqSection = () => {
   };
 
   return (
-    <div className="  flex  flex-col gap-5 md:flex-row py-16 px-[5%]">
+    <div className="  flex  flex-col gap-5 md:flex-row rm px-[5%]">
       <div className="md:w-[40%]">
         <h2 className="font-bold text-[#163123] text-[24px]  sm:text-[32px]  md:text-[32px] lg:text-[36px]  leading-[1.2]">
           Frequently Asked Questions

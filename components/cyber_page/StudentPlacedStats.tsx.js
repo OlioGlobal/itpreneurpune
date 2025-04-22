@@ -10,7 +10,7 @@ export default function StudentPlacedStats() {
   ];
 
   return (
-    <div className="flex px-[5%] flex-wrap justify-center md:justify-evenly gap-8 md:gap-20 py-16  text-center">
+    <div className="flex px-[5%] flex-wrap justify-center md:justify-evenly gap-8 md:gap-20 rm  text-center">
       {stats.map((stat, index) => (
         <div key={index}>
           <div className="font-bold  text-[#163123]  text-[24px]  sm:text-[32px] text-center md:text-[32px] lg:text-[36px]  leading-[1.2]">

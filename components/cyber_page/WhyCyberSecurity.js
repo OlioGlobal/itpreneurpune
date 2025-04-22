@@ -1,4 +1,5 @@
-// components/WhyCyberSecurity.js
+"use client";
+
 import useEmblaCarousel from "embla-carousel-react";
 import { useEffect, useCallback, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
@@ -9,37 +10,37 @@ const cards = [
     title: "Massive Global Demand",
     description:
       "With cyber threats rising daily, there’s a global shortage of skilled professionals — over 3.5 million unfilled roles worldwide. It’s one of the fastest-growing career paths in tech.",
-    icon: "/icon/work.png",
+    icon: "/icon/gd1.png",
   },
   {
     title: "High Salary, High Growth",
     description:
       "Cyber security experts are among the top-paid professionals in IT. As demand rises, so does the pay — even for entry-level roles.",
-    icon: "/icon/work.png",
+    icon: "/icon/gd2.png",
   },
   {
     title: "Ever-Evolving, Never Boring",
     description:
       "Every day brings new challenges. From ethical hacking to protecting global systems, it’s a field that keeps you sharp and constantly learning.",
-    icon: "/icon/work.png",
+    icon: "/icon/gd3.png",
   },
   {
     title: "Massive Global Demand",
     description:
       "With cyber threats rising daily, there’s a global shortage of skilled professionals — over 3.5 million unfilled roles worldwide. It’s one of the fastest-growing career paths in tech.",
-    icon: "/icon/work.png",
+    icon: "/icon/gd1.png",
   },
   {
     title: "High Salary, High Growth",
     description:
       "Cyber security experts are among the top-paid professionals in IT. As demand rises, so does the pay — even for entry-level roles.",
-    icon: "/icon/work.png",
+    icon: "/icon/gd2.png",
   },
   {
     title: "Ever-Evolving, Never Boring",
     description:
       "Every day brings new challenges. From ethical hacking to protecting global systems, it’s a field that keeps you sharp and constantly learning.",
-    icon: "/icon/work.png",
+    icon: "/icon/gd3.png",
   },
 ];
 
@@ -59,14 +60,22 @@ export default function WhyCyberSecurity() {
     setCanScrollNext(emblaApi.canScrollNext());
   }, [emblaApi]);
 
+  // Auto-play
   useEffect(() => {
     if (!emblaApi) return;
+
+    const autoplay = setInterval(() => {
+      emblaApi.scrollNext();
+    }, 3000); // Change slide every 3 seconds
+
     emblaApi.on("select", onSelect);
     onSelect();
+
+    return () => clearInterval(autoplay);
   }, [emblaApi, onSelect]);
 
   return (
-    <section className="px-[5%] py-16 bg-white">
+    <section className="px-[5%] rm bg-white">
       <div className="text-center mb-10">
         <h2 className=" font-bold text-[#163123] text-[24px]  sm:text-[32px] text-center md:text-[32px] lg:text-[36px]  leading-[1.2]">
           Why Cyber Security Is Your Future-
@@ -90,13 +99,12 @@ export default function WhyCyberSecurity() {
                 className="embla__slide shrink-0 px-3 md:basis-1/2 lg:basis-1/3 basis-full"
                 key={index}
               >
-                <div className="bg-[#26784E] flex flex-col items-start gap-14 rounded-xl h-full p-5 text-left hover:shadow-lg transition-all duration-200">
+                <div className="bg-[#26784E] flex flex-col items-start gap-10 rounded-xl h-full p-5 text-left hover:shadow-lg transition-all duration-200">
                   <Image
                     src={card.icon}
                     alt={card.title}
-                    width={40}
-                    height={40}
-                    className="w-10 h-10"
+                    width={70}
+                    height={70}
                   />
                   <div>
                     <h3 className="text-[20px] font-bold text-[#ffffff] mb-2">
