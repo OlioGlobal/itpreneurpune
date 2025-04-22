@@ -1,6 +1,9 @@
+import Header from "../../components/Header";
+
 export default function Thanks() {
   return (
     <>
+      <Header />
       <div className="py-16 text-center px-[5%] ">
         <h1 className="text-[38px] sm:text-[42px] mb-5 md:text-[45px] lg:text-[50px] leading-[50px] font-bold">
           Thank You
