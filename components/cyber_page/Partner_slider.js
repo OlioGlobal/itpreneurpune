@@ -107,7 +107,7 @@ export default function Partner_slider() {
   return (
     <div className="rm space-y-6 px-4  ">
       <div className="text-center mb-8">
-        <h2 className="font-bold  text-[#163123]  text-[24px]  sm:text-[32px] text-center md:text-[32px] lg:text-[36px]  leading-[1.2] ">
+        <h2 className="font-bold  text-[#163123] h2t text-center  leading-[1.2] ">
           Our Placement Partners
         </h2>
         <p className="text-[#4D5C54] text-[15px] md:text-[16px] mt-2">

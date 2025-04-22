@@ -8,7 +8,7 @@ export default function Enroll2() {
     <>
       <div className="flex bg-[#0A1F14] px-[5%] gap-8 flex-col lg:flex-row lg:gap-12 rm">
         <div className="lg:w-[60%] text-white flex flex-col gap-6 justify-center">
-          <h2 className="text-[28px] sm:text-[32px] md:text-[32px] lg:text-[36px] leading-[1.2] font-bold">
+          <h2 className="h2t leading-[1.2] font-bold">
             Take the First Step <br /> Toward Your Cyber <br /> Security Career
           </h2>
 
@@ -19,7 +19,7 @@ export default function Enroll2() {
           </p>
         </div>
         <div className="lg:w-[40%]">
-          <Form2 />
+          <Form2 idPrefix="bottom" />
         </div>
       </div>
     </>

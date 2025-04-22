@@ -25,22 +25,16 @@ const cards = [
     icon: "/icon/gd3.png",
   },
   {
-    title: "Massive Global Demand",
+    title: "Job Security in a Digital World",
     description:
-      "With cyber threats rising daily, there’s a global shortage of skilled professionals — over 3.5 million unfilled roles worldwide. It’s one of the fastest-growing career paths in tech.",
+      "As businesses shift online, cyber protection has become a non-negotiable priority. Your skills will always be relevant and in demand.",
     icon: "/icon/gd1.png",
   },
   {
-    title: "High Salary, High Growth",
+    title: "Make Real-World Impact",
     description:
-      "Cyber security experts are among the top-paid professionals in IT. As demand rises, so does the pay — even for entry-level roles.",
+      "You don’t just get a job — you become a digital guardian, protecting people, companies, and governments from real threats.",
     icon: "/icon/gd2.png",
-  },
-  {
-    title: "Ever-Evolving, Never Boring",
-    description:
-      "Every day brings new challenges. From ethical hacking to protecting global systems, it’s a field that keeps you sharp and constantly learning.",
-    icon: "/icon/gd3.png",
   },
 ];
 
@@ -77,7 +71,7 @@ export default function WhyCyberSecurity() {
   return (
     <section className="px-[5%] rm bg-white">
       <div className="text-center mb-10">
-        <h2 className=" font-bold text-[#163123] text-[24px]  sm:text-[32px] text-center md:text-[32px] lg:text-[36px]  leading-[1.2]">
+        <h2 className=" font-bold text-[#163123] h2t text-center  leading-[1.2]">
           Why Cyber Security Is Your Future-
           <br className="hidden md:block" />
           Proof Career Path

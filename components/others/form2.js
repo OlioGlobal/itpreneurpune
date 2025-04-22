@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useRouter } from "next/router";
 
-export default function Form2() {
+export default function Form2({ idPrefix = "top" }) {
   const [formData, setFormData] = useState({
     name: "",
     mobile: "",
@@ -87,22 +87,23 @@ export default function Form2() {
   };
 
   return (
-    <div className="flex items-center justify-center  w-full">
-      <div className="bg-white p-4 sm:p-6 rounded-[5px] shadow-md w-full ">
+    <div className="flex items-center justify-center w-full">
+      <div className="bg-white p-4 sm:p-6 rounded-[5px] shadow-md w-full">
         <form className="space-y-8" onSubmit={handleSubmit}>
+          {/* Name Field */}
           <div className="relative">
             <input
               type="text"
               name="name"
-              id="name"
+              id={`${idPrefix}name`}
               value={formData.name}
               onChange={handleChange}
               className="w-full border text-black border-[#26784E] px-4 pt-5 pb-2 focus:outline-none focus:ring-1 focus:ring-green-600 peer"
               placeholder=" "
             />
             <label
-              htmlFor="name"
-              className="absolute  text-[16px] text-gray-500 duration-300 transform -translate-y-4 scale-75 top-4 z-10 origin-[0] left-4 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4"
+              htmlFor={`${idPrefix}name`}
+              className="absolute text-[16px] text-gray-500 duration-300 transform -translate-y-4 scale-75 top-4 z-10 origin-[0] left-4 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4"
             >
               Name
             </label>
@@ -111,12 +112,12 @@ export default function Form2() {
             )}
           </div>
 
-          {/* mobile Field with Floating Label */}
+          {/* Mobile Field */}
           <div className="relative">
             <input
               type="text"
               name="mobile"
-              id="mobile"
+              id={`${idPrefix}mobile`}
               maxLength={10}
               value={formData.mobile}
               onChange={handleChange}
@@ -124,7 +125,7 @@ export default function Form2() {
               placeholder=" "
             />
             <label
-              htmlFor="mobile"
+              htmlFor={`${idPrefix}mobile`}
               className="absolute text-[16px] text-gray-500 duration-300 transform -translate-y-4 scale-75 top-4 z-10 origin-[0] left-4 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4"
             >
               Mobile
@@ -134,19 +135,19 @@ export default function Form2() {
             )}
           </div>
 
-          {/* Email Field with Floating Label */}
+          {/* Email Field */}
           <div className="relative">
             <input
               type="email"
               name="email"
-              id="email"
+              id={`${idPrefix}email`}
               value={formData.email}
               onChange={handleChange}
-              className="w-full border text-black border-[#26784E]   px-4 pt-5 pb-2 focus:outline-none focus:ring-1 focus:ring-green-600 peer"
+              className="w-full border text-black border-[#26784E] px-4 pt-5 pb-2 focus:outline-none focus:ring-1 focus:ring-green-600 peer"
               placeholder=" "
             />
             <label
-              htmlFor="email"
+              htmlFor={`${idPrefix}email`}
               className="absolute text-[16px] text-gray-500 duration-300 transform -translate-y-4 scale-75 top-4 z-10 origin-[0] left-4 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4"
             >
               Email
@@ -156,10 +157,11 @@ export default function Form2() {
             )}
           </div>
 
+          {/* Submit Button */}
           <button
             type="submit"
             disabled={loading}
-            className="w-full text-[15px] text-[#0A1F14] sm:text-[16px] cursor-pointer bg-[#5BD253]  font-medium py-3 rounded transition duration-200  hover:bg-[#48c240]"
+            className="w-full text-[15px] text-white sm:text-[16px] cursor-pointer bg-[#5BD253] font-medium py-3 rounded transition duration-200 hover:bg-[#48c240]"
           >
             {loading ? "Sending..." : "Get Free Career Consultation"}
           </button>

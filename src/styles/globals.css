@@ -8,16 +8,19 @@ html {
 @keyframes floatText {
   0%,
   100% {
-    transform: translateY(0);
+    opacity: 1;
   }
   50% {
-    transform: translateY(-2px);
+    opacity: 0.6;
   }
 }
 
 .animate-floatText {
-  animation: floatText 2s ease-in-out infinite;
+  animation: floatText 1s ease-in-out infinite;
 }
 .rm {
   @apply py-8 sm:py-10 md:py-14 lg:py-16;
+}
+.h2t {
+  @apply text-[28px] sm:text-[32px] md:text-[35px] lg:text-[40px];
 }

@@ -10,6 +10,7 @@ import Placement from "../../components/main/Placement";
 import ProcessSection from "../../components/main/Process";
 import CompanyLogoDoubleCarousel from "../../components/main/Recruiters";
 import Testimonials from "../../components/main/Reviews";
+import StickyFooter from "../../components/StickyFooter";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
       <AboutUs />
       <ProcessSection />
       <Enroll />
+      <StickyFooter />
     </>
   );
 }

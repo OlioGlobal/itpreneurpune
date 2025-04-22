@@ -35,7 +35,7 @@ export default function CareerTransformation() {
     <section className="px-[5%] rm">
       <div className=" mx-auto">
         <div className="text-center mb-8">
-          <h2 className=" font-bold text-[#163123] text-[24px] sm:text-[32px] text-center md:text-[32px] lg:text-[36px] leading-[1.2]">
+          <h2 className=" font-bold text-[#163123] text-center h2t leading-[1.2]">
             Your Career Transformation Starts Here
           </h2>
 
@@ -49,7 +49,7 @@ export default function CareerTransformation() {
           {roles.map((role, idx) => (
             <div
               key={idx}
-              className="flex transition-all duration-200 hover:bg-[#E8F5EF] hover:scale-[1.03] items-center gap-2 border border-[#26784E] cursor-pointer rounded-full px-3 py-2 text-[15px] md:text-[16px] text-[#163123]"
+              className="flex transition-all duration-200 hover:bg-[#E8F5EF] hover:scale-[1.03] items-center gap-2 border border-[#26784E] cursor-default rounded-full px-3 py-2 text-[15px] md:text-[16px] text-[#163123]"
               // Track hover state
               onMouseEnter={() => setHoveredRole(idx)}
               onMouseLeave={() => setHoveredRole(null)}

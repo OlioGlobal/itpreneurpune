@@ -12,7 +12,7 @@ export default function CyberSecurityBenefits() {
   return (
     <div className="px-[5%] rm ">
       <div className="text-center mb-8">
-        <h2 className="font-bold text-[#163123] text-[24px] sm:text-[32px] md:text-[32px] lg:text-[36px] leading-[1.2]">
+        <h2 className="font-bold text-[#163123] h2t leading-[1.2]">
           Cyber Security Course Is For You If...
         </h2>
 
@@ -44,7 +44,7 @@ export default function CyberSecurityBenefits() {
       <div className="flex justify-center mt-8">
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="bg-[#5BD253] text-[#0A1F14] text-[16px] font-bold py-3 cursor-pointer rounded-[5px] px-8"
+          className="bg-[#5BD253] text-white text-[16px] font-bold py-3 cursor-pointer rounded-[5px] px-8"
         >
           Get Free Career Consultation
         </button>

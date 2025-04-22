@@ -56,8 +56,8 @@ const FaqSection = () => {
   return (
     <div className="  flex  flex-col gap-5 md:flex-row rm px-[5%]">
       <div className="md:w-[40%]">
-        <h2 className="font-bold text-[#163123] text-[24px]  sm:text-[32px]  md:text-[32px] lg:text-[36px]  leading-[1.2]">
-          Frequently Asked Questions
+        <h2 className="font-bold text-[#163123] h2t  leading-[1.2]">
+          Frequently Asked <br /> Questions
         </h2>
       </div>
 

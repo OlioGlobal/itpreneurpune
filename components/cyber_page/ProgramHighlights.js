@@ -37,7 +37,7 @@ const services = [
 export default function ProgramHighlights() {
   return (
     <section className="px-[5%] rm bg-white">
-      <h2 className="font-bold mb-8 text-[#163123] text-[24px] sm:text-[32px] text-center md:text-[32px] lg:text-[36px] leading-[1.2]">
+      <h2 className="font-bold mb-8 text-[#163123] text-center h2t leading-[1.2]">
         Cyber Security and Ethical Hacking <br /> Program Highlights
       </h2>
 

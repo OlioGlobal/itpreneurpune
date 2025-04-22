@@ -5,9 +5,9 @@ import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
 
 const profiles = [
-  { name: "Nutan Bhanuse", salary: "7 LPA", image: "/placement/2.webp" },
-  { name: "Rupali Aswar", salary: "7.5 LPA", image: "/placement/3.webp" },
   { name: "Amarnath Chadchankar", salary: "8 LPA", image: "/placement/4.webp" },
+  { name: "Rupali Aswar", salary: "7.5 LPA", image: "/placement/3.webp" },
+  { name: "Nutan Bhanuse", salary: "7 LPA", image: "/placement/2.webp" },
   { name: "Om Tangade", salary: "7 LPA", image: "/placement/5.webp" },
   { name: "Chandani Sude", salary: "4 LPA", image: "/placement/6.webp" },
   { name: "Puja Rasal", salary: "4 LPA", image: "/placement/7.webp" },
@@ -21,7 +21,7 @@ export default function EmblaCarousel() {
 
   return (
     <div className="rm" id="placements">
-      <h2 className="font-bold px-[5%] text-[24px] sm:text-[32px] text-center md:text-[32px] lg:text-[36px] leading-[1.2] mb-10">
+      <h2 className="font-bold text-[#163123] px-[5%] text-center h2t leading-[1.2] mb-10">
         <span className="text-[#26784E]">100%</span> of Our Students Land Jobs{" "}
         <br />
         <span className="text-[#26784E]"> Within 60 Days </span>

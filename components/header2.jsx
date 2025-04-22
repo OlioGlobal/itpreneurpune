@@ -42,7 +42,7 @@ export default function Header2() {
           <div className="flex text-[18px] text-[#0A1F14] items-center gap-8">
             <div className="hidden lg:flex text-[18px] text-[#0A1F14] items-center gap-8">
               <Link href="#about" className="hover:text-green-700 transition">
-                About
+                About Us
               </Link>
               <Link
                 href="#testimonials"

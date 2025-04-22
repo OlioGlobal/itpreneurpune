@@ -24,7 +24,7 @@ const CareerSuccessComponents = () => {
 
   return (
     <div className="px-[5%] rm" id="benefits">
-      <h2 className=" font-bold text-[#163123] text-[24px] mb-8  sm:text-[32px] text-center md:text-[32px] lg:text-[36px]  leading-[1.2]">
+      <h2 className=" font-bold text-[#163123] mb-8 text-center h2t  leading-[1.2]">
         Everything you need for a successful career
       </h2>
       <div className="flex flex-wrap justify-center gap-4 px-[1%]">

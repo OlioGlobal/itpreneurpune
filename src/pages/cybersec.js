@@ -14,6 +14,7 @@ import WhyChooseITpreneur from "../../components/cyber_page/WhyChoose";
 import WhyCyberSecurity from "../../components/cyber_page/WhyCyberSecurity";
 import Header2 from "../../components/header2";
 import Enroll from "../../components/main/Enroll";
+import StickyFooter from "../../components/stickyfooter2";
 
 export default function Cyber() {
   return (
@@ -28,11 +29,12 @@ export default function Cyber() {
       <ProgramHighlights />
       <ToolsCarousel />
       <WhyChooseITpreneur />
-      <StudentPlacedStats />
+
       <HearformStud />
       <CareerSuccess />
       <FaqSection />
       <Enroll2 />
+      <StickyFooter />
     </>
   );
 }

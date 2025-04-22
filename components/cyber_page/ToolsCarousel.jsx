@@ -59,7 +59,7 @@ export default function ToolsCarousel() {
     <section className="px-[5%] rm bg-white">
       <div className="flex flex-col sm:flex-row gap-3 items-start sm:items-center justify-between mb-6 leading-[1.2]">
         <div>
-          <h2 className="text-[22px] md:text-[28px] font-bold text-[#163123]">
+          <h2 className="h2t font-bold text-[#163123]">
             Tools and Technologies That You Will Learn
           </h2>
           <p className="text-[16px] text-[#4D5C54] mt-2">
