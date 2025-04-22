@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="sticky  top-0 z-50 bg-white shadow-md">
-      <div className="  flex items-center justify-center sm:justify-between py-4 px-[5%]">
+    <header className="sticky  top-0 z-50 bg-white shadow-md ">
+      <div className="   flex items-center justify-center sm:justify-between py-4 px-[5%]">
         <div className="text-xl font-bold text-blue-600">
           <Link href={"/"}>
             <Image
