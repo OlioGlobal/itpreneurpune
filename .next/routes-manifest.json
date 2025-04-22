@@ -22,10 +22,10 @@
       "namedRegex": "^/(?:/)?$"
     },
     {
-      "page": "/cybersec",
-      "regex": "^/cybersec(?:/)?$",
+      "page": "/cyber-security",
+      "regex": "^/cyber\\-security(?:/)?$",
       "routeKeys": {},
-      "namedRegex": "^/cybersec(?:/)?$"
+      "namedRegex": "^/cyber\\-security(?:/)?$"
     },
     {
       "page": "/thank-you",

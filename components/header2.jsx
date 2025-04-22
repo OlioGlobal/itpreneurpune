@@ -67,7 +67,7 @@ export default function Header2() {
             {/* Enroll Now Button */}
             <button
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-              className="group hidden sm:flex bg-[#5BD253] gap-2 justify-center items-center text-white py-2 px-10 2xl:px-14 hover:bg-white hover:text-[#5BD253] border-[2px] cursor-pointer rounded-[10px]"
+              className="group hidden sm:flex bg-[#5BD253] gap-2 justify-center items-center text-white py-3 px-5 hover:bg-white hover:text-[#5BD253] border-[2px] cursor-pointer rounded-[10px]"
             >
               Enroll Now
               <img

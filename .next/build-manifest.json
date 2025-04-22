@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/wl0CVlrmVlgcCwiJvVa06/_buildManifest.js",
-    "static/wl0CVlrmVlgcCwiJvVa06/_ssgManifest.js"
+    "static/5r_5mUHq8a_BE3s8IWqEk/_buildManifest.js",
+    "static/5r_5mUHq8a_BE3s8IWqEk/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "rootMainFilesTree": {},
@@ -22,7 +22,7 @@
       "static/chunks/webpack-eb5d1c11adaf4b8a.js",
       "static/chunks/framework-2f335d22a7318891.js",
       "static/chunks/main-701dbc27ca0a5778.js",
-      "static/css/657a436630b70791.css",
+      "static/css/5575f7a00b8d82e7.css",
       "static/chunks/pages/_app-418a3f110acdab92.js"
     ],
     "/_error": [
@@ -31,12 +31,12 @@
       "static/chunks/main-701dbc27ca0a5778.js",
       "static/chunks/pages/_error-b41dbd85229d9331.js"
     ],
-    "/cybersec": [
+    "/cyber-security": [
       "static/chunks/webpack-eb5d1c11adaf4b8a.js",
       "static/chunks/framework-2f335d22a7318891.js",
       "static/chunks/main-701dbc27ca0a5778.js",
       "static/chunks/13-c3ab6cfb2be748b1.js",
-      "static/chunks/pages/cybersec-4948eda6f034cb6d.js"
+      "static/chunks/pages/cyber-security-3f31c6e15981fd08.js"
     ],
     "/thank-you": [
       "static/chunks/webpack-eb5d1c11adaf4b8a.js",
