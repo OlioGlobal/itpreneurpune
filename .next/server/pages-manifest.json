@@ -2,6 +2,10 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/": "pages/index.js",
-  "/cybersec": "pages/cybersec.js"
+  "/api/hello": "pages/api/hello.js",
+  "/api/sendEmail": "pages/api/sendEmail.js",
+  "/cybersec": "pages/cybersec.html",
+  "/": "pages/index.html",
+  "/thank-you": "pages/thank-you.html",
+  "/404": "pages/404.html"
 }
