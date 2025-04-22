@@ -27,7 +27,7 @@ export default function Header2() {
       <div className="flex items-center justify-center sm:justify-between py-4 px-[5%]">
         {/* Logo */}
         <div className="text-xl font-bold text-blue-600">
-          <Link href="/">
+          <Link href={""}>
             <Image
               src="/itpreneur-pune-logo-img.png"
               alt="Logo"

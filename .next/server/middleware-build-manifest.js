@@ -1,1 +1,35 @@
-globalThis.__BUILD_MANIFEST={polyfillFiles:["static/chunks/polyfills-42372ed130431b0a.js"],devFiles:[],ampDevFiles:[],lowPriorityFiles:[],rootMainFiles:[],rootMainFilesTree:{},pages:{"/":["static/chunks/webpack-eb5d1c11adaf4b8a.js","static/chunks/framework-2f335d22a7318891.js","static/chunks/main-701dbc27ca0a5778.js","static/chunks/13-c3ab6cfb2be748b1.js","static/chunks/pages/index-570636b1082d0c92.js"],"/_app":["static/chunks/webpack-eb5d1c11adaf4b8a.js","static/chunks/framework-2f335d22a7318891.js","static/chunks/main-701dbc27ca0a5778.js","static/css/657a436630b70791.css","static/chunks/pages/_app-418a3f110acdab92.js"],"/_error":["static/chunks/webpack-eb5d1c11adaf4b8a.js","static/chunks/framework-2f335d22a7318891.js","static/chunks/main-701dbc27ca0a5778.js","static/chunks/pages/_error-b41dbd85229d9331.js"],"/cybersec":["static/chunks/webpack-eb5d1c11adaf4b8a.js","static/chunks/framework-2f335d22a7318891.js","static/chunks/main-701dbc27ca0a5778.js","static/chunks/13-c3ab6cfb2be748b1.js","static/chunks/pages/cybersec-3dd98e730d68f071.js"],"/thank-you":["static/chunks/webpack-eb5d1c11adaf4b8a.js","static/chunks/framework-2f335d22a7318891.js","static/chunks/main-701dbc27ca0a5778.js","static/chunks/pages/thank-you-598b32368134ef24.js"]},ampFirstPages:[]},globalThis.__BUILD_MANIFEST.lowPriorityFiles=["/static/"+process.env.__NEXT_BUILD_ID+"/_buildManifest.js",,"/static/"+process.env.__NEXT_BUILD_ID+"/_ssgManifest.js"];
+globalThis.__BUILD_MANIFEST = {
+  "polyfillFiles": [
+    "static/chunks/polyfills.js"
+  ],
+  "devFiles": [
+    "static/chunks/react-refresh.js"
+  ],
+  "ampDevFiles": [],
+  "lowPriorityFiles": [],
+  "rootMainFiles": [],
+  "rootMainFilesTree": {},
+  "pages": {
+    "/_app": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/_app.js"
+    ],
+    "/_error": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/_error.js"
+    ],
+    "/cybersec": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/cybersec.js"
+    ]
+  },
+  "ampFirstPages": []
+};
+globalThis.__BUILD_MANIFEST.lowPriorityFiles = [
+"/static/" + process.env.__NEXT_BUILD_ID + "/_buildManifest.js",
+,"/static/" + process.env.__NEXT_BUILD_ID + "/_ssgManifest.js",
+
+];

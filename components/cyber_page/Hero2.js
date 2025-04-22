@@ -18,7 +18,7 @@ export default function Hero2() {
         {/* Main Content */}
         <div className="relative z-10 lg:w-[70%] flex flex-col gap-6 justify-center">
           <h1 className="text-[48px] sm:text-[50px] md:text-[58px] lg:text-[64px] leading-[1.1] font-bold">
-            Become a <br /> Certified Ethical <br /> Hacker
+            Become a Certified <br /> Ethical Hacker
           </h1>
           <p className="text-[24px] leading-[30px] font-bold">
             Start Your High Paying Cyber Security Career

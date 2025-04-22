@@ -9,7 +9,8 @@ export default function Enroll2() {
       <div className="flex bg-[#0A1F14] px-[5%] gap-8 flex-col lg:flex-row lg:gap-12 rm">
         <div className="lg:w-[60%] text-white flex flex-col gap-6 justify-center">
           <h2 className="h2t leading-[1.2] font-bold">
-            Take the First Step <br /> Toward Your Cyber <br /> Security Career
+            Take the First Step Toward <br className="hidden md:block" /> Your
+            Cyber Security Career
           </h2>
 
           <p className="text-[15px] md:text-[16px]">

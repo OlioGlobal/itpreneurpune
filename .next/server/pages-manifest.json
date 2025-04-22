@@ -1,11 +1,7 @@
 {
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
-  "/cybersec": "pages/cybersec.html",
-  "/": "pages/index.html",
-  "/api/hello": "pages/api/hello.js",
   "/_document": "pages/_document.js",
-  "/api/sendEmail": "pages/api/sendEmail.js",
-  "/thank-you": "pages/thank-you.html",
-  "/404": "pages/404.html"
+  "/": "pages/index.js",
+  "/cybersec": "pages/cybersec.js"
 }
