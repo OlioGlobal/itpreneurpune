@@ -9,17 +9,22 @@ const CareerSuccessComponents = () => {
 
   // Feature card items
   const features = [
-    { title: "100% Job Guarantee", icon: icons.briefcase },
-    { title: "Real-World Training", icon: icons.training },
-    { title: "100% Job Guarantee", icon: icons.briefcase },
-    { title: "Global Certification Pathways", icon: icons.certification },
-    { title: "Global Certification Pathways", icon: icons.certification },
-    { title: "Real-World Training", icon: icons.training },
-    { title: "Real-World Training", icon: icons.training },
-    { title: "100% Job Guarantee", icon: icons.briefcase },
-    { title: "Global Certification Pathways", icon: icons.certification },
-    { title: "Real-World Training", icon: icons.training },
-    { title: "100% Job Guarantee", icon: icons.briefcase },
+    { title: "100% Job Guarantee", icon: "/icon/s1.png" },
+    { title: "Real-World Training", icon: "/icon/s2.png" },
+    { title: "Day 1 Offer Letter", icon: "/icon/s3.png" },
+    { title: "Lectures Prepared by Industry Experts", icon: "/icon/s4.png" },
+    { title: "Tie Up With 300+ Companies", icon: "/icon/s5.png" },
+    { title: "Daily 6-8 Hours Training", icon: "/icon/s6.png" },
+    { title: "Live Projects and Onsite Internships", icon: "/icon/s7.png" },
+    {
+      title: "Emphasis on Soft Skill, Interview & Personality Devlopement",
+      icon: "/icon/s8.png",
+    },
+    {
+      title: "Tie Up With MNC’s, MLC’s and Fintech Companies",
+      icon: "/icon/s9.png",
+    },
+    { title: "Education loan with No Cost EMI", icon: "/icon/s10.png" },
   ];
 
   return (
@@ -33,18 +38,20 @@ const CareerSuccessComponents = () => {
             data-aos="fade-up"
             data-aos-anchor-placement="bottom-bottom"
             key={index}
-            className="flex items-center gap-2 border border-[#D7D7D7] rounded-md p-4 w-full sm:w-auto cursor-pointer  transition-all duration-300 hover:shadow-md hover:border-green-500"
+            className="flex flex-col sm:flex-row items-start sm:items-center gap-2 border border-[#D7D7D7] rounded-md p-4 w-full sm:w-auto   transition-all duration-300 hover:shadow-md hover:border-green-500"
           >
-            <div className="bg-green-700 p-2 rounded-md flex items-center justify-center ">
+            <div className="bg-green-700  rounded-md  ">
               <Image
                 src={feature.icon}
                 alt={feature.title}
-                width={24}
-                height={24}
-                className="text-white"
+                width={50}
+                height={50}
+                className="text-white "
               />
             </div>
-            <span className="text-[16px] font-bold">{feature.title}</span>
+            <div>
+              <span className="text-[16px] font-bold">{feature.title}</span>
+            </div>
           </div>
         ))}
       </div>

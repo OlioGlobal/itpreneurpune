@@ -24,13 +24,13 @@ const services = [
     id: 4,
     title: "Mock Interviews",
     description: "Prepare for technical and HR rounds with confidence",
-    image: "/icon/h1.png",
+    image: "/icon/h4.png",
   },
   {
     id: 5,
     title: "Placement Assistance",
     description: "100% job guarantee with access to 300+ hiring partners",
-    image: "/icon/h2.png",
+    image: "/icon/h5.png",
   },
 ];
 
@@ -46,7 +46,7 @@ export default function ProgramHighlights() {
           <div
             key={service.id}
             data-aos="zoom-in"
-            className={`w-full md:w-1/2 lg:w-1/3 sm:px-4  mb-8 ${
+            className={`w-full md:w-1/2 lg:w-1/3 sm:px-4 py-3 md:py-5 ${
               index > 2 ? "lg:w-1/2" : ""
             }`}
           >

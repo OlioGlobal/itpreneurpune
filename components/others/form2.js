@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useRouter } from "next/router";
 
-export default function Form2({ idPrefix = "top" }) {
+export default function Form2({ idPrefix = "top", pageSource = "itpm_25" }) {
   const [formData, setFormData] = useState({
     name: "",
     mobile: "",
@@ -22,7 +22,6 @@ export default function Form2({ idPrefix = "top" }) {
       [name]: value,
     }));
 
-    // Clear error as user types
     setErrors((prev) => ({
       ...prev,
       [name]: "",
@@ -63,7 +62,10 @@ export default function Form2({ idPrefix = "top" }) {
         const res = await fetch("/api/sendEmail", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(formData),
+          body: JSON.stringify({
+            ...formData,
+            pageSource,
+          }),
         });
 
         if (res.ok) {

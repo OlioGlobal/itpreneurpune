@@ -3,7 +3,7 @@ import Image from "next/image"; // ✅ Importing Next.js Image component
 import Form from "../others/form";
 import Form2 from "../others/form2";
 
-export default function Enroll2() {
+export default function Enroll2({ pageSource }) {
   return (
     <>
       <div className="flex bg-[#0A1F14] px-[5%] gap-8 flex-col lg:flex-row lg:gap-12 rm">
@@ -20,7 +20,7 @@ export default function Enroll2() {
           </p>
         </div>
         <div className="lg:w-[40%]">
-          <Form2 idPrefix="bottom" />
+          <Form2 idPrefix="bottom" pageSource={pageSource} />
         </div>
       </div>
     </>

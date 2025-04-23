@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Form2 from "../others/form2";
 
-export default function Hero2() {
+export default function Hero2({ pageSource }) {
   return (
     <>
       <div className="relative bg-[#26784E] lg:h-[650px] text-white flex-col lg:flex-row flex px-[5%] py-10 gap-12 overflow-hidden">
@@ -44,7 +44,7 @@ export default function Hero2() {
 
         {/* Form */}
         <div className="relative z-10 lg:w-[50%] flex justify-end items-center">
-          <Form2 />
+          <Form2 pageSource={pageSource} />
         </div>
       </div>
       <div

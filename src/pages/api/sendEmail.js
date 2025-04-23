@@ -3,7 +3,7 @@ import nodemailer from "nodemailer";
 export default async function handler(req, res) {
   if (req.method !== "POST") return res.status(405).end();
 
-  const { name, email, mobile } = req.body;
+  const { name, email, mobile, pageSource } = req.body;
 
   if (!name || !email || !mobile) {
     return res.status(400).json({ message: "Missing fields" });
@@ -32,7 +32,7 @@ export default async function handler(req, res) {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ name, email, mobile }),
+      body: JSON.stringify({ name, email, mobile, pageName: pageSource }),
     });
 
     res.status(200).json({ message: "Email sent and data stored!" });

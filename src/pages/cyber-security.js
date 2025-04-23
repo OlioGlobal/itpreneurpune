@@ -20,7 +20,7 @@ export default function Cyber() {
   return (
     <>
       <Header2 />
-      <Hero2 />
+      <Hero2 pageSource={"cyber_security"} />
       <Students />
       <Partner_slider />
       <CyberSecurityBenefits />
@@ -32,7 +32,7 @@ export default function Cyber() {
       <HearformStud />
       <CareerSuccess />
       <FaqSection />
-      <Enroll2 />
+      <Enroll2 pageSource={"cyber_security"} />
       <StickyFooter />
     </>
   );

@@ -9,7 +9,7 @@ const tools = [
 
 export default function ToolsGrid() {
   return (
-    <section className="px-[5%] rm bg-white">
+    <section className="px-[5%] rm  bg-white">
       <div className="flex flex-col sm:flex-row gap-3 items-start sm:items-center justify-between mb-8 leading-[1.2]">
         <div>
           <h2 className="h2t font-bold text-[#163123]">

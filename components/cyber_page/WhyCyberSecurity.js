@@ -28,13 +28,13 @@ const cards = [
     title: "Job Security in a Digital World",
     description:
       "As businesses shift online, cyber protection has become a non-negotiable priority. Your skills will always be relevant and in demand.",
-    icon: "/icon/gd1.png",
+    icon: "/icon/gd4.png",
   },
   {
     title: "Make Real-World Impact",
     description:
       "You don’t just get a job — you become a digital guardian, protecting people, companies, and governments from real threats.",
-    icon: "/icon/gd2.png",
+    icon: "/icon/gd5.png",
   },
 ];
 
@@ -60,7 +60,7 @@ export default function WhyCyberSecurity() {
 
     const autoplay = setInterval(() => {
       emblaApi.scrollNext();
-    }, 3000); // Change slide every 3 seconds
+    }, 3000);
 
     emblaApi.on("select", onSelect);
     onSelect();
@@ -114,7 +114,6 @@ export default function WhyCyberSecurity() {
           </div>
         </div>
 
-        {/* Navigation Buttons */}
         <button
           onClick={() => emblaApi?.scrollPrev()}
           className="absolute -left-3 top-1/2 -translate-y-1/2 z-10 p-2 bg-white rounded-full shadow-md hover:bg-gray-100"
