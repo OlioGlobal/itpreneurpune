@@ -39,7 +39,7 @@ export default function CyberSecurityBenefits() {
                 {reason}
               </p>
             </div>
-            <div className="mt-2 w-6 h-[1px] bg-[#00000040] rounded"></div>
+            <div className=" w-6 rounded"></div>
           </div>
         ))}
       </div>
