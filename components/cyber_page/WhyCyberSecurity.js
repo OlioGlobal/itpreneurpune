@@ -93,7 +93,7 @@ export default function WhyCyberSecurity() {
                 className="embla__slide shrink-0 px-3 md:basis-1/2 lg:basis-1/3 basis-full"
                 key={index}
               >
-                <div className="bg-[#26784E] flex flex-col items-start gap-10 rounded-xl h-full p-5 text-left hover:shadow-lg transition-all duration-200">
+                <div className="bg-[#26784E] flex flex-col items-start gap-10 rounded-xl h-full p-8 text-left hover:shadow-lg transition-all duration-200">
                   <Image
                     src={card.icon}
                     alt={card.title}

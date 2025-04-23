@@ -105,7 +105,7 @@ const LogoCarouselRow = ({ logos, reverse = false }) => {
 
 export default function CompanyLogoDoubleCarousel() {
   return (
-    <div className="py-16 space-y-6 px-4 max">
+    <div className="py-16 space-y-6  max px-[5%]">
       <h2 className="font-bold text-center text-[#0a1f14] text-[28px] sm:text-[32px] md:text-[35px] lg:text-[40px] ">
         Our Top Recruiters
       </h2>
