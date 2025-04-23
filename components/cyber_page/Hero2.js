@@ -4,7 +4,7 @@ import Form2 from "../others/form2";
 export default function Hero2({ pageSource }) {
   return (
     <>
-      <div className="relative bg-[#26784E] lg:h-[650px] text-white flex-col lg:flex-row flex px-[5%] py-10 gap-12 overflow-hidden">
+      <div className="relative bg-[#26784E] lg:h-[520px] text-white flex-col lg:flex-row flex px-[5%] py-10 gap-12 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <div
             className="w-full h-full bg-cover bg-center bg-no-repeat"

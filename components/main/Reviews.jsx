@@ -23,7 +23,7 @@ const reviews = [
       "Huge thanks to ITPRENEUR Pune for helping me land a job at Myospaz Software Technologies! The training by Vinayak Sir was outstanding, with in-depth knowledge and hands-on experience that truly made a difference. The placement support from Ms. Vivek Shukla was exceptional, guiding me at every step and ensuring a smooth hiring process. The entire team at ITPRENEUR is dedicated, supportive, and committed to student success. I highly recommend this institute to anyone looking for quality training and guaranteed career growth!",
   },
   {
-    id: 1,
+    id: 3,
     name: "Snehal Mahasagar",
     date: "2025-04-03",
     avatar: "https://i.pravatar.cc/40?img=1",
@@ -32,7 +32,7 @@ const reviews = [
       "Big thanks to ITPRENEUR Pune for placing me in Myospaz Software technologies. Aishwarya Mam's training was outstanding, and the placement support from Ms. Vivek Shukla was very helpful. Highly recommend this institute!",
   },
   {
-    id: 2,
+    id: 4,
     name: "Vishakha Taur",
     date: "April 2, 2024",
     avatar: "https://i.pravatar.cc/40?img=2",
@@ -42,7 +42,7 @@ const reviews = [
   },
 
   {
-    id: 1,
+    id: 5,
     name: "Apeksha Chavan",
     date: "2025-04-03",
     avatar: "https://i.pravatar.cc/40?img=1",
@@ -51,7 +51,7 @@ const reviews = [
       "I had a great experience with iTpreneur. The training was well-structured, covering all the essential concepts with hands-on practice. The trainers were highly knowledgeable, supportive, and always ready to clarify doubts. The placement team provided excellent guidance, from resume building to interview preparation. Their continuous support helped me secure a great opportunity. I appreciate the efforts of the entire team in making this journey smooth and successful.",
   },
   {
-    id: 2,
+    id: 6,
     name: "Mahesh Chivare",
     date: "2025-04-03",
     avatar: "https://i.pravatar.cc/40?img=2",
@@ -61,7 +61,7 @@ const reviews = [
   },
 
   {
-    id: 1,
+    id: 7,
     name: "Rohan Kumbhojkar",
     date: "2025-04-02",
     avatar: "https://i.pravatar.cc/40?img=1",
@@ -70,7 +70,7 @@ const reviews = [
       "I appreciate the efforts of ITpreneur Institute in providing quality training and career guidance. The course content was well-structured, and the faculty was knowledgeable and supportive.The job openings were always aligned with my skill set.",
   },
   {
-    id: 2,
+    id: 8,
     name: "shivam mandlik",
     date: "2025-04-02",
     avatar: "https://i.pravatar.cc/40?img=2",
