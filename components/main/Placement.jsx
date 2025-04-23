@@ -29,36 +29,38 @@ export default function EmblaCarousel() {
   }));
 
   return (
-    <div className="text-center py-16 flex flex-col gap-8 bg-[#EDF2E4] px-[5%]">
-      <div data-aos="fade-up">
-        <p className="text-[#26784e] mb-2 text-[18px] md:text-[22px] font-bold">
-          100% PLACEMENT
-        </p>
-        <h2 className="text-[#0a1f14] font-bold text-[24px]  sm:text-[32px] md:text-[35px] lg:text-[40px]  leading-[1.2]">
-          Over <span className="text-[#246a3e]">12000+</span> Careers Launched
-          with Impressive <br /> Salary Packages
-        </h2>
-      </div>
-      <div className="relative w-full overflow-hidden" data-aos="fade-up">
-        <div className="embla" ref={emblaRef}>
-          <div className="embla__container flex">
-            {slides.map((slide) => (
-              <div
-                key={slide.id}
-                className="embla__slide shrink-0 w-1/2 md:w-1/4 lg:w-1/6 px-2"
-                data-aos="fade-up"
-              >
-                <div className="overflow-hidden">
-                  <Image
-                    src={slide.src}
-                    alt={`ITpreneur Placement ${slide.id}`}
-                    width={500}
-                    height={300}
-                    className="w-full h-auto object-cover"
-                  />
+    <div className="bg-[#EDF2E4] ">
+      <div className="text-center  py-16 max flex flex-col gap-8  px-[5%]">
+        <div data-aos="fade-up">
+          <p className="text-[#26784e] mb-2 text-[18px] md:text-[22px] font-bold">
+            100% PLACEMENT
+          </p>
+          <h2 className="text-[#0a1f14] font-bold text-[24px]  sm:text-[32px] md:text-[35px] lg:text-[40px]  leading-[1.2]">
+            Over <span className="text-[#246a3e]">12000+</span> Careers Launched
+            with Impressive <br /> Salary Packages
+          </h2>
+        </div>
+        <div className="relative w-full overflow-hidden" data-aos="fade-up">
+          <div className="embla" ref={emblaRef}>
+            <div className="embla__container flex">
+              {slides.map((slide) => (
+                <div
+                  key={slide.id}
+                  className="embla__slide shrink-0 w-1/2 md:w-1/4 lg:w-1/6 px-2"
+                  data-aos="fade-up"
+                >
+                  <div className="overflow-hidden">
+                    <Image
+                      src={slide.src}
+                      alt={`ITpreneur Placement ${slide.id}`}
+                      width={500}
+                      height={300}
+                      className="w-full h-auto object-cover"
+                    />
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>

@@ -29,7 +29,7 @@ const ProcessSection = () => {
   ];
 
   return (
-    <section className="py-14 px-[5%] bg-white text-[#163123]">
+    <section className="py-14 px-[5%] bg-white text-[#163123] max">
       <p className="text-[#26784e] mb-2 text-[18px] md:text-[22px] font-bold text-center">
         OUR SIMPLE PROCESS
       </p>

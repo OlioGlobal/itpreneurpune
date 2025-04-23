@@ -69,7 +69,7 @@ export default function WhyCyberSecurity() {
   }, [emblaApi, onSelect]);
 
   return (
-    <section className="px-[5%] rm bg-white">
+    <section className="px-[5%] rm bg-white max">
       <div className="text-center mb-10">
         <h2 className=" font-bold text-[#163123] h2t text-center  leading-[1.2]">
           Why Cyber Security Is Your Future-

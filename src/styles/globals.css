@@ -24,3 +24,6 @@ html {
 .h2t {
   @apply text-[28px] sm:text-[32px] md:text-[35px] lg:text-[40px];
 }
+.max {
+  @apply max-w-screen-2xl mx-auto;
+}

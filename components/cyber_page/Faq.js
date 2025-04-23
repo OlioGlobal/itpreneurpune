@@ -54,7 +54,7 @@ const FaqSection = () => {
   };
 
   return (
-    <div className="  flex  flex-col gap-5 md:flex-row rm px-[5%]">
+    <div className=" max flex  flex-col gap-5 md:flex-row rm px-[5%]">
       <div className="md:w-[40%]">
         <h2 className="font-bold text-[#163123] h2t  leading-[1.2]">
           Frequently Asked <br /> Questions

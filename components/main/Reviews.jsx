@@ -115,7 +115,7 @@ export default function EmblaCarousel() {
   };
 
   return (
-    <div className="px-[5%] py-16 text-center">
+    <div className="px-[5%] py-16 text-center max">
       <div className="mb-8">
         <p className="text-[#26784e] mb-2 text-[18px] md:text-[22px] font-bold">
           TESTIMONIALS

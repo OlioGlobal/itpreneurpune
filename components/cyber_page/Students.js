@@ -20,7 +20,7 @@ export default function EmblaCarousel() {
   ]);
 
   return (
-    <div className="rm" id="placements">
+    <div className="rm max" id="placements">
       <h2 className="font-bold text-[#163123] px-[5%] text-center h2t leading-[1.2] mb-10">
         <span className="text-[#26784E]">100%</span> of Our Students Land Jobs{" "}
         <br />

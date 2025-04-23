@@ -94,7 +94,7 @@ export default function HearFromStud() {
 
   return (
     <div id="testimonials">
-      <section className="px-[5%] rm bg-white">
+      <section className="px-[5%] max rm bg-white">
         <div className="text-center mb-10">
           <h2 className="font-bold text-[#163123] h2t leading-[1.2]">
             Hear It From Our Students

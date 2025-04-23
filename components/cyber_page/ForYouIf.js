@@ -10,7 +10,7 @@ const reasons = [
 
 export default function CyberSecurityBenefits() {
   return (
-    <div className="px-[5%] rm  " data-aos="zoom-in">
+    <div className="px-[5%] rm max" data-aos="zoom-in">
       <div className="text-center mb-8">
         <h2 className="font-bold text-[#163123] h2t leading-[1.2]">
           Cyber Security Course Is For You If...
@@ -26,25 +26,28 @@ export default function CyberSecurityBenefits() {
         {reasons.map((reason, index) => (
           <div
             key={index}
-            className="bg-[#F1F3EF] p-6 flex flex-col items-start gap-5 rounded-lg text-left shadow-sm transition hover:shadow-md"
+            className="bg-[#F1F3EF] p-6 flex flex-col items-start gap-5 justify-between rounded-xl text-left shadow-sm hover:shadow-md transition-all duration-300"
           >
-            <Image
-              src="/icon/que.png"
-              alt="question icon"
-              width={32}
-              height={32}
-            />
-            <p className="text-[15px] leading-[1.3] sm:text-[17px] md:text-[18px] lg:text-[20px] font-semibold text-[#163123]">
-              {reason}
-            </p>
+            <div className="flex flex-col gap-5">
+              <Image
+                src="/icon/que.png"
+                alt="question icon"
+                width={54}
+                height={54}
+              />
+              <p className="text-[17px]  sm:text-[18px] md:text-[19px] lg:text-[20px] font-semibold text-[#163123] leading-[1.3]">
+                {reason}
+              </p>
+            </div>
+            <div className="mt-2 w-6 h-[1px] bg-[#00000040] rounded"></div>
           </div>
         ))}
       </div>
 
-      <div className="flex justify-center mt-8">
+      <div className="flex justify-center mt-10">
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="bg-[#5BD253] text-white text-[16px] font-bold py-3 cursor-pointer rounded-[5px] px-8"
+          className="bg-[#5BD253] hover:bg-[#44bb3c] text-white text-[16px] font-bold py-3 cursor-pointer rounded-[5px] px-8"
         >
           Get Free Career Consultation
         </button>

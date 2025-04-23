@@ -36,12 +36,12 @@ const services = [
 
 export default function ProgramHighlights() {
   return (
-    <section className="px-[5%] rm bg-white">
+    <section className="px-[5%] rm bg-white max">
       <h2 className="font-bold mb-8 text-[#163123] text-center h2t leading-[1.2]">
         Cyber Security and Ethical Hacking <br /> Program Highlights
       </h2>
 
-      <div className="flex flex-wrap  cursor-pointer justify-center">
+      <div className="flex flex-wrap  cursor-default justify-center">
         {services.map((service, index) => (
           <div
             key={service.id}
@@ -50,7 +50,7 @@ export default function ProgramHighlights() {
               index > 2 ? "lg:w-1/2" : ""
             }`}
           >
-            <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 h-full">
+            <div className="bg-white rounded-lg overflow-hidden border border-[#D7D7D7] hover:shadow-lg transition-shadow duration-300 h-full">
               <div className="relative h-44 w-full">
                 <Image
                   src={service.image}

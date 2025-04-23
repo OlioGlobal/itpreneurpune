@@ -28,15 +28,15 @@ export default function WhyChooseITpreneur() {
   return (
     <div
       id="about"
-      className="flex px-[5%] flex-col md:flex-row items-center justify-between py-16 bg-white gap-3 md:gap-10"
+      className=" max flex px-[5%] flex-col md:flex-row items-center justify-between py-16 bg-white gap-3 md:gap-10"
     >
       {/* Left Image */}
       <div className="w-full md:w-[40%]">
         <Image
           src="/icon/why.png"
           alt="IT Training"
-          width={1000}
-          height={1000}
+          width={1500}
+          height={1500}
           className="rounded-xl w-full h-auto object-cover"
         />
       </div>

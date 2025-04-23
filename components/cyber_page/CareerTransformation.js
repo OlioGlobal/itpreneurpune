@@ -32,7 +32,7 @@ export default function CareerTransformation() {
   const [hoveredRole, setHoveredRole] = useState(null);
 
   return (
-    <section className="px-[5%] rm">
+    <section className="px-[5%] rm max">
       <div className=" mx-auto">
         <div className="text-center mb-8">
           <h2 className=" font-bold text-[#163123] text-center h2t leading-[1.2]">
