@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/qzMAHhx8MkMCIRtat8b9V/_buildManifest.js",
-    "static/qzMAHhx8MkMCIRtat8b9V/_ssgManifest.js"
+    "static/d32A-TKINs0w2UMJn607S/_buildManifest.js",
+    "static/d32A-TKINs0w2UMJn607S/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "rootMainFilesTree": {},
@@ -36,7 +36,7 @@
       "static/chunks/framework-2f335d22a7318891.js",
       "static/chunks/main-701dbc27ca0a5778.js",
       "static/chunks/13-c3ab6cfb2be748b1.js",
-      "static/chunks/pages/cyber-security-72cc7a2a0099eb40.js"
+      "static/chunks/pages/cyber-security-630f4df00954cbdc.js"
     ],
     "/thank-you": [
       "static/chunks/webpack-33ce12fd6f11a809.js",
