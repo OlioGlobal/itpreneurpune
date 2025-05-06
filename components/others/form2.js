@@ -70,6 +70,10 @@ export default function Form2({ idPrefix = "top", pageSource = "itpm_25" }) {
 
         if (res.ok) {
           setSuccess("Form Successfully Submitted");
+          window.dataLayer.push({
+            event: "Lead_Success_ITPM",
+            formId: "leadFormPopup",
+          });
           setFormData({ name: "", email: "", mobile: "" });
           setTimeout(() => {
             router.push("/thank-you");
@@ -97,7 +101,7 @@ export default function Form2({ idPrefix = "top", pageSource = "itpm_25" }) {
             <input
               type="text"
               name="name"
-              id={`${idPrefix}name`}
+              id={`name`}
               value={formData.name}
               onChange={handleChange}
               className="w-full border text-black border-[#26784E] px-4 pt-5 pb-2 focus:outline-none focus:ring-1 focus:ring-green-600 peer"
@@ -119,7 +123,7 @@ export default function Form2({ idPrefix = "top", pageSource = "itpm_25" }) {
             <input
               type="text"
               name="mobile"
-              id={`${idPrefix}mobile`}
+              id={`mobile`}
               maxLength={10}
               value={formData.mobile}
               onChange={handleChange}
@@ -142,7 +146,7 @@ export default function Form2({ idPrefix = "top", pageSource = "itpm_25" }) {
             <input
               type="email"
               name="email"
-              id={`${idPrefix}email`}
+              id={`email`}
               value={formData.email}
               onChange={handleChange}
               className="w-full border text-black border-[#26784E] px-4 pt-5 pb-2 focus:outline-none focus:ring-1 focus:ring-green-600 peer"

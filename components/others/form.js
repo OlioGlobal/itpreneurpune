@@ -67,6 +67,11 @@ export default function Form() {
 
         if (res.ok) {
           setSuccess("Form Successfully Submitted");
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({
+            event: "Lead_Success_ITPM",
+            formId: "leadFormPopup",
+          });
           setFormData({ name: "", email: "", mobile: "" });
           setTimeout(() => {
             router.push("/thank-you");
@@ -100,6 +105,7 @@ export default function Form() {
             </label>
             <input
               type="text"
+              id="name"
               name="name"
               placeholder="Name"
               value={formData.name}
@@ -118,6 +124,7 @@ export default function Form() {
             </label>
             <input
               type="email"
+              id="email"
               name="email"
               placeholder="Email"
               value={formData.email}
@@ -137,6 +144,7 @@ export default function Form() {
             <input
               type="text"
               name="mobile"
+              id="mobile"
               maxLength={10}
               placeholder="Mobile Number"
               value={formData.mobile}

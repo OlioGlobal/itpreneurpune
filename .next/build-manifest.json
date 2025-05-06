@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/gJG4UOp0XQChGkSUL3irr/_buildManifest.js",
-    "static/gJG4UOp0XQChGkSUL3irr/_ssgManifest.js"
+    "static/jeAJAebjfkPBaavkWaziC/_buildManifest.js",
+    "static/jeAJAebjfkPBaavkWaziC/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "rootMainFilesTree": {},
@@ -16,13 +16,13 @@
       "static/chunks/framework-2f335d22a7318891.js",
       "static/chunks/main-701dbc27ca0a5778.js",
       "static/chunks/13-c3ab6cfb2be748b1.js",
-      "static/chunks/pages/index-d4130d5d9e53e113.js"
+      "static/chunks/pages/index-e8f8e175c668f043.js"
     ],
     "/_app": [
       "static/chunks/webpack-33ce12fd6f11a809.js",
       "static/chunks/framework-2f335d22a7318891.js",
       "static/chunks/main-701dbc27ca0a5778.js",
-      "static/css/9362b124335019d3.css",
+      "static/css/a59353de850832d7.css",
       "static/chunks/pages/_app-7fa5976bc4a455a9.js"
     ],
     "/_error": [
@@ -36,7 +36,7 @@
       "static/chunks/framework-2f335d22a7318891.js",
       "static/chunks/main-701dbc27ca0a5778.js",
       "static/chunks/13-c3ab6cfb2be748b1.js",
-      "static/chunks/217-619d41e3352df81b.js",
+      "static/chunks/217-22faf6da61b9808f.js",
       "static/chunks/pages/cyber-security-675579ce9f763d79.js"
     ],
     "/fullstack-java-developer": [
@@ -44,7 +44,7 @@
       "static/chunks/framework-2f335d22a7318891.js",
       "static/chunks/main-701dbc27ca0a5778.js",
       "static/chunks/13-c3ab6cfb2be748b1.js",
-      "static/chunks/217-619d41e3352df81b.js",
+      "static/chunks/217-22faf6da61b9808f.js",
       "static/chunks/pages/fullstack-java-developer-158e81ef89eeee20.js"
     ],
     "/thank-you": [
