@@ -24,7 +24,7 @@ export default async function handler(req, res) {
       from: `iTpreneur <${process.env.EMAIL_USER}>`,
       to: "olioclientwebsiteleads@gmail.com",
       subject: "📣 Enquiry from iTPreneur Pune",
-      text: `Name : ${name}\n \n Email: ${email}\n \n Mobile: ${mobile}\n\n`,
+      text: `Name : ${name}\n \n Email: ${email}\n \n Mobile: ${mobile}\n\n Page Source: ${pageSource}`,
     });
 
     const sheet = await fetch(process.env.GS, {

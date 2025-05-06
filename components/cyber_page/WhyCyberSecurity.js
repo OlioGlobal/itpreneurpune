@@ -5,40 +5,7 @@ import { useEffect, useCallback, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 
-const cards = [
-  {
-    title: "Massive Global Demand",
-    description:
-      "With cyber threats rising daily, there’s a global shortage of skilled professionals — over 3.5 million unfilled roles worldwide. It’s one of the fastest-growing career paths in tech.",
-    icon: "/icon/gd1.png",
-  },
-  {
-    title: "High Salary, High Growth",
-    description:
-      "Cyber security experts are among the top-paid professionals in IT. As demand rises, so does the pay — even for entry-level roles.",
-    icon: "/icon/gd2.png",
-  },
-  {
-    title: "Ever-Evolving, Never Boring",
-    description:
-      "Every day brings new challenges. From ethical hacking to protecting global systems, it’s a field that keeps you sharp and constantly learning.",
-    icon: "/icon/gd3.png",
-  },
-  {
-    title: "Job Security in a Digital World",
-    description:
-      "As businesses shift online, cyber protection has become a non-negotiable priority. Your skills will always be relevant and in demand.",
-    icon: "/icon/gd4.png",
-  },
-  {
-    title: "Make Real-World Impact",
-    description:
-      "You don’t just get a job — you become a digital guardian, protecting people, companies, and governments from real threats.",
-    icon: "/icon/gd5.png",
-  },
-];
-
-export default function WhyCyberSecurity() {
+export default function WhyChoose({ data, heading, subheading }) {
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: true,
     align: "start",
@@ -54,7 +21,6 @@ export default function WhyCyberSecurity() {
     setCanScrollNext(emblaApi.canScrollNext());
   }, [emblaApi]);
 
-  // Auto-play
   useEffect(() => {
     if (!emblaApi) return;
 
@@ -70,25 +36,23 @@ export default function WhyCyberSecurity() {
 
   return (
     <section className="px-[5%] rm bg-white max">
-      <div className="text-center mb-10">
-        <h2 className=" font-bold text-[#163123] h2t text-center  leading-[1.2]">
-          Why Cyber Security Is Your Future-
-          <br className="hidden md:block" />
-          Proof Career Path
-        </h2>
-
-        <p className="text-[#4D5C54] text-[15px] md:text-[16px] mt-2">
-          In Today&apos;s digital landscape, cyber threats are evolving faster
-          than ever. Organizations worldwide are{" "}
-          <br className="hidden md:block" /> desperately seeking skilled cyber
-          security professionals to protect their critical assets.
-        </p>
-      </div>
+      {heading && (
+        <div className="text-center mb-10">
+          <h2 className="font-bold text-[#163123] h2t text-center leading-[1.2]">
+            {heading}
+          </h2>
+          {subheading && (
+            <p className="text-[#4D5C54] text-[15px] md:text-[16px] mt-2">
+              {subheading}
+            </p>
+          )}
+        </div>
+      )}
 
       <div className="relative">
         <div className="overflow-hidden" ref={emblaRef}>
           <div className="flex">
-            {cards.map((card, index) => (
+            {data.map((card, index) => (
               <div
                 className="embla__slide shrink-0 px-3 md:basis-1/2 lg:basis-1/3 basis-full"
                 key={index}
@@ -101,12 +65,12 @@ export default function WhyCyberSecurity() {
                     height={70}
                   />
                   <div>
-                    <h3 className="text-[20px] font-bold text-[#ffffff] mb-2">
+                    <h3 className="text-[20px] font-bold text-white mb-2">
                       {card.title}
                     </h3>
-                    <p className="text-[#ffffff] text-[16px] font-normal">
+                    <span className="text-white text-[16px] font-normal">
                       {card.description}
-                    </p>
+                    </span>
                   </div>
                 </div>
               </div>

@@ -1,24 +1,10 @@
-const tools = [
-  { title: "Kali Linux", icon: "/icon/tool1.png" },
-  { title: "Wireshark", icon: "/icon/tool2.png" },
-  { title: "Metasploit", icon: "/icon/tool3.png" },
-  { title: "NMAP", icon: "/icon/tool4.png" },
-  { title: "Burp Suite", icon: "/icon/tool5.png" },
-  { title: "Splunk", icon: "/icon/tool6.png" },
-];
-
-export default function ToolsGrid() {
+export default function ToolsGrid({ tools, title, description }) {
   return (
-    <section className="px-[5%] mb-8 max  bg-white">
+    <section className="px-[5%] mb-8 max bg-white">
       <div className="flex flex-col sm:flex-row gap-3 items-start sm:items-center justify-between mb-8 leading-[1.2]">
         <div>
-          <h2 className="h2t font-bold text-[#163123]">
-            Tools and Technologies That You Will Learn
-          </h2>
-          <p className="text-[16px] text-[#4D5C54] mt-2">
-            With Cyber Security and Ethical Hacking skills, you can unlock roles
-            like
-          </p>
+          <h2 className="h2t font-bold text-[#163123]">{title}</h2>
+          <p className="text-[16px] text-[#4D5C54] mt-2">{description}</p>
         </div>
       </div>
 

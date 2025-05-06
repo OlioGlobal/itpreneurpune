@@ -1,49 +1,7 @@
 import React, { useState } from "react";
 
-const FaqSection = () => {
+const FaqSection = ({ faqData }) => {
   // FAQ data structure
-  const faqData = [
-    {
-      id: 1,
-      question:
-        "I don't have a strong technical background. Can I still join your IT courses?",
-      answer:
-        "Yes! Our courses are designed for beginners too. We start from the basics and provide step-by-step guidance to build your skills from the ground up.",
-    },
-    {
-      id: 2,
-      question: "Will I get a job after completing the course?",
-      answer:
-        "Absolutely. iTpreneur has a strong placement track record and dedicated support to help you land interviews with top IT companies.",
-    },
-    {
-      id: 3,
-      question:
-        "How is your course different from online tutorials or YouTube videos?",
-      answer:
-        "We offer structured learning, real-time mentoring, live projects, and doubt-solving — everything you won’t get from scattered online content.",
-    },
-    {
-      id: 4,
-      question: "What kind of practical training will I get?",
-      answer:
-        "You’ll work on real-life projects, simulated cyber attacks (in Cyber Security), and industry case studies to gain hands-on experience.",
-    },
-    {
-      id: 5,
-      question:
-        "Do you offer EMI or financial support options for course fees?",
-      answer:
-        "Yes, we have easy EMI plans and guidance to make learning affordable for every student.",
-    },
-    {
-      id: 6,
-      question:
-        "I’m preparing for government exams but not getting results. Should I consider IT as a career?",
-      answer:
-        "Definitely. IT offers faster growth, stable job opportunities, and a future-proof career — even if you're switching from a different path.",
-    },
-  ];
 
   // State to track which FAQ is open
   const [openFaq, setOpenFaq] = useState(null);

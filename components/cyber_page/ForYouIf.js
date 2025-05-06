@@ -1,24 +1,14 @@
 // components/CyberSecurityBenefits.js
 import Image from "next/image";
 
-const reasons = [
-  "You're An Engineering Graduate But Still Job Hunting.",
-  "You're Exhausted By The MPSC/UPSC Grind.",
-  "You're Looking To Switch Into A Stable, High-Demand IT Career.",
-  "You Want A Future-Proof Skill With Global Demand.",
-];
-
-export default function CyberSecurityBenefits() {
+export default function CyberSecurityBenefits({ reasons, title, subtitle }) {
   return (
     <div className="px-[5%] rm max" data-aos="zoom-in">
       <div className="text-center mb-8">
-        <h2 className="font-bold text-[#163123] h2t leading-[1.2]">
-          Cyber Security Course Is For You If...
-        </h2>
+        <h2 className="font-bold text-[#163123] h2t leading-[1.2]">{title}</h2>
 
         <p className="text-[#4D5C54] text-[15px] md:text-[16px] mt-2">
-          With Cyber Security and Ethical Hacking skills, you can unlock roles
-          like
+          {subtitle}
         </p>
       </div>
 

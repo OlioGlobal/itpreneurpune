@@ -1,7 +1,7 @@
 import Image from "next/image";
 import CountUp from "../utils/CountUp";
 
-export default function WhyChooseITpreneur() {
+export default function WhyChooseITpreneur({ title, para }) {
   const stats = [
     {
       to: 40000,
@@ -44,16 +44,8 @@ export default function WhyChooseITpreneur() {
       {/* Right Content */}
       <div className="w-full md:w-[60%] flex gap-5 md:gap-10 flex-col">
         <div>
-          <h2 className="h2t font-bold text-[#163123]">
-            Why Choose ITpreneur?
-          </h2>
-          <p className="text-[16px] text-[#4D5C54] mt-2">
-            iTpreneur is one of Maharashtra’s leading IT training institutes,
-            known for its industry-aligned curriculum and strong placement
-            support. With expert mentors and hands-on learning, we prepare
-            students to confidently step into real-world IT roles — especially
-            in high-demand fields like Cyber Security.
-          </p>
+          <h2 className="h2t font-bold text-[#163123]">{title}</h2>
+          <p className="text-[16px] text-[#4D5C54] mt-2">{para}</p>
         </div>
 
         {/* Stats Section */}

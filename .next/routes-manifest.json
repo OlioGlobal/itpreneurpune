@@ -28,6 +28,12 @@
       "namedRegex": "^/cyber\\-security(?:/)?$"
     },
     {
+      "page": "/fullstack-java-developer",
+      "regex": "^/fullstack\\-java\\-developer(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/fullstack\\-java\\-developer(?:/)?$"
+    },
+    {
       "page": "/thank-you",
       "regex": "^/thank\\-you(?:/)?$",
       "routeKeys": {},

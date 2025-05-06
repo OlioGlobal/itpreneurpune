@@ -1,48 +1,15 @@
 import React from "react";
 import Image from "next/image";
 
-const services = [
-  {
-    id: 1,
-    title: "120 Days of Intensive Training",
-    description: "85% practical, 15% theory",
-    image: "/icon/h1.png",
-  },
-  {
-    id: 2,
-    title: "Live Sessions + Video Lectures",
-    description: "Learn at your own pace",
-    image: "/icon/h2.png",
-  },
-  {
-    id: 3,
-    title: "Hands-On Labs",
-    description: "Build real-world projects and showcase them on GitHub",
-    image: "/icon/h3.png",
-  },
-  {
-    id: 4,
-    title: "Mock Interviews",
-    description: "Prepare for technical and HR rounds with confidence",
-    image: "/icon/h4.png",
-  },
-  {
-    id: 5,
-    title: "Placement Assistance",
-    description: "100% job guarantee with access to 300+ hiring partners",
-    image: "/icon/h5.png",
-  },
-];
-
-export default function ProgramHighlights() {
+export default function ProgramHighlights({ title, data }) {
   return (
     <section className="px-[5%] rm bg-white max">
       <h2 className="font-bold mb-8 text-[#163123] text-center h2t leading-[1.2]">
-        Cyber Security and Ethical Hacking <br /> Program Highlights
+        {title}
       </h2>
 
-      <div className="flex flex-wrap  cursor-default justify-center">
-        {services.map((service, index) => (
+      <div className="flex flex-wrap cursor-default justify-center">
+        {data.map((service, index) => (
           <div
             key={service.id}
             data-aos="zoom-in"

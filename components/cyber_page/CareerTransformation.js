@@ -1,47 +1,23 @@
 import { useState } from "react";
 import Image from "next/image";
 
-const roles = [
-  "Security Analyst",
-  "Penetration Tester",
-  "Digital Forensics Analyst",
-  "Incident Responder",
-  "Ethical Hacker",
-];
-
-const salaryData = [
-  {
-    range: "₹3 to 5 LPA",
-    level: "Entry-level Job",
-    color: "text-[#0E75A9] border-[#0E75A9]",
-  },
-  {
-    range: "₹8 to 12 LPA",
-    level: "Mid-level Job",
-    color: "text-[#C07B19] border-[#C07B19]",
-  },
-  {
-    range: "₹15+ LPA",
-    level: "Senior-level Job",
-    color: "text-[#6726D9] border-[#6726D9]",
-  },
-];
-
-export default function CareerTransformation() {
-  // State to keep track of hovered role
+export default function CareerTransformation({
+  roles,
+  salaryData,
+  title,
+  subtitle,
+}) {
   const [hoveredRole, setHoveredRole] = useState(null);
 
   return (
     <section className="px-[5%] rm max">
-      <div className=" mx-auto">
+      <div className="mx-auto">
         <div className="text-center mb-8">
-          <h2 className=" font-bold text-[#163123] text-center h2t leading-[1.2]">
-            Your Career Transformation Starts Here
+          <h2 className="font-bold text-[#163123] text-center h2t leading-[1.2]">
+            {title}
           </h2>
-
           <p className="text-[#4D5C54] text-[15px] md:text-[16px] mt-2">
-            With Cyber Security and Ethical Hacking skills, you can unlock roles
-            like
+            {subtitle}
           </p>
         </div>
 
@@ -50,14 +26,13 @@ export default function CareerTransformation() {
             <div
               key={idx}
               className="flex transition-all duration-200 hover:bg-[#E8F5EF] hover:scale-[1.03] items-center gap-2 border border-[#26784E] cursor-default rounded-full px-3 py-2 text-[15px] md:text-[16px] text-[#163123]"
-              // Track hover state
               onMouseEnter={() => setHoveredRole(idx)}
               onMouseLeave={() => setHoveredRole(null)}
             >
               <Image
                 src={
                   hoveredRole === idx ? "/icon/check2.png" : "/icon/check.png"
-                } // Change image on hover
+                }
                 alt="check"
                 width={35}
                 height={35}
