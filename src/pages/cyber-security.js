@@ -18,7 +18,7 @@ import StickyFooter from "../../components/stickyfooter2";
 
 export default function Cyber() {
   const heroData = {
-    title: "Become a Certified\nEthical Hacker",
+    title: <span>Become a Certified Ethical Hacker</span>,
     subtitle: "Start Your High Paying Cyber Security Career",
     description:
       "Become the digital guardian the world desperately needs.\nStart your cyber security journey today.",
@@ -267,14 +267,17 @@ export default function Cyber() {
       <Enroll2
         title={
           <span>
-            Take the First Step Toward <br /> Your Cyber Security Career
+            Take the First Step Toward <br className="hidden md:block" /> Your
+            Cyber Security Career
           </span>
         }
         para={
           <span>
             Fill out the form below to get started. One of our career counselors
-            will <br /> get in touch with you to help you choose the right
-            course and guide <br /> you through the enrollment process.
+            will <br className="hidden md:block" /> get in touch with you to
+            help you choose the right course and guide
+            <br className="hidden md:block" /> you through the enrollment
+            process.
           </span>
         }
         pageSource={"cyber_security"}

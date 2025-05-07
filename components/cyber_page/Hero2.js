@@ -31,9 +31,7 @@ export default function Hero2({ pageSource, data }) {
           {/* Text Section */}
           <div className="lg:w-[80%] flex flex-col gap-6 justify-center">
             <h1 className="text-[48px] sm:text-[50px] md:text-[58px] lg:text-[px] leading-[1.1] font-bold">
-              {title?.split("\n").map((line, i) => (
-                <span key={i}>{line}</span>
-              ))}
+              <span>{title}</span>
             </h1>
             {subtitle && (
               <p className="text-[24px] leading-[30px] font-bold">{subtitle}</p>
@@ -73,7 +71,7 @@ export default function Hero2({ pageSource, data }) {
               ))}
             </p>
           </div>
-          <div className="lg:w-[50%] flex gap-5 justify-center flex-wrap">
+          <div className="lg:w-[50%] flex gap-2 sm:gap-5 justify-center flex-wrap">
             {partnerLogos?.map((logo, index) => (
               <div
                 key={index}
