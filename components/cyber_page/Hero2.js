@@ -15,7 +15,7 @@ export default function Hero2({ pageSource, data }) {
   return (
     <>
       {/* Hero Section */}
-      <div className="relative bg-[#26784E] flex lg:h-[620px] text-white overflow-hidden">
+      <div className="relative bg-[#26784E] flex 2xl:h-[660px] text-white overflow-hidden">
         {/* Background Image Layer */}
         <div className="absolute inset-0 z-0">
           <div
@@ -27,10 +27,10 @@ export default function Hero2({ pageSource, data }) {
         </div>
 
         {/* Content Container */}
-        <div className="relative z-10 flex flex-col lg:flex-row px-[5%] py-10 gap-12 w-full max">
+        <div className="relative z-10 flex flex-col 2xl:flex-row px-[5%] py-10 gap-12 w-full max">
           {/* Text Section */}
-          <div className="lg:w-[70%] flex flex-col gap-6 justify-center">
-            <h1 className="text-[48px] sm:text-[50px] md:text-[58px] lg:text-[64px] leading-[1.1] font-bold">
+          <div className="2xl:w-[70%] flex flex-col gap-6 justify-center">
+            <h1 className="text-[48px] sm:text-[50px] md:text-[58px] lg:text-[58px] leading-[1.1] font-bold">
               {title?.split("\n").map((line, i) => (
                 <span key={i}>{line}</span>
               ))}
@@ -57,7 +57,7 @@ export default function Hero2({ pageSource, data }) {
           </div>
 
           {/* Form Section */}
-          <div className="lg:w-[50%] flex justify-end items-center">
+          <div className="2xl:w-[50%] flex justify-end items-center">
             <Form2 pageSource={pageSource} />
           </div>
         </div>

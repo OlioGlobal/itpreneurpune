@@ -22,16 +22,52 @@
       "namedRegex": "^/(?:/)?$"
     },
     {
+      "page": "/bussiness-and-data-analytics",
+      "regex": "^/bussiness\\-and\\-data\\-analytics(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/bussiness\\-and\\-data\\-analytics(?:/)?$"
+    },
+    {
       "page": "/cyber-security",
       "regex": "^/cyber\\-security(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/cyber\\-security(?:/)?$"
     },
     {
+      "page": "/dot-net-developer",
+      "regex": "^/dot\\-net\\-developer(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dot\\-net\\-developer(?:/)?$"
+    },
+    {
       "page": "/fullstack-java-developer",
       "regex": "^/fullstack\\-java\\-developer(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/fullstack\\-java\\-developer(?:/)?$"
+    },
+    {
+      "page": "/mean-stack-developer",
+      "regex": "^/mean\\-stack\\-developer(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/mean\\-stack\\-developer(?:/)?$"
+    },
+    {
+      "page": "/mern-stack-developer",
+      "regex": "^/mern\\-stack\\-developer(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/mern\\-stack\\-developer(?:/)?$"
+    },
+    {
+      "page": "/python-developer",
+      "regex": "^/python\\-developer(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/python\\-developer(?:/)?$"
+    },
+    {
+      "page": "/software-testing",
+      "regex": "^/software\\-testing(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/software\\-testing(?:/)?$"
     },
     {
       "page": "/thank-you",

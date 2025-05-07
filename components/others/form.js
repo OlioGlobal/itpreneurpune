@@ -71,6 +71,9 @@ export default function Form() {
           window.dataLayer.push({
             event: "Lead_Success_ITPM",
             formId: "leadFormPopup",
+            name: formData.name,
+            email: formData.email,
+            mobile: formData.mobile,
           });
           setFormData({ name: "", email: "", mobile: "" });
           setTimeout(() => {

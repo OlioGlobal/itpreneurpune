@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/jeAJAebjfkPBaavkWaziC/_buildManifest.js",
-    "static/jeAJAebjfkPBaavkWaziC/_ssgManifest.js"
+    "static/6w6LfH2Gf7LdgRCXele8x/_buildManifest.js",
+    "static/6w6LfH2Gf7LdgRCXele8x/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "rootMainFilesTree": {},
@@ -16,13 +16,13 @@
       "static/chunks/framework-2f335d22a7318891.js",
       "static/chunks/main-701dbc27ca0a5778.js",
       "static/chunks/13-c3ab6cfb2be748b1.js",
-      "static/chunks/pages/index-e8f8e175c668f043.js"
+      "static/chunks/pages/index-048016f78387da6a.js"
     ],
     "/_app": [
       "static/chunks/webpack-33ce12fd6f11a809.js",
       "static/chunks/framework-2f335d22a7318891.js",
       "static/chunks/main-701dbc27ca0a5778.js",
-      "static/css/a59353de850832d7.css",
+      "static/css/4e6c982e42a97cb9.css",
       "static/chunks/pages/_app-7fa5976bc4a455a9.js"
     ],
     "/_error": [
@@ -31,21 +31,69 @@
       "static/chunks/main-701dbc27ca0a5778.js",
       "static/chunks/pages/_error-b41dbd85229d9331.js"
     ],
+    "/bussiness-and-data-analytics": [
+      "static/chunks/webpack-33ce12fd6f11a809.js",
+      "static/chunks/framework-2f335d22a7318891.js",
+      "static/chunks/main-701dbc27ca0a5778.js",
+      "static/chunks/13-c3ab6cfb2be748b1.js",
+      "static/chunks/217-c9185d63be61edcc.js",
+      "static/chunks/pages/bussiness-and-data-analytics-0f01cd4408c73245.js"
+    ],
     "/cyber-security": [
       "static/chunks/webpack-33ce12fd6f11a809.js",
       "static/chunks/framework-2f335d22a7318891.js",
       "static/chunks/main-701dbc27ca0a5778.js",
       "static/chunks/13-c3ab6cfb2be748b1.js",
-      "static/chunks/217-22faf6da61b9808f.js",
+      "static/chunks/217-c9185d63be61edcc.js",
       "static/chunks/pages/cyber-security-675579ce9f763d79.js"
+    ],
+    "/dot-net-developer": [
+      "static/chunks/webpack-33ce12fd6f11a809.js",
+      "static/chunks/framework-2f335d22a7318891.js",
+      "static/chunks/main-701dbc27ca0a5778.js",
+      "static/chunks/13-c3ab6cfb2be748b1.js",
+      "static/chunks/217-c9185d63be61edcc.js",
+      "static/chunks/pages/dot-net-developer-3462428dbf8f8ac4.js"
     ],
     "/fullstack-java-developer": [
       "static/chunks/webpack-33ce12fd6f11a809.js",
       "static/chunks/framework-2f335d22a7318891.js",
       "static/chunks/main-701dbc27ca0a5778.js",
       "static/chunks/13-c3ab6cfb2be748b1.js",
-      "static/chunks/217-22faf6da61b9808f.js",
+      "static/chunks/217-c9185d63be61edcc.js",
       "static/chunks/pages/fullstack-java-developer-158e81ef89eeee20.js"
+    ],
+    "/mean-stack-developer": [
+      "static/chunks/webpack-33ce12fd6f11a809.js",
+      "static/chunks/framework-2f335d22a7318891.js",
+      "static/chunks/main-701dbc27ca0a5778.js",
+      "static/chunks/13-c3ab6cfb2be748b1.js",
+      "static/chunks/217-c9185d63be61edcc.js",
+      "static/chunks/pages/mean-stack-developer-d7c86dc0c10eb699.js"
+    ],
+    "/mern-stack-developer": [
+      "static/chunks/webpack-33ce12fd6f11a809.js",
+      "static/chunks/framework-2f335d22a7318891.js",
+      "static/chunks/main-701dbc27ca0a5778.js",
+      "static/chunks/13-c3ab6cfb2be748b1.js",
+      "static/chunks/217-c9185d63be61edcc.js",
+      "static/chunks/pages/mern-stack-developer-7af3b3cc63dae793.js"
+    ],
+    "/python-developer": [
+      "static/chunks/webpack-33ce12fd6f11a809.js",
+      "static/chunks/framework-2f335d22a7318891.js",
+      "static/chunks/main-701dbc27ca0a5778.js",
+      "static/chunks/13-c3ab6cfb2be748b1.js",
+      "static/chunks/217-c9185d63be61edcc.js",
+      "static/chunks/pages/python-developer-1e0a6f0053696472.js"
+    ],
+    "/software-testing": [
+      "static/chunks/webpack-33ce12fd6f11a809.js",
+      "static/chunks/framework-2f335d22a7318891.js",
+      "static/chunks/main-701dbc27ca0a5778.js",
+      "static/chunks/13-c3ab6cfb2be748b1.js",
+      "static/chunks/217-c9185d63be61edcc.js",
+      "static/chunks/pages/software-testing-95a5a9eaacbf1ef8.js"
     ],
     "/thank-you": [
       "static/chunks/webpack-33ce12fd6f11a809.js",

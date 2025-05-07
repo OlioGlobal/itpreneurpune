@@ -70,10 +70,15 @@ export default function Form2({ idPrefix = "top", pageSource = "itpm_25" }) {
 
         if (res.ok) {
           setSuccess("Form Successfully Submitted");
+          window.dataLayer = window.dataLayer || [];
           window.dataLayer.push({
             event: "Lead_Success_ITPM",
             formId: "leadFormPopup",
+            name: formData.name,
+            email: formData.email,
+            mobile: formData.mobile,
           });
+
           setFormData({ name: "", email: "", mobile: "" });
           setTimeout(() => {
             router.push("/thank-you");
@@ -95,6 +100,9 @@ export default function Form2({ idPrefix = "top", pageSource = "itpm_25" }) {
   return (
     <div className="flex items-center justify-center w-full">
       <div className="bg-white p-4 sm:p-6 rounded-[5px] shadow-md w-full">
+        <h2 className="text-[22px] mb-6 leading-[30px] font-bold text-[#0a1f14]">
+          Get Your Job Offer Now!
+        </h2>
         <form className="space-y-8" onSubmit={handleSubmit}>
           {/* Name Field */}
           <div className="relative">

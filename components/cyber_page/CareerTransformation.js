@@ -46,7 +46,7 @@ export default function CareerTransformation({
           {salaryData.map((item, idx) => (
             <div key={idx} className="flex flex-col items-center">
               <h3
-                className={`text-[24px] sm:text-[32px] text-center md:text-[35px] lg:text-[40px] leading-[1.2] font-medium ${item.color}`}
+                className={`text-[24px] font-medium sm:text-[32px] text-center md:text-[35px] lg:text-[40px] leading-[1.2]  ${item.color}`}
               >
                 {item.range}
               </h3>
