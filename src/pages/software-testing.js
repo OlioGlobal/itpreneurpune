@@ -17,8 +17,7 @@ import Enroll2 from "../../components/cyber_page/Enroll2";
 
 export default function Full_stack() {
   const heroData = {
-    title:
-      "Become a Certified Software Testing Professional - 100% Job Guarantee!",
+    title: "Become a Certified Software Testing Professional",
     subtitle: "Master Software Testing in 120 Days",
     description:
       "Ready to launch your career in IT? Join iTpreneur’s Software Testing Certification Program and gain hands-on experience, dual certifications, and personalized career support to switch careers with confidence.",

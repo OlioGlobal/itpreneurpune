@@ -17,8 +17,7 @@ import Enroll2 from "../../components/cyber_page/Enroll2";
 
 export default function Full_stack() {
   const heroData = {
-    title:
-      "Become a Certified Business Analyst + Data Analytics Professional – 100% Job Guarantee!",
+    title: "Become a Certified Business Analyst + Data Analytics Professional",
     subtitle: "Master In 180 Days and Secure Your Dream Job!",
     description:
       "Ready to transform your career? Join iTpreneur’s Business Analyst + Data Analytics program and gain dual certifications, hands-on experience, and personalized career support to switch careers with confidence.",

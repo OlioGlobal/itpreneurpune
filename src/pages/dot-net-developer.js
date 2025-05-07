@@ -17,8 +17,7 @@ import Enroll2 from "../../components/cyber_page/Enroll2";
 
 export default function Full_stack() {
   const heroData = {
-    title:
-      "Master Fullstack .NET Development – Secure Your Dream Career Today!",
+    title: "Master Fullstack .NET Development",
     subtitle: "100% Job Guarantee with Refund Policy & Day 1 Offer Letter",
     description:
       "Gain in-demand skills, hands-on experience, and dual certifications with our Fullstack .NET Development Program. Start your journey with confidence, backed by a Day 1 Offer Letter and a 100% Job Guarantee.",

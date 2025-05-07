@@ -17,8 +17,7 @@ import Enroll2 from "../../components/cyber_page/Enroll2";
 
 export default function Full_stack() {
   const heroData = {
-    title:
-      "Master Python Web Development + Data Analytics – Secure Your Dream IT Career Today!",
+    title: "Master Python Web Development + Data Analytics",
     subtitle: "100% Job Guarantee with Day 1 Offer Letter",
     description:
       "Become a certified Python Web Developer and Data Analyst in just 120 days with hands-on training, real-world projects, and personalized career support. Whether you're a student, fresh graduate, or working professional, this program is designed to help you switch careers with confidence and secure a high-paying job in the IT industry.",

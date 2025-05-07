@@ -17,8 +17,7 @@ import Enroll2 from "../../components/cyber_page/Enroll2";
 
 export default function Full_stack() {
   const heroData = {
-    title:
-      "Become a MEAN Stack Developer – Launch Your Dream IT Career with 100% Job Guarantee!",
+    title: "Become a MEAN Stack Developer",
     subtitle: "Master Full-Stack Development in 180 Days",
     description:
       "Ready to build modern web applications and secure a high-paying career in IT? Join iTpreneur’s certified MEAN Stack Development program and gain hands-on skills, dual certifications, and personalized career support to switch careers with confidence.",
