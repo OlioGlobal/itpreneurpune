@@ -260,15 +260,17 @@ export default function Full_stack() {
         title={
           <span>
             Take the First Step Toward <br className="hidden md:block" /> Your
-            Software Testing Program
+            Business and Data Analytics Program
             <br className="hidden md:block" /> Career
           </span>
         }
         para={
           <span>
             Fill out the form below to get started. One of our career counselors
-            will <br /> get in touch with you to help you choose the right
-            course and guide <br /> you through the enrollment process.
+            will <br className="hidden md:block" /> get in touch with you to
+            help you choose the right course and guide{" "}
+            <br className="hidden md:block" /> you through the enrollment
+            process.
           </span>
         }
         pageSource={"Bussiness_and_Data_Analytics"}
