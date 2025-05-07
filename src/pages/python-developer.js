@@ -267,8 +267,8 @@ export default function Full_stack() {
         title={
           <span>
             Take the First Step Toward <br className="hidden md:block" /> Your
-            Python Web Development + Data Analytics
-            <br className="hidden md:block" /> Career
+            Python Web Development <br className="hidden md:block" /> + Data
+            Analytics Career
           </span>
         }
         para={

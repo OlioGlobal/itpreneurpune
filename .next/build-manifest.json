@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/w7OxBLyFx7KaPCbpU7dpO/_buildManifest.js",
-    "static/w7OxBLyFx7KaPCbpU7dpO/_ssgManifest.js"
+    "static/TC_QpiQlIujgbEXmHliF4/_buildManifest.js",
+    "static/TC_QpiQlIujgbEXmHliF4/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "rootMainFilesTree": {},
@@ -85,7 +85,7 @@
       "static/chunks/main-701dbc27ca0a5778.js",
       "static/chunks/13-c3ab6cfb2be748b1.js",
       "static/chunks/217-d787138f623f39db.js",
-      "static/chunks/pages/python-developer-99be22b78bdb4143.js"
+      "static/chunks/pages/python-developer-433ce84f585478b1.js"
     ],
     "/software-testing": [
       "static/chunks/webpack-33ce12fd6f11a809.js",
