@@ -29,7 +29,7 @@ export default function Hero2({ pageSource, data }) {
         {/* Content Container */}
         <div className="relative z-10 flex flex-col lg:flex-row px-[5%] py-10 gap-12 w-full max">
           {/* Text Section */}
-          <div className="lg:w-[70%] flex flex-col gap-6 justify-center">
+          <div className="lg:w-[80%] flex flex-col gap-6 justify-center">
             <h1 className="text-[48px] sm:text-[50px] md:text-[58px] lg:text-[px] leading-[1.1] font-bold">
               {title?.split("\n").map((line, i) => (
                 <span key={i}>{line}</span>

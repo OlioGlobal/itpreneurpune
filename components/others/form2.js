@@ -99,7 +99,7 @@ export default function Form2({ idPrefix = "top", pageSource = "itpm_25" }) {
 
   return (
     <div className="flex items-center justify-center w-full">
-      <div className="bg-white p-4 sm:p-6 rounded-[5px] shadow-md w-full">
+      <div className="bg-white p-4 sm:p-6 rounded-[10px] shadow-md w-full">
         <h2 className="text-[22px] mb-6 leading-[30px] font-bold text-[#0a1f14]">
           Get Your Job Offer Now!
         </h2>
@@ -175,7 +175,7 @@ export default function Form2({ idPrefix = "top", pageSource = "itpm_25" }) {
           <button
             type="submit"
             disabled={loading}
-            className="w-full text-[15px] text-white sm:text-[16px] cursor-pointer bg-[#5BD253] font-medium py-3 rounded transition duration-200 hover:bg-[#48c240]"
+            className="w-full text-[15px] text-white sm:text-[16px] cursor-pointer bg-[#5BD253] font-medium py-3 rounded-[5px] transition duration-200 hover:bg-[#48c240]"
           >
             {loading ? "Sending..." : "Get Free Career Consultation"}
           </button>

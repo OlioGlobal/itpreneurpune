@@ -22,7 +22,7 @@ export default function Full_stack() {
     description:
       "Ready to launch your career in IT? Join iTpreneur’s Software Testing Certification Program and gain hands-on experience, dual certifications, and personalized career support to switch careers with confidence.",
     notice: "Reserve Your Spot — Next Batch Filling Fast",
-    backgroundImage: "/icon/herobg.png",
+    backgroundImage: "/icon/herobg.webp",
     instituteNote:
       "Global certifications from along with iTpreneur course \n completion certificate certified by",
     partnerLogos: [
@@ -107,31 +107,31 @@ export default function Full_stack() {
       id: 1,
       title: "120 Days of Intensive Training",
       description: "85% practical, 15% theory",
-      image: "/icon/h1.png",
+      image: "/icon/h1.webp",
     },
     {
       id: 2,
       title: "Live Sessions + Video Lectures",
       description: "Learn at your own pace",
-      image: "/icon/h2.png",
+      image: "/icon/h2.webp",
     },
     {
       id: 3,
       title: "Hands-On Labs",
       description: "Build real-world projects and showcase them on GitHub",
-      image: "/icon/h3.png",
+      image: "/icon/h3.webp",
     },
     {
       id: 4,
       title: "Mock Interviews",
       description: "Prepare for technical and HR rounds with confidence",
-      image: "/icon/h4.png",
+      image: "/icon/h4.webp",
     },
     {
       id: 5,
       title: "Placement Assistance",
       description: "100% job guarantee with access to 300+ hiring partners",
-      image: "/icon/h5.png",
+      image: "/icon/h5.webp",
     },
   ];
   const faqData = [

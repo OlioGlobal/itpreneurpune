@@ -23,7 +23,7 @@ export default function Cyber() {
     description:
       "Become the digital guardian the world desperately needs.\nStart your cyber security journey today.",
     notice: "Reserve Your Spot — Next Batch Filling Fast",
-    backgroundImage: "/icon/herobg.png",
+    backgroundImage: "/icon/herobg.webp",
     instituteNote:
       "iTpreneur - A hallmark of quality and\nhighly regarded IT institute in India",
     partnerLogos: [
@@ -109,31 +109,31 @@ export default function Cyber() {
       id: 1,
       title: "120 Days of Intensive Training",
       description: "85% practical, 15% theory",
-      image: "/icon/h1.png",
+      image: "/icon/h1.webp",
     },
     {
       id: 2,
       title: "Live Sessions + Video Lectures",
       description: "Learn at your own pace",
-      image: "/icon/h2.png",
+      image: "/icon/h2.webp",
     },
     {
       id: 3,
       title: "Hands-On Labs",
       description: "Build real-world projects and showcase them on GitHub",
-      image: "/icon/h3.png",
+      image: "/icon/h3.webp",
     },
     {
       id: 4,
       title: "Mock Interviews",
       description: "Prepare for technical and HR rounds with confidence",
-      image: "/icon/h4.png",
+      image: "/icon/h4.webp",
     },
     {
       id: 5,
       title: "Placement Assistance",
       description: "100% job guarantee with access to 300+ hiring partners",
-      image: "/icon/h5.png",
+      image: "/icon/h5.webp",
     },
   ];
   const faqData = [

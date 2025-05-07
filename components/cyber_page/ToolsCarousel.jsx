@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function ToolsGrid({ tools, title, description }) {
   return (
     <section className="px-[5%] mb-8 max bg-white">
@@ -14,9 +15,11 @@ export default function ToolsGrid({ tools, title, description }) {
             key={index}
             className="flex flex-col items-center gap-2 bg-[#F1F3EF] rounded-xl p-4 text-center hover:shadow-md transition-all"
           >
-            <img
+            <Image
               src={tool.icon}
               alt={tool.title}
+              height={100}
+              width={100}
               className="h-20 w-auto mx-auto mb-1"
             />
             <h3 className="text-[14px] font-bold text-[#163123]">
