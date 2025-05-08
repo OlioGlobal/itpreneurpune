@@ -22,7 +22,7 @@ export default function Full_stack() {
     description:
       "Gain in-demand skills, hands-on experience, and dual certifications with our Fullstack .NET Development Program. Start your journey with confidence, backed by a Day 1 Offer Letter and a 100% Job Guarantee.",
     notice: "🚀 Enroll Now – Limited Seats Available!",
-    backgroundImage: "/icon/herobg.webp",
+    backgroundImage: "/icon/dot-net_net.webp",
     instituteNote:
       "Global certifications from along with iTpreneur course \n completion certificate certified by",
     partnerLogos: [

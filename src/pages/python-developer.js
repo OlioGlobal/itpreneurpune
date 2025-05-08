@@ -22,7 +22,7 @@ export default function Full_stack() {
     description:
       "Become a certified Python Web Developer and Data Analyst in just 120 days with hands-on training, real-world projects, and personalized career support. Whether you're a student, fresh graduate, or working professional, this program is designed to help you switch careers with confidence and secure a high-paying job in the IT industry.",
     notice: "Reserve Your Spot — Next Batch Filling Fast",
-    backgroundImage: "/icon/herobg.webp",
+    backgroundImage: "/icon/python.webp",
     instituteNote:
       "Global certifications from along with iTpreneur course \n completion certificate certified by",
     partnerLogos: [

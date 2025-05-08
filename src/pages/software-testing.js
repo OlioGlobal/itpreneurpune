@@ -22,7 +22,7 @@ export default function Full_stack() {
     description:
       "Ready to launch your career in IT? Join iTpreneur’s Software Testing Certification Program and gain hands-on experience, dual certifications, and personalized career support to switch careers with confidence.",
     notice: "Reserve Your Spot — Next Batch Filling Fast",
-    backgroundImage: "/icon/herobg.webp",
+    backgroundImage: "/icon/testing.webp",
     instituteNote:
       "Global certifications from along with iTpreneur course \n completion certificate certified by",
     partnerLogos: [

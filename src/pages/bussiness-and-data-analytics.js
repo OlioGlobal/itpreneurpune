@@ -22,7 +22,7 @@ export default function Full_stack() {
     description:
       "Ready to transform your career? Join iTpreneur’s Business Analyst + Data Analytics program and gain dual certifications, hands-on experience, and personalized career support to switch careers with confidence.",
     notice: "Reserve Your Spot — Next Batch Filling Fast",
-    backgroundImage: "/icon/herobg.webp",
+    backgroundImage: "/icon/da_bg.webp",
     instituteNote:
       "Global certifications from along with iTpreneur course \n completion certificate certified by",
     partnerLogos: [

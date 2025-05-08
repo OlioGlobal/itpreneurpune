@@ -22,7 +22,7 @@ export default function Full_stack() {
     description:
       "Join our 180-day program with hands-on projects, expert guidance & \n guaranteed Day-1 offer letters.",
     notice: "Reserve Your Spot — Next Batch Filling Fast",
-    backgroundImage: "/icon/herobg.webp",
+    backgroundImage: "/icon/java_bg.webp",
     instituteNote:
       "Global certifications from along with iTpreneur course \n completion certificate certified by",
     partnerLogos: [

@@ -22,7 +22,7 @@ export default function Full_stack() {
     description:
       "Ready to build dynamic web applications and launch a high-paying career in IT? Join iTpreneur’s certified MERN Stack Development program and gain hands-on skills, dual certifications, and personalized career support to switch careers with confidence.",
     notice: "Reserve Your Spot — Next Batch Filling Fast",
-    backgroundImage: "/icon/herobg.webp",
+    backgroundImage: "/icon/mern.webp",
     instituteNote:
       "Global certifications from along with iTpreneur course \n completion certificate certified by",
     partnerLogos: [
