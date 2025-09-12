@@ -15,7 +15,7 @@ export default function Hero2({ pageSource, data }) {
   return (
     <>
       {/* Hero Section */}
-      <div className="relative bg-[#26784E] flex lg:h-[600px] text-white overflow-hidden">
+      <div className="relative bg-[#26784E] flex lg:h-[680px] text-white overflow-hidden">
         {/* Background Image Layer */}
         <div className="absolute inset-0 z-0">
           <div

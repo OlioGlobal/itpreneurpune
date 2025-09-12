@@ -6,6 +6,7 @@ export default function Form2({ idPrefix = "top", pageSource = "itpm_25" }) {
     name: "",
     mobile: "",
     email: "",
+    city: "",
   });
 
   const [errors, setErrors] = useState({});
@@ -47,6 +48,10 @@ export default function Form2({ idPrefix = "top", pageSource = "itpm_25" }) {
       newErrors.mobile = "Enter Valid Mobile Number";
     }
 
+    if (!formData.city.trim()) {
+      newErrors.city = "City is required.";
+    }
+
     return newErrors;
   };
 
@@ -59,12 +64,16 @@ export default function Form2({ idPrefix = "top", pageSource = "itpm_25" }) {
     } else {
       setLoading(true);
       try {
+        // Get the full current URL with all UTM parameters
+        const fullUrl = window.location.href;
+
         const res = await fetch("/api/sendEmail", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
             ...formData,
             pageSource,
+            fullUrl,
           }),
         });
 
@@ -77,9 +86,10 @@ export default function Form2({ idPrefix = "top", pageSource = "itpm_25" }) {
             name: formData.name,
             email: formData.email,
             mobile: formData.mobile,
+            city: formData.city,
           });
 
-          setFormData({ name: "", email: "", mobile: "" });
+          setFormData({ name: "", email: "", mobile: "", city: "" });
           setTimeout(() => {
             router.push("/thank-you");
           }, 2000);
@@ -168,6 +178,28 @@ export default function Form2({ idPrefix = "top", pageSource = "itpm_25" }) {
             </label>
             {errors.email && (
               <p className="text-red-600 text-[16px] mt-1">{errors.email}</p>
+            )}
+          </div>
+
+          {/* City Field */}
+          <div className="relative">
+            <input
+              type="text"
+              name="city"
+              id={`${idPrefix}city`}
+              value={formData.city}
+              onChange={handleChange}
+              className="w-full border text-black border-[#26784E] px-4 pt-5 pb-2 focus:outline-none focus:ring-1 focus:ring-green-600 peer"
+              placeholder=""
+            />
+            <label
+              htmlFor={`${idPrefix}city`}
+              className="absolute text-[16px] text-gray-500 duration-300 transform -translate-y-4 scale-75 top-4 z-10 origin-[0] left-4 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4"
+            >
+              City
+            </label>
+            {errors.city && (
+              <p className="text-red-600 text-[16px] mt-1">{errors.city}</p>
             )}
           </div>
 

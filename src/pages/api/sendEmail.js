@@ -3,11 +3,12 @@ import nodemailer from "nodemailer";
 export default async function handler(req, res) {
   if (req.method !== "POST") return res.status(405).end();
 
-  const { name, email, mobile, pageSource } = req.body;
+  const { name, email, mobile, city, pageSource, fullUrl } = req.body;
 
   if (!name || !email || !mobile) {
     return res.status(400).json({ message: "Missing fields" });
   }
+  console.log(name, email, mobile, city, pageSource, fullUrl);
 
   try {
     const transporter = nodemailer.createTransport({
@@ -24,7 +25,17 @@ export default async function handler(req, res) {
       from: `iTpreneur <${process.env.EMAIL_USER}>`,
       to: "olioclientwebsiteleads@gmail.com",
       subject: "📣 Enquiry from iTPreneur Pune",
-      text: `Name : ${name}\n \n Email: ${email}\n \n Mobile: ${mobile}\n\n Page Source: ${pageSource}`,
+      text: `Name: ${name}
+
+Email: ${email}
+
+Mobile: ${mobile}
+
+City: ${city}
+
+Page Source: ${pageSource}
+
+`,
     });
 
     const sheet = await fetch(process.env.GS, {
@@ -32,7 +43,14 @@ export default async function handler(req, res) {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ name, email, mobile, pageName: pageSource }),
+      body: JSON.stringify({
+        name,
+        email,
+        mobile,
+        city,
+        pageName: pageSource,
+        fullUrl,
+      }),
     });
 
     res.status(200).json({ message: "Email sent and data stored!" });
