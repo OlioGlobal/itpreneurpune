@@ -109,11 +109,11 @@ export default function Form2({ idPrefix = "top", pageSource = "itpm_25" }) {
             <input
               type="text"
               name="name"
-              id={`name`}
+              id={`${idPrefix}name`}
               value={formData.name}
               onChange={handleChange}
               className="w-full border text-black border-[#26784E] px-4 pt-5 pb-2 focus:outline-none focus:ring-1 focus:ring-green-600 peer"
-              placeholder=" "
+              placeholder=""
             />
             <label
               htmlFor={`${idPrefix}name`}
@@ -131,12 +131,12 @@ export default function Form2({ idPrefix = "top", pageSource = "itpm_25" }) {
             <input
               type="text"
               name="mobile"
-              id={`mobile`}
+              id={`${idPrefix}mobile`}
               maxLength={10}
               value={formData.mobile}
               onChange={handleChange}
               className="w-full border text-black border-[#26784E] px-4 pt-5 pb-2 focus:outline-none focus:ring-1 focus:ring-green-600 peer"
-              placeholder=" "
+              placeholder=""
             />
             <label
               htmlFor={`${idPrefix}mobile`}
@@ -154,7 +154,7 @@ export default function Form2({ idPrefix = "top", pageSource = "itpm_25" }) {
             <input
               type="email"
               name="email"
-              id={`email`}
+              id={`${idPrefix}email`}
               value={formData.email}
               onChange={handleChange}
               className="w-full border text-black border-[#26784E] px-4 pt-5 pb-2 focus:outline-none focus:ring-1 focus:ring-green-600 peer"
