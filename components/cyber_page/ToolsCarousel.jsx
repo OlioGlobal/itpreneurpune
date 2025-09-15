@@ -18,9 +18,9 @@ export default function ToolsGrid({ tools, title, description }) {
             <Image
               src={tool.icon}
               alt={tool.title}
-              height={100}
-              width={100}
-              className="h-20 w-auto mx-auto mb-1"
+              height={500}
+              width={500}
+              className="h-30 w-auto mx-auto mb-1"
             />
             <h3 className="text-[14px] font-bold text-[#163123]">
               {tool.title}

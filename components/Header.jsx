@@ -40,7 +40,7 @@ export default function Header() {
                 onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
                 className="group hidden sm:flex bg-[#26784E] gap-2 justify-center items-center text-white py-2 px-5 hover:bg-white hover:text-[#26784E] border-[2px] cursor-pointer rounded-[10px]"
               >
-                Enroll Now
+                Apply Now
                 <img
                   src="/icon/chat-box.png"
                   alt=""

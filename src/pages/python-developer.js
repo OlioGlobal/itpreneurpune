@@ -174,12 +174,14 @@ export default function Full_stack() {
     "You Want A Future-Proof Skill With Global Demand.",
   ];
   const tools = [
-    { title: "Kali Linux", icon: "/icon/tool1.png" },
-    { title: "Wireshark", icon: "/icon/tool2.png" },
-    { title: "Metasploit", icon: "/icon/tool3.png" },
-    { title: "NMAP", icon: "/icon/tool4.png" },
-    { title: "Burp Suite", icon: "/icon/tool5.png" },
-    { title: "Splunk", icon: "/icon/tool6.png" },
+    { title: "Python", icon: "/tech/python1.png" },
+    { title: "Django Framework", icon: "/tech/python2.png" },
+    { title: "Flask", icon: "/tech/python3.png" },
+    { title: "Fast Api", icon: "/tech/python4.png" },
+    { title: "My SQL", icon: "/tech/python5.png" },
+    { title: "Angular", icon: "/tech/python6.png" },
+    { title: "Py Test", icon: "/tech/python7.png" },
+    { title: "Git - GitHub", icon: "/tech/python8.png" },
   ];
 
   return (

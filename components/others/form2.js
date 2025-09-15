@@ -209,7 +209,7 @@ export default function Form2({ idPrefix = "top", pageSource = "itpm_25" }) {
             disabled={loading}
             className="w-full text-[15px] text-white sm:text-[16px] cursor-pointer bg-[#5BD253] font-medium py-3 rounded-[5px] transition duration-200 hover:bg-[#48c240]"
           >
-            {loading ? "Sending..." : "Get Free Career Consultation"}
+            {loading ? "Sending..." : "Apply Now"}
           </button>
         </form>
         {success && (
