@@ -50,37 +50,37 @@ Page Source: ${pageSource}
     });
 
     // 3️⃣ Try sending to NoPaperForms (ignore errors silently)
-    try {
-      const npfResponse = await fetch(
-        "https://api.nopaperforms.io/lead/v1/create",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            "secret-key": process.env.NPF_SECRET_KEY,
-            "access-key": process.env.NPF_ACCESS_KEY,
-          },
-          body: JSON.stringify({
-            name,
-            email,
-            mobile,
-            city,
-            state: "Maharashtra",
-            source: "google",
-          }),
-        }
-      );
+    // try {
+    //   const npfResponse = await fetch(
+    //     "https://api.nopaperforms.io/lead/v1/create",
+    //     {
+    //       method: "POST",
+    //       headers: {
+    //         "Content-Type": "application/json",
+    //         "secret-key": process.env.NPF_SECRET_KEY,
+    //         "access-key": process.env.NPF_ACCESS_KEY,
+    //       },
+    //       body: JSON.stringify({
+    //         name,
+    //         email,
+    //         mobile,
+    //         city,
+    //         state: "Maharashtra",
+    //         source: "google",
+    //       }),
+    //     }
+    //   );
 
-      if (!npfResponse.ok) {
-        const errorText = await npfResponse.text();
-        console.error("NPF API Error:", npfResponse.status, errorText);
-      } else {
-        const npfData = await npfResponse.json();
-        console.log("NPF Success:", npfData);
-      }
-    } catch (npfError) {
-      console.error("NPF connection error:", npfError);
-    }
+    //   if (!npfResponse.ok) {
+    //     const errorText = await npfResponse.text();
+    //     console.error("NPF API Error:", npfResponse.status, errorText);
+    //   } else {
+    //     const npfData = await npfResponse.json();
+    //     console.log("NPF Success:", npfData);
+    //   }
+    // } catch (npfError) {
+    //   console.error("NPF connection error:", npfError);
+    // }
 
     // ✅ Final response (always same to frontend)
     res.status(200).json({

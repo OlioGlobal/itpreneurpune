@@ -5,14 +5,14 @@
   "/api/sendEmail": "pages/api/sendEmail.js",
   "/bussiness-and-data-analytics": "pages/bussiness-and-data-analytics.html",
   "/cyber-security": "pages/cyber-security.html",
-  "/fullstack-java-developer": "pages/fullstack-java-developer.html",
   "/dot-net-developer": "pages/dot-net-developer.html",
-  "/mean-stack-developer": "pages/mean-stack-developer.html",
+  "/fullstack-java-developer": "pages/fullstack-java-developer.html",
   "/": "pages/index.html",
+  "/mean-stack-developer": "pages/mean-stack-developer.html",
   "/mern-stack-developer": "pages/mern-stack-developer.html",
-  "/thank-you": "pages/thank-you.html",
-  "/software-testing": "pages/software-testing.html",
   "/python-developer": "pages/python-developer.html",
+  "/software-testing": "pages/software-testing.html",
+  "/thank-you": "pages/thank-you.html",
   "/_error": "pages/_error.js",
   "/404": "pages/404.html"
 }
