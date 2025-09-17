@@ -55,6 +55,19 @@ export default function Form2({ idPrefix = "top", pageSource = "itpm_25" }) {
     return newErrors;
   };
 
+  // Function to detect traffic source
+  const getTrafficSource = () => {
+    if (typeof window === "undefined") return "direct";
+
+    const urlParams = new URLSearchParams(window.location.search);
+
+    // Check UTM parameters
+    if (urlParams.get("utm_source")) return urlParams.get("utm_source");
+    if (urlParams.get("source")) return urlParams.get("source");
+
+    return "direct";
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     const validationErrors = validate();
@@ -66,6 +79,7 @@ export default function Form2({ idPrefix = "top", pageSource = "itpm_25" }) {
       try {
         // Get the full current URL with all UTM parameters
         const fullUrl = window.location.href;
+        const source = getTrafficSource();
 
         const res = await fetch("/api/sendEmail", {
           method: "POST",
@@ -74,6 +88,7 @@ export default function Form2({ idPrefix = "top", pageSource = "itpm_25" }) {
             ...formData,
             pageSource,
             fullUrl,
+            source,
           }),
         });
 
@@ -113,7 +128,7 @@ export default function Form2({ idPrefix = "top", pageSource = "itpm_25" }) {
         <h2 className="text-[22px] mb-6 leading-[30px] font-bold text-[#0a1f14]">
           Get Your Job Offer Now!
         </h2>
-        <form className="space-y-8" onSubmit={handleSubmit}>
+        <form className="space-y-6" onSubmit={handleSubmit}>
           {/* Name Field */}
           <div className="relative">
             <input
@@ -209,7 +224,7 @@ export default function Form2({ idPrefix = "top", pageSource = "itpm_25" }) {
             disabled={loading}
             className="w-full text-[15px] text-white sm:text-[16px] cursor-pointer bg-[#5BD253] font-medium py-3 rounded-[5px] transition duration-200 hover:bg-[#48c240]"
           >
-            {loading ? "Sending..." : "Apply Now"}
+            {loading ? "Sending..." : "Register Now"}
           </button>
         </form>
         {success && (

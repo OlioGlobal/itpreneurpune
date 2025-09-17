@@ -29,7 +29,7 @@ export default function ProgramHighlights({ title, data }) {
                 />
               </div>
               <div className="p-4">
-                <h3 className="font-semibold text-[24px] text-[#163123] mb-2">
+                <h3 className="font-semibold text-[20px] text-[#163123] mb-2">
                   {service.title}
                 </h3>
                 <p className="text-[#163123] text-[16px]">

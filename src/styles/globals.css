@@ -22,8 +22,28 @@ html {
   @apply py-8 sm:py-10 md:py-12 lg:py-14;
 }
 .h2t {
-  @apply text-[28px] sm:text-[32px] md:text-[35px] lg:text-[40px];
+  @apply text-[24px] sm:text-[32px] md:text-[35px] lg:text-[40px];
 }
 .max {
   @apply max-w-screen-2xl mx-auto;
+}
+@keyframes shine {
+  0% {
+    left: -75%;
+  }
+  100% {
+    left: 125%;
+  }
+}
+
+@keyframes glow {
+  0%,
+  100% {
+    box-shadow: 0 0 10px rgba(91, 210, 83, 0.6), 0 0 20px rgba(91, 210, 83, 0.3);
+    opacity: 0.8;
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(91, 210, 83, 0.9), 0 0 40px rgba(91, 210, 83, 0.6);
+    opacity: 1;
+  }
 }

@@ -10,10 +10,10 @@ const StickyFooter2 = () => {
 
   return (
     <div
-      className="fixed bottom-0 left-0 w-full bg-[#5BD253] text-white text-center py-3 text-[15px] sm:hidden z-50 shadow-md cursor-pointer"
+      className="fixed bottom-0 left-0 w-full bg-[#5BD253] text-white text-center py-3 px-3 text-[15px] sm:hidden z-50 shadow-md cursor-pointer"
       onClick={scrollToTop}
     >
-      Apply Now
+      Register Now & 100% Guaranteed IT Job Placement Offer
     </div>
   );
 };

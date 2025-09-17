@@ -46,6 +46,18 @@
       "namedRegex": "^/fullstack\\-java\\-developer(?:/)?$"
     },
     {
+      "page": "/fullstack-java-developer-meta",
+      "regex": "^/fullstack\\-java\\-developer\\-meta(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/fullstack\\-java\\-developer\\-meta(?:/)?$"
+    },
+    {
+      "page": "/fullstack-java-developer-youtube",
+      "regex": "^/fullstack\\-java\\-developer\\-youtube(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/fullstack\\-java\\-developer\\-youtube(?:/)?$"
+    },
+    {
       "page": "/mean-stack-developer",
       "regex": "^/mean\\-stack\\-developer(?:/)?$",
       "routeKeys": {},
@@ -62,6 +74,18 @@
       "regex": "^/python\\-developer(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/python\\-developer(?:/)?$"
+    },
+    {
+      "page": "/python-developer-meta",
+      "regex": "^/python\\-developer\\-meta(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/python\\-developer\\-meta(?:/)?$"
+    },
+    {
+      "page": "/python-developer-youtube",
+      "regex": "^/python\\-developer\\-youtube(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/python\\-developer\\-youtube(?:/)?$"
     },
     {
       "page": "/software-testing",

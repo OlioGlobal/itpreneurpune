@@ -67,19 +67,30 @@ export default function Header2() {
             {/* Enroll Now Button */}
             <button
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-              className="group hidden sm:flex bg-[#5BD253] gap-2 justify-center items-center text-white py-3 px-5 hover:bg-white hover:text-[#5BD253] border-[2px] cursor-pointer rounded-[10px]"
+              className="group hidden sm:flex relative bg-[#5BD253] gap-2 justify-center items-center 
+             text-white py-3 px-6  border-[#5BD253] cursor-pointer rounded-[12px] 
+             shadow-lg shadow-[#5BD253]/40 transition-all duration-300
+             hover:bg-white hover:text-[#5BD253] hover:shadow-[#5BD253]/60 overflow-hidden"
             >
-              Apply Now
-              <img
-                src="/icon/chat-box.png"
-                alt=""
-                className="h-5 block group-hover:hidden"
-              />
-              <img
-                src="/icon/chat-box-b.png"
-                alt=""
-                className="h-5 hidden group-hover:block"
-              />
+              <span className="relative z-10 flex items-center gap-2">
+                Apply Now
+                <img
+                  src="/icon/chat-box.png"
+                  alt=""
+                  className="h-5 block group-hover:hidden"
+                />
+                <img
+                  src="/icon/chat-box-b.png"
+                  alt=""
+                  className="h-5 hidden group-hover:block"
+                />
+              </span>
+
+              {/* Shine sweep */}
+              <span className="absolute top-0 left-[-75%] w-1/2 h-full bg-white/30 skew-x-12 animate-[shine_2.5s_linear_infinite]"></span>
+
+              {/* Glow pulse ring */}
+              <span className="absolute inset-0 rounded-[12px] border-2 border-[#5BD253] opacity-70 animate-[glow_3s_ease-in-out_infinite]"></span>
             </button>
           </div>
         </div>

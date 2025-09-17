@@ -14,9 +14,7 @@ export default function Hero2({ pageSource, data }) {
 
   return (
     <>
-      {/* Hero Section */}
       <div className="relative bg-[#26784E] flex lg:h-[680px] text-white overflow-hidden">
-        {/* Background Image Layer */}
         <div className="absolute inset-0 z-0">
           <div
             className="w-full h-full bg-cover bg-center bg-no-repeat"
@@ -26,18 +24,18 @@ export default function Hero2({ pageSource, data }) {
           />
         </div>
 
-        {/* Content Container */}
         <div className="relative z-10 flex flex-col lg:flex-row px-[5%] py-10 gap-12 w-full max">
-          {/* Text Section */}
           <div className="lg:w-[80%] flex flex-col gap-6 justify-center">
-            <h1 className="text-[48px] sm:text-[50px] md:text-[58px] lg:text-[px] leading-[1.1] font-bold">
+            <h1 className="text-[30px] sm:text-[50px] md:text-[58px] lg:text-[px] leading-[1.1] font-bold">
               <span>{title}</span>
             </h1>
             {subtitle && (
-              <p className="text-[24px] leading-[30px] font-bold">{subtitle}</p>
+              <p className="text-[22px] md:text-[24px] leading-[30px] font-bold">
+                {subtitle}
+              </p>
             )}
             {description && (
-              <p className="text-[20px] font-normal">
+              <p className="text-[18px] md:text-[20px] md:max-w-xl font-normal">
                 {description.split("\n").map((line, i) => (
                   <sapn key={i}>{line}</sapn>
                 ))}
@@ -54,14 +52,12 @@ export default function Hero2({ pageSource, data }) {
             )}
           </div>
 
-          {/* Form Section */}
           <div className="lg:w-[50%] flex justify-end items-center">
             <Form2 pageSource={pageSource} />
           </div>
         </div>
       </div>
 
-      {/* Logos Section */}
       <div className="bg-[#F1F3EF]">
         <div className="flex flex-col gap-2 lg:flex-row justify-center items-center py-4 px-[5%] max-w-screen-2xl mx-auto">
           <div className="lg:w-[50%]">
