@@ -4,7 +4,7 @@ import CountUp from "../utils/CountUp";
 export default function WhyChooseITpreneur({ title, para }) {
   const stats = [
     {
-      to: 40000,
+      to: 12000,
       label: "Happy Students",
       img: "/icon/happystud.png",
     },
@@ -76,6 +76,33 @@ export default function WhyChooseITpreneur({ title, para }) {
               </div>
             </div>
           ))}
+        </div>
+
+        <div>
+          {" "}
+          <button
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            className="group relative bg-[#017D3E] text-white text-[16px] font-bold py-3 px-8 
+             rounded-[10px] cursor-pointer shadow-lg shadow-[#017D3E]/20 transition-all duration-300
+             hover:bg-white hover:text-[#017D3E] hover:shadow-[#017D3E]/20 overflow-hidden"
+          >
+            {/* Text + Icons */}
+            <span className="relative z-10 flex items-center gap-2">
+              Get Free Career Consultation
+            </span>
+
+            {/* Shine sweep */}
+            <span
+              className="absolute top-0 left-[-75%] w-1/2 h-full bg-white/30 skew-x-12 
+               animate-[shine_2.5s_linear_infinite]"
+            ></span>
+
+            {/* Glow pulse ring */}
+            <span
+              className="absolute inset-0 rounded-[10px] border-2 border-[#017D3E] opacity-70 
+               animate-[glow_3s_ease-in-out_infinite]"
+            ></span>
+          </button>
         </div>
       </div>
     </div>

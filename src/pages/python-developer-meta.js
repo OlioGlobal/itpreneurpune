@@ -14,6 +14,7 @@ import HearformStud from "../../components/cyber_page/HearformStud";
 import CareerSuccessComponents from "../../components/cyber_page/CareerSuccess";
 import StickyFooter2 from "../../components/stickyfooter2";
 import Enroll2 from "../../components/cyber_page/Enroll2";
+import ProfessionalMarquee from "../../components/ProfessionalMarquee";
 
 export default function Full_stack() {
   const heroData = {
@@ -186,6 +187,7 @@ export default function Full_stack() {
 
   return (
     <>
+      <ProfessionalMarquee />
       <Header2 />
       <Hero2 data={heroData} pageSource={"Python_Developer_meta"} />
       <StudentCarousel

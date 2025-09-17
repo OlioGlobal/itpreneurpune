@@ -7,6 +7,7 @@ export default function Hero2({ pageSource, data }) {
     subtitle,
     description,
     notice,
+    noticePara = null,
     backgroundImage,
     instituteNote,
     partnerLogos,
@@ -35,22 +36,30 @@ export default function Hero2({ pageSource, data }) {
               </p>
             )}
             {description && (
-              <p className="text-[18px] md:text-[20px] md:max-w-xl font-normal">
-                {description.split("\n").map((line, i) => (
-                  <sapn key={i}>{line}</sapn>
-                ))}
-              </p>
+              <div className="text-[18px] md:text-[20px] md:max-w-xl font-normal">
+                {description}
+              </div>
             )}
+
             {notice && (
-              <p className="text-[18px] font-bold flex items-center gap-2 animate-floatText">
-                <span className="relative flex h-3 w-3">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-3 w-3 bg-green-600"></span>
-                </span>
-                {notice}
-              </p>
+              <div>
+                <p className="text-[18px] font-bold flex items-center gap-2 animate-floatText">
+                  <span className="relative flex h-3 w-3">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-3 w-3 bg-green-600"></span>
+                  </span>
+                  {notice}
+                </p>
+                <p className="pl-5">{noticePara}</p>
+              </div>
             )}
           </div>
+
+          {/* {noticePara && (
+            <p className="text-[18px] font-bold flex items-center gap-2 ">
+              {noticePara}
+            </p>
+          )} */}
 
           <div className="lg:w-[50%] flex justify-end items-center">
             <Form2 pageSource={pageSource} />

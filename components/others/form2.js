@@ -7,12 +7,23 @@ export default function Form2({ idPrefix = "top", pageSource = "itpm_25" }) {
     mobile: "",
     email: "",
     city: "",
+    education: "",
   });
 
   const [errors, setErrors] = useState({});
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState("");
   const router = useRouter();
+
+  const educationOptions = [
+    "Bachelor of Engineering",
+    "Bachelor of Science",
+    "Bachelor of Commerce",
+    "Bachelor of Arts",
+    "Diploma Holder",
+    "12th Pass",
+    "Other",
+  ];
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -50,6 +61,10 @@ export default function Form2({ idPrefix = "top", pageSource = "itpm_25" }) {
 
     if (!formData.city.trim()) {
       newErrors.city = "City is required.";
+    }
+
+    if (!formData.education.trim()) {
+      newErrors.education = "Education is required.";
     }
 
     return newErrors;
@@ -102,9 +117,16 @@ export default function Form2({ idPrefix = "top", pageSource = "itpm_25" }) {
             email: formData.email,
             mobile: formData.mobile,
             city: formData.city,
+            education: formData.education,
           });
 
-          setFormData({ name: "", email: "", mobile: "", city: "" });
+          setFormData({
+            name: "",
+            email: "",
+            mobile: "",
+            city: "",
+            education: "",
+          });
           setTimeout(() => {
             router.push("/thank-you");
           }, 2000);
@@ -125,10 +147,15 @@ export default function Form2({ idPrefix = "top", pageSource = "itpm_25" }) {
   return (
     <div className="flex items-center justify-center w-full">
       <div className="bg-white p-4 sm:p-6 rounded-[10px] shadow-md w-full">
-        <h2 className="text-[22px] mb-6 leading-[30px] font-bold text-[#0a1f14]">
-          Get Your Job Offer Now!
-        </h2>
-        <form className="space-y-6" onSubmit={handleSubmit}>
+        <div className="mb-5">
+          <h2 className="text-[22px] leading-[30px] font-bold text-[#0a1f14]">
+            Get Your Job Offer Now!
+          </h2>
+          <p className="text-[#0a1f14]">
+            Register yourself to get Free IT Career Counselling
+          </p>
+        </div>
+        <form className="space-y-4" onSubmit={handleSubmit}>
           {/* Name Field */}
           <div className="relative">
             <input
@@ -218,11 +245,45 @@ export default function Form2({ idPrefix = "top", pageSource = "itpm_25" }) {
             )}
           </div>
 
+          {/* Education Dropdown */}
+          <div className="relative">
+            <select
+              name="education"
+              id={`${idPrefix}education`}
+              value={formData.education}
+              onChange={handleChange}
+              className="w-full border text-black border-[#26784E] px-4 py-3 focus:outline-none focus:ring-1 focus:ring-green-600 bg-white appearance-none"
+            >
+              <option value="" disabled>
+                Select Your Highest Education*
+              </option>
+              {educationOptions.map((option, index) => (
+                <option key={index} value={option}>
+                  {option}
+                </option>
+              ))}
+            </select>
+            <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+              <svg
+                className="fill-current h-4 w-4"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+              >
+                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+              </svg>
+            </div>
+            {errors.education && (
+              <p className="text-red-600 text-[16px] mt-1">
+                {errors.education}
+              </p>
+            )}
+          </div>
+
           {/* Submit Button */}
           <button
             type="submit"
             disabled={loading}
-            className="w-full text-[15px] text-white sm:text-[16px] cursor-pointer bg-[#5BD253] font-medium py-3 rounded-[5px] transition duration-200 hover:bg-[#48c240]"
+            className="w-full text-[15px] text-white sm:text-[16px] cursor-pointer bg-[#017D3E] hover:bg-[#076b39] font-medium py-3 rounded-[5px]"
           >
             {loading ? "Sending..." : "Register Now"}
           </button>

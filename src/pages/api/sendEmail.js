@@ -3,7 +3,8 @@ import nodemailer from "nodemailer";
 export default async function handler(req, res) {
   if (req.method !== "POST") return res.status(405).end();
 
-  const { name, email, mobile, city, pageSource, fullUrl, source } = req.body;
+  const { name, email, mobile, city, education, pageSource, fullUrl, source } =
+    req.body;
 
   if (!name || !email || !mobile) {
     return res.status(400).json({ message: "Missing fields" });
@@ -29,6 +30,7 @@ export default async function handler(req, res) {
 Email: ${email}
 Mobile: ${mobile}
 City: ${city}
+Education: ${education}
 Page Source: ${pageSource}
 Traffic Source: ${source}
 Full URL: ${fullUrl}
@@ -46,6 +48,7 @@ Full URL: ${fullUrl}
         email,
         mobile,
         city,
+        education,
         pageName: pageSource,
         fullUrl,
       }),
@@ -59,6 +62,7 @@ Full URL: ${fullUrl}
         country_dial_code: "+91",
         mobile,
         city,
+        education,
         state: "Maharashtra",
         source: source || "direct", // Use traffic source
       };

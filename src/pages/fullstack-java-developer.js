@@ -14,14 +14,24 @@ import HearformStud from "../../components/cyber_page/HearformStud";
 import CareerSuccessComponents from "../../components/cyber_page/CareerSuccess";
 import StickyFooter2 from "../../components/stickyfooter2";
 import Enroll2 from "../../components/cyber_page/Enroll2";
+import ProfessionalMarquee from "../../components/ProfessionalMarquee";
+import ITStruggleSection from "../../components/main/ITStruggleSection";
 
 export default function Full_stack() {
   const heroData = {
-    title: "Become a Full Stack Java Developer Secure Your IT Career Today!",
-    subtitle: "Step Into a High-Growth Tech Career",
-    description:
-      "Join our 180-day program with hands-on projects, expert guidance & \n guaranteed Day-1 offer letters.",
-    notice: "Reserve Your Spot — Next Batch Filling Fast",
+    title: "Step Into the World of High-Paying IT Careers",
+    subtitle: "Become a Full Stack Java Developer",
+
+    description: (
+      <ul className="list-disc pl-5 text-[18px] md:text-[20px] md:max-w-xl font-normal space-y-2">
+        <li>100% Job Guarantee</li>
+        <li>300+ Placement Partners</li>
+        <li>Master Coding Skills</li>
+      </ul>
+    ),
+
+    notice: "2735 Students Have Registered So Far!",
+    noticePara: "Limited Seats. Register your interest for FREE.",
     backgroundImage: "/icon/java_bg.webp",
     instituteNote:
       "Global certifications from along with iTpreneur course \n completion certificate certified by",
@@ -144,27 +154,90 @@ export default function Full_stack() {
   const faqData = [
     {
       id: 1,
+      question: "What makes this course different from other IT courses?",
+      answer:
+        "Our course combines hands-on projects, expert-led training, and job placement support, ensuring you're not just learning, but ready to start your IT career with real-world experience.",
+    },
+    {
+      id: 2,
+      question: "Do I need prior experience to join this course?",
+      answer:
+        "No prior experience is needed. This course is designed for freshers and anyone looking to make a career switch, giving you the skills and confidence you need to succeed in IT.",
+    },
+    {
+      id: 3,
+      question: "How soon will I get a job after completing the course?",
+      answer:
+        "Our course includes job placement assistance, helping you connect with top companies. While job timelines vary, our students have successfully secured positions soon after completing the course.",
+    },
+    {
+      id: 4,
       question: "Who can join this program?",
       answer:
         "Final-year students, fresh graduates, and working professionals looking to upskill or switch careers.",
     },
     {
-      id: 2,
+      id: 5,
+      question: "Will I get hands-on experience during the course?",
+      answer:
+        "Yes! You'll work on real-world projects, giving you practical experience and the chance to showcase your skills to potential employers.",
+    },
+    {
+      id: 6,
       question: "What is the duration of the course?",
       answer:
         "The program is designed to be completed in 180 days, with flexible learning options.",
     },
+
     {
-      id: 3,
+      id: 8,
       question: "Is there a job guarantee?",
       answer:
         "Yes, we offer a 100% job guarantee with a Day 1 offer letter or a refund policy.",
     },
     {
-      id: 4,
+      id: 9,
+      question: "What if I don't get placed after completing the course?",
+      answer:
+        "We are committed to your success. If you face challenges finding a job, we'll continue to support you with extra career coaching and job search assistance until you secure a role.",
+    },
+    {
+      id: 10,
+      question: "How flexible is the course schedule?",
+      answer:
+        "Our courses are designed to be flexible, with options to learn at your own pace while still receiving support from instructors and peers.",
+    },
+    {
+      id: 11,
+      question:
+        "What kind of job roles can I expect after completing this course?",
+      answer:
+        "You can expect to qualify for roles like Java Full Stack Developer, Front-End Developer, Back-End Developer, and other high-demand IT positions.",
+    },
+    {
+      id: 12,
+      question: "Is financial support available for the course?",
+      answer:
+        "We offer flexible payment plans and financing options, making it easier for you to start your career in IT without financial stress.",
+    },
+    {
+      id: 13,
+      question: "What kind of salary can I expect after completing the course?",
+      answer:
+        "Graduates of this course have gone on to secure jobs with competitive salary packages in the IT industry. Salaries vary depending on the role and location but can range from ₹2.5 LPA to ₹10 LPA for entry-level positions.",
+    },
+    {
+      id: 14,
       question: "What kind of projects will I work on?",
       answer:
         "Real-world projects like e-commerce platforms, library management systems, and more, using tools like Git, JIRA, and Jenkins.",
+    },
+    {
+      id: 15,
+      question:
+        "How will this course help me transition from a non-technical background?",
+      answer:
+        "This course is designed to make the transition smooth for non-technical individuals. You'll learn step-by-step, from basic concepts to advanced skills, so you can confidently enter the IT field.",
     },
   ];
   const reasons = [
@@ -186,25 +259,52 @@ export default function Full_stack() {
     { title: "My SQL", icon: "/tech/java-10.png" },
   ];
 
+  const itStruggleData = {
+    videoSrc: "/videos/career-counseling.mp4",
+    posterSrc: "/thumbnails/career-counseling-poster.jpg",
+    title: "Struggling to Kick Start a Career in IT?",
+    description:
+      "We understand the struggle of trying to break into the IT industry. The endless job applications, the pressure to have hands-on experience, and the feeling of being overlooked despite your potential.",
+    struggles: [
+      "Struggling to crack interviews?",
+      "Not getting interview calls?",
+      "No hands-on experience?",
+      "Unsure how to bridge your career gap?",
+      "Rejected despite the right qualifications?",
+      "Confused by industry tools and tech?",
+      "Overwhelmed by job market competition?",
+      "Want to switch to IT from another field?",
+      "Lost confidence after rejections?",
+      "Lack the right connections?",
+      "Don't know which IT skill to focus on?",
+      "Unsure where to start your IT career?",
+    ],
+    ctaText: "Get Free Career Consultation",
+  };
+
   return (
     <>
+      <ProfessionalMarquee />
       <Header2 />
       <Hero2 data={heroData} pageSource={"Java_Full_Stack_Developer"} />
       <StudentCarousel
         title={
           <span className="text-[#163123]">
-            Over <span className="text-[#26784E]">12000+</span> Careers Launched
-            with Impressive <br /> Salary Packages
+            Struggling to start your IT career?
           </span>
+        }
+        subtitle={
+          "Join over 12,000+ people who’ve kickstarted their careers with great salary packages."
         }
         students={profiles}
       />
       <Partner_slider />
+      {/* <ITStruggleSection data={itStruggleData} /> */}
       <CyberSecurityBenefits
         reasons={reasons}
         title={"Java Full Stack Course Is For You If..."}
         subtitle={
-          "This Java Full Stack Journey Is Designed For Individuals Who :"
+          "This Java Full Stack Journey Is Designed For Individuals Who"
         }
       />
 
@@ -220,9 +320,9 @@ export default function Full_stack() {
         data={cards}
         heading={
           <>
-            Why Choose Our Full Stack Java
+            Why Choose iTpreneur for Full Stack
             <br className="hidden md:block" />
-            Development Program?
+            Java Development Program?
           </>
         }
         subheading={
@@ -245,13 +345,17 @@ export default function Full_stack() {
       />
       <ToolsGrid
         tools={tools}
-        title="Tools and Technologies That You Will Learn"
+        title={
+          <span>
+            Tools and Technologies <br /> That You Will Learn
+          </span>
+        }
         description="With Full Stack Java Development, you'll master these tools step-by-step."
       />
       <WhyChooseITpreneur
-        title={"Why Full Stack Java Development?"}
+        title={"Why Choose iTpreneur?"}
         para={
-          "Java is one of the most widely used programming languages in the world. With this course, you’ll gain the expertise to build scalable, secure, and high-performance applications, making you a valuable asset to any organization."
+          "At iTpreneur, we prioritize not only delivering cutting-edge technical knowledge but also building a strong, career-oriented profile for each student. With personalized mentorship and dedicated support, our goal is to make every student job-ready."
         }
       />
       <HearformStud />

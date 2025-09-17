@@ -46,10 +46,17 @@ export default function CareerTransformation({
           {salaryData.map((item, idx) => (
             <div key={idx} className="flex flex-col items-center">
               <h3
-                className={`text-[24px] font-medium sm:text-[32px] text-center md:text-[35px] lg:text-[40px] leading-[1.2]  ${item.color}`}
+                className={`relative inline-block text-[24px] font-medium sm:text-[32px] text-center 
+  md:text-[35px] lg:text-[40px] leading-[1.2] overflow-hidden ${item.color}`}
               >
                 {item.range}
+                {/* Shine sweep */}
+                <span
+                  className="absolute top-0 left-[-75%] w-1/2 h-full bg-white/30 
+     skew-x-12 animate-[shine_2.5s_linear_infinite]"
+                ></span>
               </h3>
+
               <div
                 className={`h-[2px] w-10 mt-2 mb-2 ${item.color} bg-current rounded-full`}
               />
