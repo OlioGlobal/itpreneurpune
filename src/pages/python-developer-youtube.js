@@ -25,7 +25,7 @@ export default function Full_stack() {
     notice: "Reserve Your Spot — Next Batch Filling Fast",
     backgroundImage: "/icon/python.webp",
     instituteNote:
-      "Global certifications from along with iTpreneur course \n completion certificate certified by",
+      "iTpreneur is a hallmark of quality and a highly regarded IT Training & Job Placement institute in India",
     partnerLogos: [
       { src: "/icon/aicte.png", alt: "AICTE" },
       { src: "/icon/nsdc-logo.png", alt: "NSDC" },
@@ -95,7 +95,7 @@ export default function Full_stack() {
 
   const salaryData = [
     {
-      range: "₹3 to 5 LPA",
+      range: "₹2.5 to 5 LPA",
       level: "Entry-level Job",
       color: "text-[#0E75A9] border-[#0E75A9]",
     },
