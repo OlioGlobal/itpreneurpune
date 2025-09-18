@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/ynDaQeGIEK4xKOw0T48FA/_buildManifest.js",
-    "static/ynDaQeGIEK4xKOw0T48FA/_ssgManifest.js"
+    "static/zB9-S-jKJG5NvPWU9AE0H/_buildManifest.js",
+    "static/zB9-S-jKJG5NvPWU9AE0H/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "rootMainFilesTree": {},
@@ -62,7 +62,7 @@
       "static/chunks/981-1fd64ddac04e317e.js",
       "static/chunks/851-58fa495a868602a6.js",
       "static/chunks/217-f8844fd17a160e2e.js",
-      "static/chunks/pages/fullstack-java-developer-e75cdec50ee86492.js"
+      "static/chunks/pages/fullstack-java-developer-7f1c6c642fb32843.js"
     ],
     "/fullstack-java-developer-meta": [
       "static/chunks/webpack-f5c9bbb7127d32ec.js",
@@ -71,7 +71,7 @@
       "static/chunks/981-1fd64ddac04e317e.js",
       "static/chunks/851-58fa495a868602a6.js",
       "static/chunks/217-f8844fd17a160e2e.js",
-      "static/chunks/pages/fullstack-java-developer-meta-e2967b6b5aea0c21.js"
+      "static/chunks/pages/fullstack-java-developer-meta-51e4ec367fbf282a.js"
     ],
     "/fullstack-java-developer-youtube": [
       "static/chunks/webpack-f5c9bbb7127d32ec.js",
@@ -80,7 +80,7 @@
       "static/chunks/981-1fd64ddac04e317e.js",
       "static/chunks/851-58fa495a868602a6.js",
       "static/chunks/217-f8844fd17a160e2e.js",
-      "static/chunks/pages/fullstack-java-developer-youtube-7a02411923248802.js"
+      "static/chunks/pages/fullstack-java-developer-youtube-d37e418fcc981237.js"
     ],
     "/mean-stack-developer": [
       "static/chunks/webpack-f5c9bbb7127d32ec.js",

@@ -299,7 +299,7 @@ export default function Full_stack() {
         students={profiles}
       />
       <Partner_slider />
-      {/* <ITStruggleSection data={itStruggleData} /> */}
+      <ITStruggleSection data={itStruggleData} />
       <CyberSecurityBenefits
         reasons={reasons}
         title={"Java Full Stack Course Is For You If..."}

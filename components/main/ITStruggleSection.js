@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const ITStruggleSection = ({
   data = {
@@ -29,21 +30,7 @@ const ITStruggleSection = ({
   return (
     <section className="px-[5%] py-12 max rm bg-white">
       <div className="flex flex-col lg:flex-row gap-8 items-center">
-        {/* Left side - Video (40%) */}
-        <div className="w-full lg:w-[40%]">
-          <div className="aspect-video rounded-xl overflow-hidden shadow-lg bg-gray-100">
-            <video
-              src={videoSrc}
-              controls
-              poster={posterSrc}
-              className="w-full h-full object-cover"
-            >
-              Your browser does not support the video tag.
-            </video>
-          </div>
-        </div>
-
-        {/* Right side - Content (60%) */}
+        {/* left side - Content (60%) */}
         <div className="w-full lg:w-[60%]">
           <div className="border-gray-200 rounded-xl">
             {/* Header */}
@@ -98,6 +85,28 @@ const ITStruggleSection = ({
             </div>
           </div>
         </div>
+
+        {/* Right side - Video (40%) */}
+        <div className="w-full lg:w-[40%]">
+          <div className="aspect-video rounded-xl">
+            <Image
+              src="/icon/why.png"
+              alt="IT Training"
+              width={1500}
+              height={1500}
+              className="rounded-xl w-full object-cover"
+            />
+            {/* <video
+              src={videoSrc}
+              controls
+              poster={posterSrc}
+              className="w-full h-full object-cover"
+            >
+              Your browser does not support the video tag.
+            </video> */}
+          </div>
+        </div>
+
       </div>
     </section>
   );
