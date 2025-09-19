@@ -149,7 +149,7 @@ export default function Form2({ idPrefix = "top", pageSource = "itpm_25" }) {
       <div className="bg-white p-4 sm:p-6 rounded-[10px] shadow-md w-full">
         <div className="mb-5">
           <h2 className="text-[22px] leading-[30px] font-bold text-[#0a1f14]">
-            Get Your Job Offer Now!
+            Register For Free
           </h2>
           <p className="text-[#0a1f14]">
             Register yourself to get Free IT Career Counselling
@@ -293,6 +293,35 @@ export default function Form2({ idPrefix = "top", pageSource = "itpm_25" }) {
             {success}
           </p>
         )}
+
+        <div className="flex items-center rounded-md bg-gray-200 px-3 py-2 w-full mt-2 animate-floatText">
+          {/* Avatars group */}
+          <div className="flex -space-x-3 flex-shrink-0">
+            <img
+              src="/icon/student-1.png"
+              alt="Student 1"
+              className="w-10 h-10 rounded-full border-2 border-white object-cover"
+            />
+            <img
+              src="/icon/student-2.png"
+              alt="Student 2"
+              className="w-10 h-10 rounded-full border-2 border-white object-cover"
+            />
+            <img
+              src="/icon/student-3.png"
+              alt="Student 3"
+              className="w-10 h-10 rounded-full border-2 border-white object-cover"
+            />
+          </div>
+          <span className="ml-4 text-[15px] font-bold text-[#133522] ">
+            2735 Students Have Registered So Far!
+          </span>
+        </div>
+
+        <div className="text-black text-center mt-2">
+          Limited Seats. Register your interest for FREE.
+        </div>
+
       </div>
     </div>
   );

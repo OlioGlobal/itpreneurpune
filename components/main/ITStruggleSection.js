@@ -3,8 +3,8 @@ import Image from "next/image";
 
 const ITStruggleSection = ({
   data = {
-    videoSrc: "/videos/career-counseling.mp4",
-    posterSrc: "/thumbnails/career-counseling-poster.jpg",
+    videoSrc: "/videos/Java.mp4",
+    posterSrc: "/thumbnails/full-stack-java-thumnail.png",
     title: "Struggling to Kick Start a Career in IT?",
     description:
       "We understand the struggle of trying to break into the IT industry. The endless job applications, the pressure to have hands-on experience, and the feeling of being overlooked despite your potential.",
@@ -31,7 +31,7 @@ const ITStruggleSection = ({
     <section className="px-[5%] py-12 max rm bg-white">
       <div className="flex flex-col lg:flex-row gap-8 items-center">
         {/* left side - Content (60%) */}
-        <div className="w-full lg:w-[60%]">
+        <div className="w-full lg:w-[65%]">
           <div className="border-gray-200 rounded-xl">
             {/* Header */}
             <div className="mb-6">
@@ -87,23 +87,23 @@ const ITStruggleSection = ({
         </div>
 
         {/* Right side - Video (40%) */}
-        <div className="w-full lg:w-[40%]">
-          <div className="aspect-video rounded-xl">
-            <Image
+        <div className="w-full lg:w-[35%]">
+          <div className="relative overflow-hidden rounded-xl bg-black h-[400px] lg:h-[600px">
+            {/* <Image
               src="/icon/why.png"
               alt="IT Training"
               width={1500}
               height={1500}
               className="rounded-xl w-full object-cover"
-            />
-            {/* <video
+            /> */}
+            <video
               src={videoSrc}
               controls
               poster={posterSrc}
-              className="w-full h-full object-cover"
+              className="absolute top-0 left-0 w-full h-full object-contain"
             >
               Your browser does not support the video tag.
-            </video> */}
+            </video>
           </div>
         </div>
 

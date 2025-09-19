@@ -16,31 +16,50 @@ import StickyFooter2 from "../../components/stickyfooter2";
 import Enroll2 from "../../components/cyber_page/Enroll2";
 import ProfessionalMarquee from "../../components/ProfessionalMarquee";
 import ITStruggleSection from "../../components/main/ITStruggleSection";
+import ProfessionalMarqueeForSimpleText from "../../components/ProfessionalMarqueeForSimpleText";
 
 export default function Full_stack() {
   const heroData = {
     title: "Step Into the World of High-Paying IT Careers",
     subtitle: "Become a Full Stack Java Developer",
 
-    description: (
-      <ul className="list-disc pl-5 text-[18px] md:text-[20px] md:max-w-xl font-normal space-y-2">
-        <li>100% Job Guarantee</li>
-        <li>300+ Placement Partners</li>
-        <li>Master Coding Skills</li>
-      </ul>
-    ),
+    // description: (
+    //   <ul className="list-disc pl-5 text-[18px] md:text-[20px] md:max-w-xl font-normal space-y-2">
+    //     <li>100% Job Guarantee</li>
+    //     <li>300+ Placement Partners</li>
+    //     <li>Master Coding Skills</li>
+    //   </ul>
+    // ),
+    section: [
+      {
+        imgSrc: "/icon/briefcase_job_guarantee.png", 
+        main: "100%",
+        sub: "Job Guarantee",
+      },
+      {
+        imgSrc: "/icon/placement_partners_build.png",
+        main: "300+",
+        sub: "Placement Partners",
+      },
+      {
+        imgSrc: "/icon/coding_skills.png",
+        main: "Master",
+        sub: "Coding Skills",
+      }
+    ],
 
     notice: "2735 Students Have Registered So Far!",
     noticePara: "Limited Seats. Register your interest for FREE.",
     backgroundImage: "/icon/java_bg.webp",
     instituteNote:
       "iTpreneur is a hallmark of quality and a highly regarded IT Training & Job Placement institute in India",
-    partnerLogos: [
-      { src: "/icon/aicte.png", alt: "AICTE" },
-      { src: "/icon/nsdc-logo.png", alt: "NSDC" },
-      { src: "/icon/aictsd-logo.png", alt: "AICSTD" },
-      { src: "/icon/skill-india-logo.png", alt: "Skill India" },
-    ],
+      partnerLogos: [
+        { src: "/icon/aicte.png", alt: "AICTE", name: "All India Council for Technical Education" },
+        { src: "/icon/nsdc-logo.png", alt: "NSDC", name: "National Skill Development Corporation (NSDC)" },
+        { src: "/icon/aictsd-logo.png", alt: "AICSTD", name: "All India Council for Technical Skill Development"   },
+        { src: "/icon/skill-india-logo.png", alt: "Skill India", name: "National Skills Development Mission of India" },
+        { src: "/icon/iso.png", alt: "ISO", name: "International Organization for Standardization" },
+      ],
   };
   const profiles = [
     {
@@ -260,8 +279,8 @@ export default function Full_stack() {
   ];
 
   const itStruggleData = {
-    videoSrc: "/videos/career-counseling.mp4",
-    posterSrc: "/thumbnails/career-counseling-poster.jpg",
+    videoSrc: "/videos/Java.mp4",
+    posterSrc: "/thumbnails/full-stack-java-thumnail.png",
     title: "Struggling to Kick Start a Career in IT?",
     description:
       "We understand the struggle of trying to break into the IT industry. The endless job applications, the pressure to have hands-on experience, and the feeling of being overlooked despite your potential.",
@@ -287,6 +306,7 @@ export default function Full_stack() {
       <ProfessionalMarquee />
       <Header2 />
       <Hero2 data={heroData} pageSource={"Java_Full_Stack_Developer_meta"} />
+      <ProfessionalMarqueeForSimpleText />
       <StudentCarousel
         title={
           <span className="text-[#163123]">

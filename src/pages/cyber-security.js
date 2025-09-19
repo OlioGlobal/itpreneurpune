@@ -26,12 +26,13 @@ export default function Cyber() {
     backgroundImage: "/icon/herobg.webp",
     instituteNote:
       "iTpreneur - A hallmark of quality and\nhighly regarded IT institute in India",
-    partnerLogos: [
-      { src: "/icon/aicte.png", alt: "AICTE" },
-      { src: "/icon/nsdc-logo.png", alt: "NSDC" },
-      { src: "/icon/aictsd-logo.png", alt: "AICSTD" },
-      { src: "/icon/skill-india-logo.png", alt: "Skill India" },
-    ],
+      partnerLogos: [
+        { src: "/icon/aicte.png", alt: "AICTE", name: "All India Council for Technical Education" },
+        { src: "/icon/nsdc-logo.png", alt: "NSDC", name: "National Skill Development Corporation (NSDC)" },
+        { src: "/icon/aictsd-logo.png", alt: "AICSTD", name: "All India Council for Technical Skill Development"   },
+        { src: "/icon/skill-india-logo.png", alt: "Skill India", name: "National Skills Development Mission of India" },
+        { src: "/icon/iso.png", alt: "ISO", name: "International Organization for Standardization" },
+      ],
   };
   const profiles = [
     {

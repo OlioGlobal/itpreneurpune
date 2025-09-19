@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/p3PlkW_u3DH9irbXzvFvL/_buildManifest.js",
-    "static/p3PlkW_u3DH9irbXzvFvL/_ssgManifest.js"
+    "static/Nn2fyuMCx4x36HXrvj5ww/_buildManifest.js",
+    "static/Nn2fyuMCx4x36HXrvj5ww/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "rootMainFilesTree": {},
@@ -22,7 +22,7 @@
       "static/chunks/webpack-f5c9bbb7127d32ec.js",
       "static/chunks/framework-2f335d22a7318891.js",
       "static/chunks/main-701dbc27ca0a5778.js",
-      "static/css/ded66008a4a2b235.css",
+      "static/css/1fb6aa32d86f7a1c.css",
       "static/chunks/pages/_app-33c9816545ab11e8.js"
     ],
     "/_error": [
@@ -36,24 +36,24 @@
       "static/chunks/framework-2f335d22a7318891.js",
       "static/chunks/main-701dbc27ca0a5778.js",
       "static/chunks/981-1fd64ddac04e317e.js",
-      "static/chunks/217-f8844fd17a160e2e.js",
-      "static/chunks/pages/bussiness-and-data-analytics-497d17495be44a60.js"
+      "static/chunks/217-5d93780a8602482b.js",
+      "static/chunks/pages/bussiness-and-data-analytics-3148e4f60c38e5c7.js"
     ],
     "/cyber-security": [
       "static/chunks/webpack-f5c9bbb7127d32ec.js",
       "static/chunks/framework-2f335d22a7318891.js",
       "static/chunks/main-701dbc27ca0a5778.js",
       "static/chunks/981-1fd64ddac04e317e.js",
-      "static/chunks/217-f8844fd17a160e2e.js",
-      "static/chunks/pages/cyber-security-de450a4d59b939d5.js"
+      "static/chunks/217-5d93780a8602482b.js",
+      "static/chunks/pages/cyber-security-ee4626467aeb58f3.js"
     ],
     "/dot-net-developer": [
       "static/chunks/webpack-f5c9bbb7127d32ec.js",
       "static/chunks/framework-2f335d22a7318891.js",
       "static/chunks/main-701dbc27ca0a5778.js",
       "static/chunks/981-1fd64ddac04e317e.js",
-      "static/chunks/217-f8844fd17a160e2e.js",
-      "static/chunks/pages/dot-net-developer-d0a720f55f2317f3.js"
+      "static/chunks/217-5d93780a8602482b.js",
+      "static/chunks/pages/dot-net-developer-d9b0b2e6b5d59be3.js"
     ],
     "/fullstack-java-developer": [
       "static/chunks/webpack-f5c9bbb7127d32ec.js",
@@ -61,8 +61,9 @@
       "static/chunks/main-701dbc27ca0a5778.js",
       "static/chunks/981-1fd64ddac04e317e.js",
       "static/chunks/851-58fa495a868602a6.js",
-      "static/chunks/217-f8844fd17a160e2e.js",
-      "static/chunks/pages/fullstack-java-developer-eaaf87c295cd62e7.js"
+      "static/chunks/217-5d93780a8602482b.js",
+      "static/chunks/700-5022d79af7646b41.js",
+      "static/chunks/pages/fullstack-java-developer-4ff711b1f69ea1e7.js"
     ],
     "/fullstack-java-developer-meta": [
       "static/chunks/webpack-f5c9bbb7127d32ec.js",
@@ -70,8 +71,9 @@
       "static/chunks/main-701dbc27ca0a5778.js",
       "static/chunks/981-1fd64ddac04e317e.js",
       "static/chunks/851-58fa495a868602a6.js",
-      "static/chunks/217-f8844fd17a160e2e.js",
-      "static/chunks/pages/fullstack-java-developer-meta-74314ba0cc7f2637.js"
+      "static/chunks/217-5d93780a8602482b.js",
+      "static/chunks/700-5022d79af7646b41.js",
+      "static/chunks/pages/fullstack-java-developer-meta-cb7099a2706dd539.js"
     ],
     "/fullstack-java-developer-youtube": [
       "static/chunks/webpack-f5c9bbb7127d32ec.js",
@@ -79,24 +81,25 @@
       "static/chunks/main-701dbc27ca0a5778.js",
       "static/chunks/981-1fd64ddac04e317e.js",
       "static/chunks/851-58fa495a868602a6.js",
-      "static/chunks/217-f8844fd17a160e2e.js",
-      "static/chunks/pages/fullstack-java-developer-youtube-ef720707e9ab4162.js"
+      "static/chunks/217-5d93780a8602482b.js",
+      "static/chunks/700-5022d79af7646b41.js",
+      "static/chunks/pages/fullstack-java-developer-youtube-987fcf35378cd5ef.js"
     ],
     "/mean-stack-developer": [
       "static/chunks/webpack-f5c9bbb7127d32ec.js",
       "static/chunks/framework-2f335d22a7318891.js",
       "static/chunks/main-701dbc27ca0a5778.js",
       "static/chunks/981-1fd64ddac04e317e.js",
-      "static/chunks/217-f8844fd17a160e2e.js",
-      "static/chunks/pages/mean-stack-developer-3f9744a24c14eae6.js"
+      "static/chunks/217-5d93780a8602482b.js",
+      "static/chunks/pages/mean-stack-developer-da1bffe05faebda8.js"
     ],
     "/mern-stack-developer": [
       "static/chunks/webpack-f5c9bbb7127d32ec.js",
       "static/chunks/framework-2f335d22a7318891.js",
       "static/chunks/main-701dbc27ca0a5778.js",
       "static/chunks/981-1fd64ddac04e317e.js",
-      "static/chunks/217-f8844fd17a160e2e.js",
-      "static/chunks/pages/mern-stack-developer-97d7aaba8e007b87.js"
+      "static/chunks/217-5d93780a8602482b.js",
+      "static/chunks/pages/mern-stack-developer-8688c9d741a32b65.js"
     ],
     "/python-developer": [
       "static/chunks/webpack-f5c9bbb7127d32ec.js",
@@ -104,8 +107,8 @@
       "static/chunks/main-701dbc27ca0a5778.js",
       "static/chunks/981-1fd64ddac04e317e.js",
       "static/chunks/851-58fa495a868602a6.js",
-      "static/chunks/217-f8844fd17a160e2e.js",
-      "static/chunks/pages/python-developer-2c94acb5bdfea641.js"
+      "static/chunks/217-5d93780a8602482b.js",
+      "static/chunks/pages/python-developer-324f103b7ad17c55.js"
     ],
     "/python-developer-meta": [
       "static/chunks/webpack-f5c9bbb7127d32ec.js",
@@ -113,8 +116,8 @@
       "static/chunks/main-701dbc27ca0a5778.js",
       "static/chunks/981-1fd64ddac04e317e.js",
       "static/chunks/851-58fa495a868602a6.js",
-      "static/chunks/217-f8844fd17a160e2e.js",
-      "static/chunks/pages/python-developer-meta-ee3fabcb72fd6093.js"
+      "static/chunks/217-5d93780a8602482b.js",
+      "static/chunks/pages/python-developer-meta-906cee23c9370583.js"
     ],
     "/python-developer-youtube": [
       "static/chunks/webpack-f5c9bbb7127d32ec.js",
@@ -122,16 +125,16 @@
       "static/chunks/main-701dbc27ca0a5778.js",
       "static/chunks/981-1fd64ddac04e317e.js",
       "static/chunks/851-58fa495a868602a6.js",
-      "static/chunks/217-f8844fd17a160e2e.js",
-      "static/chunks/pages/python-developer-youtube-e52f49f6a0a6c212.js"
+      "static/chunks/217-5d93780a8602482b.js",
+      "static/chunks/pages/python-developer-youtube-56bbd4929694eeaa.js"
     ],
     "/software-testing": [
       "static/chunks/webpack-f5c9bbb7127d32ec.js",
       "static/chunks/framework-2f335d22a7318891.js",
       "static/chunks/main-701dbc27ca0a5778.js",
       "static/chunks/981-1fd64ddac04e317e.js",
-      "static/chunks/217-f8844fd17a160e2e.js",
-      "static/chunks/pages/software-testing-2e927e9cc91864f2.js"
+      "static/chunks/217-5d93780a8602482b.js",
+      "static/chunks/pages/software-testing-7acdbb3a1da4ce13.js"
     ],
     "/thank-you": [
       "static/chunks/webpack-f5c9bbb7127d32ec.js",
