@@ -6,6 +6,7 @@ export default function Hero2({ pageSource, data }) {
     title,
     subtitle,
     description,
+    section,
     notice,
     noticePara = null,
     backgroundImage,
@@ -41,7 +42,36 @@ export default function Hero2({ pageSource, data }) {
               </div>
             )}
 
-            {notice && (
+            {section && (
+              <div className="flex w-full py-5 divide-x divide-gray-500/40">
+                {section.map((item, idx) => (
+                  <div
+                    key={idx}
+                    className={`flex-grow-0 w-fit flex flex-col gap-4 items-start ${
+                      idx === 0 ? "pl-0 pr-6" : "px-6"
+                    }`}
+                  >
+                    <div className=" rounded-xl  w-fit">
+                      <img
+                        src={item.imgSrc}
+                        alt={item.sub}
+                        className="w-13 h-13"
+                      />
+                    </div>
+                    <div className="w-full text-left">
+                      <div className="text-xl font-bold text-white mb-1">
+                        {item.main}
+                      </div>
+                      <div className="text-md text-emerald-100 font-medium">
+                        {item.sub}
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
+
+            {/* {notice && (
               <div>
                 <p className="text-[18px] font-bold flex items-center gap-2 animate-floatText">
                   <span className="relative flex h-3 w-3">
@@ -52,7 +82,7 @@ export default function Hero2({ pageSource, data }) {
                 </p>
                 <p className="pl-5">{noticePara}</p>
               </div>
-            )}
+            )} */}
           </div>
 
           {/* {noticePara && (
@@ -68,27 +98,35 @@ export default function Hero2({ pageSource, data }) {
       </div>
 
       <div className="bg-[#F1F3EF]">
-        <div className="flex flex-col gap-2 lg:flex-row justify-center items-center py-4 px-[5%] max-w-screen-2xl mx-auto">
-          <div className="lg:w-[50%]">
-            <p className="text-[#0A1F14] text-[16px] font-semibold md:text-[24px] text-center">
+        <div className="flex flex-col gap-4 justify-center items-center py-6 px-[5%] max-w-screen-2xl mx-auto">
+          {/* Institute Note Section */}
+          <div className="text-center mb-3">
+            <p className="text-[#0A1F14] text-[16px] font-semibold md:text-[24px]">
               {instituteNote?.split("\n").map((line, i) => (
                 <span key={i}>{line}</span>
               ))}
             </p>
           </div>
-          <div className="lg:w-[50%] flex gap-2 sm:gap-5 justify-center flex-wrap">
+
+          <div className="flex flex-wrap justify-center gap-6">
             {partnerLogos?.map((logo, index) => (
               <div
                 key={index}
-                className="bg-white rounded-full p-3 flex items-center justify-center h-[70px] sm:h-[100px] md:h-[100px] lg:h-28"
+                className="flex flex-col items-center justify-center w-[calc(50%-1.5rem)] sm:w-[calc(50%-1.5rem)] md:w-[calc(33.333%-1.5rem)] lg:w-[calc(20%-2rem)]"
               >
-                <Image
-                  src={logo.src}
-                  alt={logo.alt}
-                  width={100}
-                  height={100}
-                  className="object-contain h-full w-full"
-                />
+                <div className="bg-white rounded-full p-3 h-[70px] sm:h-[100px] md:h-[100px] lg:h-[120px] w-[70px] sm:w-[100px] md:w-[100px] lg:w-[120px] flex items-center justify-center">
+                  <Image
+                    src={logo.src}
+                    alt={logo.alt}
+                    width={100}
+                    height={100}
+                    className="object-contain h-full w-full"
+                  />
+                </div>
+
+                <span className="text-center text-[12px] md:text-[14px] font-medium mt-2">
+                  {logo.name}
+                </span>
               </div>
             ))}
           </div>

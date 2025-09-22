@@ -15,22 +15,70 @@ import CareerSuccessComponents from "../../components/cyber_page/CareerSuccess";
 import StickyFooter2 from "../../components/stickyfooter2";
 import Enroll2 from "../../components/cyber_page/Enroll2";
 import ProfessionalMarquee from "../../components/ProfessionalMarquee";
+import ProfessionalMarqueeForSimpleText from "../../components/ProfessionalMarqueeForSimpleText";
 
 export default function Full_stack() {
   const heroData = {
-    title: "Master Python Web Development + Data Analytics",
-    subtitle: "100% Job Guarantee with Day 1 Offer Letter",
-    description:
-      "Become a certified Python Web Developer and Data Analyst in just 120 days with hands-on training, real-world projects, and personalized career support. Whether you're a student, fresh graduate, or working professional, this program is designed to help you switch careers with confidence and secure a high-paying job in the IT industry.",
-    notice: "Reserve Your Spot — Next Batch Filling Fast",
-    backgroundImage: "/icon/python.webp",
+    title: "Step Into the World of High-Paying IT Careers",
+    subtitle: "Become a Master of Python Web Development + Data Analytics",
+
+    // description: (
+    //   <ul className="list-disc pl-5 text-[18px] md:text-[20px] md:max-w-xl font-normal space-y-2">
+    //     <li>100% Job Guarantee</li>
+    //     <li>300+ Placement Partners</li>
+    //     <li>Master Coding Skills</li>
+    //   </ul>
+    // ),
+
+    section: [
+      {
+        imgSrc: "/icon/s7.png",
+        main: "100%",
+        sub: "Job Guarantee",
+      },
+      {
+        imgSrc: "/icon/s5.png",
+        main: "300+",
+        sub: "Placement Partners",
+      },
+      {
+        imgSrc: "/icon/s6.png",
+        main: "Master",
+        sub: "Coding Skills",
+      },
+    ],
+
+    notice: "2735 Students Have Registered So Far!",
+    noticePara: "Limited Seats. Register your interest for FREE.",
+    backgroundImage: "/icon/java_bg.webp",
     instituteNote:
-      "Global certifications from along with iTpreneur course \n completion certificate certified by",
+      "iTpreneur is a hallmark of quality and a highly regarded \n IT Training & Job Placement institute in India",
     partnerLogos: [
-      { src: "/icon/aicte.png", alt: "AICTE" },
-      { src: "/icon/nsdc-logo.png", alt: "NSDC" },
-      { src: "/icon/aictsd-logo.png", alt: "AICSTD" },
-      { src: "/icon/skill-india-logo.png", alt: "Skill India" },
+      {
+        src: "/icon/aicte.png",
+        alt: "AICTE",
+        name: "All India Council for Technical Education",
+      },
+      {
+        src: "/icon/nsdc-logo.png",
+        alt: "NSDC",
+        name: "National Skill Development Corporation (NSDC)",
+      },
+      {
+        src: "/icon/aictsd-logo.png",
+        alt: "AICSTD",
+        name: "All India Council for Technical Skill Development",
+      },
+      {
+        src: "/icon/skill-india-logo.png",
+        alt: "Skill India",
+        name: "National Skills Development Mission of India",
+      },
+      {
+        src: "/icon/iso.png",
+        alt: "ISO",
+        name: "International Organization for Standardization",
+      },
     ],
   };
   const profiles = [
@@ -95,7 +143,7 @@ export default function Full_stack() {
 
   const salaryData = [
     {
-      range: "₹3 to 5 LPA",
+      range: "₹2.5 to 5 LPA",
       level: "Entry-level Job",
       color: "text-[#0E75A9] border-[#0E75A9]",
     },
@@ -190,6 +238,7 @@ export default function Full_stack() {
       <ProfessionalMarquee />
       <Header2 />
       <Hero2 data={heroData} pageSource={"Python_Developer_meta"} />
+      <ProfessionalMarqueeForSimpleText />
       <StudentCarousel
         title={
           <span className="text-[#163123]">
@@ -287,7 +336,11 @@ export default function Full_stack() {
         pageSource={"Python_Developer_meta"}
       />
 
-      <StickyFooter2 />
+      <StickyFooter2
+        message={
+          "Register yourself for Python Web Developer Program with 100% Job Guarantee Assurance"
+        }
+      />
     </>
   );
 }

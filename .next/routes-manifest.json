@@ -1,0 +1,121 @@
+{
+  "version": 3,
+  "pages404": true,
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "dynamicRoutes": [],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/bussiness-and-data-analytics",
+      "regex": "^/bussiness\\-and\\-data\\-analytics(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/bussiness\\-and\\-data\\-analytics(?:/)?$"
+    },
+    {
+      "page": "/cyber-security",
+      "regex": "^/cyber\\-security(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/cyber\\-security(?:/)?$"
+    },
+    {
+      "page": "/dot-net-developer",
+      "regex": "^/dot\\-net\\-developer(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dot\\-net\\-developer(?:/)?$"
+    },
+    {
+      "page": "/fullstack-java-developer",
+      "regex": "^/fullstack\\-java\\-developer(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/fullstack\\-java\\-developer(?:/)?$"
+    },
+    {
+      "page": "/fullstack-java-developer-meta",
+      "regex": "^/fullstack\\-java\\-developer\\-meta(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/fullstack\\-java\\-developer\\-meta(?:/)?$"
+    },
+    {
+      "page": "/fullstack-java-developer-youtube",
+      "regex": "^/fullstack\\-java\\-developer\\-youtube(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/fullstack\\-java\\-developer\\-youtube(?:/)?$"
+    },
+    {
+      "page": "/mean-stack-developer",
+      "regex": "^/mean\\-stack\\-developer(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/mean\\-stack\\-developer(?:/)?$"
+    },
+    {
+      "page": "/mern-stack-developer",
+      "regex": "^/mern\\-stack\\-developer(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/mern\\-stack\\-developer(?:/)?$"
+    },
+    {
+      "page": "/python-developer",
+      "regex": "^/python\\-developer(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/python\\-developer(?:/)?$"
+    },
+    {
+      "page": "/python-developer-meta",
+      "regex": "^/python\\-developer\\-meta(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/python\\-developer\\-meta(?:/)?$"
+    },
+    {
+      "page": "/python-developer-youtube",
+      "regex": "^/python\\-developer\\-youtube(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/python\\-developer\\-youtube(?:/)?$"
+    },
+    {
+      "page": "/software-testing",
+      "regex": "^/software\\-testing(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/software\\-testing(?:/)?$"
+    },
+    {
+      "page": "/thank-you",
+      "regex": "^/thank\\-you(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/thank\\-you(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "RSC",
+    "varyHeader": "RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch",
+    "prefetchHeader": "Next-Router-Prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSuffix": ".prefetch.rsc",
+    "prefetchSegmentHeader": "Next-Router-Segment-Prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments"
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  },
+  "rewrites": []
+}

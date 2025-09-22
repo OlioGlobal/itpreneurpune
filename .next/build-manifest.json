@@ -1,0 +1,147 @@
+{
+  "polyfillFiles": [
+    "static/chunks/polyfills-42372ed130431b0a.js"
+  ],
+  "devFiles": [],
+  "ampDevFiles": [],
+  "lowPriorityFiles": [
+    "static/huNjUNXJw16ERSEayQFRd/_buildManifest.js",
+    "static/huNjUNXJw16ERSEayQFRd/_ssgManifest.js"
+  ],
+  "rootMainFiles": [],
+  "rootMainFilesTree": {},
+  "pages": {
+    "/": [
+      "static/chunks/webpack-f5c9bbb7127d32ec.js",
+      "static/chunks/framework-2f335d22a7318891.js",
+      "static/chunks/main-701dbc27ca0a5778.js",
+      "static/chunks/981-1fd64ddac04e317e.js",
+      "static/chunks/pages/index-6c6a0343303d5e13.js"
+    ],
+    "/_app": [
+      "static/chunks/webpack-f5c9bbb7127d32ec.js",
+      "static/chunks/framework-2f335d22a7318891.js",
+      "static/chunks/main-701dbc27ca0a5778.js",
+      "static/css/158095ca52addc81.css",
+      "static/chunks/pages/_app-33c9816545ab11e8.js"
+    ],
+    "/_error": [
+      "static/chunks/webpack-f5c9bbb7127d32ec.js",
+      "static/chunks/framework-2f335d22a7318891.js",
+      "static/chunks/main-701dbc27ca0a5778.js",
+      "static/chunks/pages/_error-b41dbd85229d9331.js"
+    ],
+    "/bussiness-and-data-analytics": [
+      "static/chunks/webpack-f5c9bbb7127d32ec.js",
+      "static/chunks/framework-2f335d22a7318891.js",
+      "static/chunks/main-701dbc27ca0a5778.js",
+      "static/chunks/981-1fd64ddac04e317e.js",
+      "static/chunks/217-19eecfd11e211431.js",
+      "static/chunks/pages/bussiness-and-data-analytics-3148e4f60c38e5c7.js"
+    ],
+    "/cyber-security": [
+      "static/chunks/webpack-f5c9bbb7127d32ec.js",
+      "static/chunks/framework-2f335d22a7318891.js",
+      "static/chunks/main-701dbc27ca0a5778.js",
+      "static/chunks/981-1fd64ddac04e317e.js",
+      "static/chunks/217-19eecfd11e211431.js",
+      "static/chunks/pages/cyber-security-ee4626467aeb58f3.js"
+    ],
+    "/dot-net-developer": [
+      "static/chunks/webpack-f5c9bbb7127d32ec.js",
+      "static/chunks/framework-2f335d22a7318891.js",
+      "static/chunks/main-701dbc27ca0a5778.js",
+      "static/chunks/981-1fd64ddac04e317e.js",
+      "static/chunks/217-19eecfd11e211431.js",
+      "static/chunks/pages/dot-net-developer-d9b0b2e6b5d59be3.js"
+    ],
+    "/fullstack-java-developer": [
+      "static/chunks/webpack-f5c9bbb7127d32ec.js",
+      "static/chunks/framework-2f335d22a7318891.js",
+      "static/chunks/main-701dbc27ca0a5778.js",
+      "static/chunks/981-1fd64ddac04e317e.js",
+      "static/chunks/851-58fa495a868602a6.js",
+      "static/chunks/217-19eecfd11e211431.js",
+      "static/chunks/700-5022d79af7646b41.js",
+      "static/chunks/pages/fullstack-java-developer-853cc5fd467c5078.js"
+    ],
+    "/fullstack-java-developer-meta": [
+      "static/chunks/webpack-f5c9bbb7127d32ec.js",
+      "static/chunks/framework-2f335d22a7318891.js",
+      "static/chunks/main-701dbc27ca0a5778.js",
+      "static/chunks/981-1fd64ddac04e317e.js",
+      "static/chunks/851-58fa495a868602a6.js",
+      "static/chunks/217-19eecfd11e211431.js",
+      "static/chunks/700-5022d79af7646b41.js",
+      "static/chunks/pages/fullstack-java-developer-meta-867a0e3ed12bb1c7.js"
+    ],
+    "/fullstack-java-developer-youtube": [
+      "static/chunks/webpack-f5c9bbb7127d32ec.js",
+      "static/chunks/framework-2f335d22a7318891.js",
+      "static/chunks/main-701dbc27ca0a5778.js",
+      "static/chunks/981-1fd64ddac04e317e.js",
+      "static/chunks/851-58fa495a868602a6.js",
+      "static/chunks/217-19eecfd11e211431.js",
+      "static/chunks/700-5022d79af7646b41.js",
+      "static/chunks/pages/fullstack-java-developer-youtube-cc2c3512290ff884.js"
+    ],
+    "/mean-stack-developer": [
+      "static/chunks/webpack-f5c9bbb7127d32ec.js",
+      "static/chunks/framework-2f335d22a7318891.js",
+      "static/chunks/main-701dbc27ca0a5778.js",
+      "static/chunks/981-1fd64ddac04e317e.js",
+      "static/chunks/217-19eecfd11e211431.js",
+      "static/chunks/pages/mean-stack-developer-da1bffe05faebda8.js"
+    ],
+    "/mern-stack-developer": [
+      "static/chunks/webpack-f5c9bbb7127d32ec.js",
+      "static/chunks/framework-2f335d22a7318891.js",
+      "static/chunks/main-701dbc27ca0a5778.js",
+      "static/chunks/981-1fd64ddac04e317e.js",
+      "static/chunks/217-19eecfd11e211431.js",
+      "static/chunks/pages/mern-stack-developer-8688c9d741a32b65.js"
+    ],
+    "/python-developer": [
+      "static/chunks/webpack-f5c9bbb7127d32ec.js",
+      "static/chunks/framework-2f335d22a7318891.js",
+      "static/chunks/main-701dbc27ca0a5778.js",
+      "static/chunks/981-1fd64ddac04e317e.js",
+      "static/chunks/851-58fa495a868602a6.js",
+      "static/chunks/217-19eecfd11e211431.js",
+      "static/chunks/pages/python-developer-146e7bef76a9a349.js"
+    ],
+    "/python-developer-meta": [
+      "static/chunks/webpack-f5c9bbb7127d32ec.js",
+      "static/chunks/framework-2f335d22a7318891.js",
+      "static/chunks/main-701dbc27ca0a5778.js",
+      "static/chunks/981-1fd64ddac04e317e.js",
+      "static/chunks/851-58fa495a868602a6.js",
+      "static/chunks/217-19eecfd11e211431.js",
+      "static/chunks/pages/python-developer-meta-52c47e65ba6b36de.js"
+    ],
+    "/python-developer-youtube": [
+      "static/chunks/webpack-f5c9bbb7127d32ec.js",
+      "static/chunks/framework-2f335d22a7318891.js",
+      "static/chunks/main-701dbc27ca0a5778.js",
+      "static/chunks/981-1fd64ddac04e317e.js",
+      "static/chunks/851-58fa495a868602a6.js",
+      "static/chunks/217-19eecfd11e211431.js",
+      "static/chunks/pages/python-developer-youtube-83fb232ea643d949.js"
+    ],
+    "/software-testing": [
+      "static/chunks/webpack-f5c9bbb7127d32ec.js",
+      "static/chunks/framework-2f335d22a7318891.js",
+      "static/chunks/main-701dbc27ca0a5778.js",
+      "static/chunks/981-1fd64ddac04e317e.js",
+      "static/chunks/217-19eecfd11e211431.js",
+      "static/chunks/pages/software-testing-7acdbb3a1da4ce13.js"
+    ],
+    "/thank-you": [
+      "static/chunks/webpack-f5c9bbb7127d32ec.js",
+      "static/chunks/framework-2f335d22a7318891.js",
+      "static/chunks/main-701dbc27ca0a5778.js",
+      "static/chunks/pages/thank-you-2839175739489fdf.js"
+    ]
+  },
+  "ampFirstPages": []
+}

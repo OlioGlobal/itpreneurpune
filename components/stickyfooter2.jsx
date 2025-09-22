@@ -1,6 +1,6 @@
 import React from "react";
 
-const StickyFooter2 = () => {
+const StickyFooter2 = ({ message }) => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 450,
@@ -10,10 +10,10 @@ const StickyFooter2 = () => {
 
   return (
     <div
-      className="fixed bottom-0 left-0 w-full bg-[#5BD253] text-white text-center py-3 px-3 text-[15px] sm:hidden z-50 shadow-md cursor-pointer"
+      className="fixed bottom-0 left-0 w-full bg-[#5BD253] text-white text-center py-3 px-3 text-[13px] sm:hidden z-50 shadow-md cursor-pointer"
       onClick={scrollToTop}
     >
-      Register Now & 100% Guaranteed IT Job Placement Offer
+      {message || "Register Now & 100% Guaranteed IT Job Placement Offer"}
     </div>
   );
 };

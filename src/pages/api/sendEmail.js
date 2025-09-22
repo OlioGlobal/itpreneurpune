@@ -12,30 +12,30 @@ export default async function handler(req, res) {
 
   try {
     // 1️⃣ Send Email
-    const transporter = nodemailer.createTransport({
-      host: "smtp.gmail.com",
-      port: 587,
-      secure: false,
-      auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS,
-      },
-    });
+    // const transporter = nodemailer.createTransport({
+    //   host: "smtp.gmail.com",
+    //   port: 465,
+    //   secure: true,
+    //   auth: {
+    //     user: process.env.EMAIL_USER,
+    //     pass: process.env.EMAIL_PASS,
+    //   },
+    // });
 
-    await transporter.sendMail({
-      from: `iTpreneur <${process.env.EMAIL_USER}>`,
-      to: "olioclientwebsiteleads@gmail.com",
-      subject: "📣 Enquiry from iTPreneur Pune",
-      text: `Name: ${name}
-Email: ${email}
-Mobile: ${mobile}
-City: ${city}
-Education: ${education}
-Page Source: ${pageSource}
-Traffic Source: ${source}
-Full URL: ${fullUrl}
-`,
-    });
+    // await transporter.sendMail({
+    //   from: `iTpreneur <${process.env.EMAIL_USER}>`,
+    //   to: "olioclientwebsiteleads@gmail.com",
+    //   subject: "📣 Enquiry from iTPreneur Pune",
+    //   text: `Name: ${name}
+    //   Email: ${email}
+    //   Mobile: ${mobile}
+    //   City: ${city}
+    //   Education: ${education}
+    //   Page Source: ${pageSource}
+    //   Traffic Source: ${source}
+    //   Full URL: ${fullUrl}
+    //   `,
+    // });
 
     // 2️⃣ Send to Google Sheet
     await fetch(process.env.GS, {
