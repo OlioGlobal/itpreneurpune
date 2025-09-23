@@ -35,7 +35,7 @@ const ProfessionalMarquee = () => {
           >
             {/* Star separator */}
             <motion.div
-              className="text-green-400 mx-3 sm:mx-4 md:mx-6"
+              className="text-white mx-3 sm:mx-4 md:mx-6"
               animate={{
                 rotate: [0, 360],
                 scale: [1, 1.2, 1],
@@ -67,7 +67,12 @@ const ProfessionalMarquee = () => {
   };
 
   return (
-    <div className="sticky top-0 z-[500] w-full bg-gradient-to-r from-slate-900 via-green-900 to-slate-900 border-b border-green-500/20 shadow-lg backdrop-blur-sm overflow-hidden">
+    <div
+      className="sticky top-22 z-[500] w-full    overflow-hidden"
+      style={{
+        background: "#121c72",
+      }}
+    >
       {/* Responsive height */}
       <div className="h-10 sm:h-12 md:h-13 flex items-center">
         <div className="w-full overflow-hidden relative">

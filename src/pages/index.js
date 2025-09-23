@@ -17,7 +17,15 @@ export default function Home() {
     <>
       <Header />
       <Hero />
-      <Placement />
+      <Placement
+        paragraph="100% PLACEMENT"
+        title={
+          <span>
+            Over 12000+ Careers Launched with <br /> Impressive Salary Packages
+          </span>
+        }
+        bgColor="#FDF6E4"
+      />
       <CompanyLogoDoubleCarousel />
       <CourseGrid />
       <Testimonials />

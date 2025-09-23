@@ -17,11 +17,17 @@ import Enroll2 from "../../components/cyber_page/Enroll2";
 import ProfessionalMarquee from "../../components/ProfessionalMarquee";
 import ITStruggleSection from "../../components/main/ITStruggleSection";
 import ProfessionalMarqueeForSimpleText from "../../components/ProfessionalMarqueeForSimpleText";
+import Student2 from "../../components/cyber_page/student2";
 
 export default function Full_stack() {
   const heroData = {
     title: "Step Into the World of High-Paying IT Careers",
-    subtitle: "Become a Full Stack Java Developer",
+    subtitle: (
+      <span className="text-[#FFFFFFCC]">
+        Become a{" "}
+        <span className="text-white font-bold">Full Stack Java Developer</span>
+      </span>
+    ),
 
     // description: (
     //   <ul className="list-disc pl-5 text-[18px] md:text-[20px] md:max-w-xl font-normal space-y-2">
@@ -30,6 +36,7 @@ export default function Full_stack() {
     //     <li>Master Coding Skills</li>
     //   </ul>
     // ),
+
     section: [
       {
         imgSrc: "/icon/s7.png",
@@ -52,7 +59,7 @@ export default function Full_stack() {
     noticePara: "Limited Seats. Register your interest for FREE.",
     backgroundImage: "/icon/java_bg.webp",
     instituteNote:
-      "iTpreneur is a hallmark of quality and a highly regarded IT Training & Job Placement institute in India",
+      "iTpreneur is a hallmark of quality and a highly regarded \n IT Training & Job Placement institute in India",
     partnerLogos: [
       {
         src: "/icon/aicte.png",
@@ -323,11 +330,17 @@ export default function Full_stack() {
 
   return (
     <>
-      <ProfessionalMarquee />
       <Header2 />
+      <ProfessionalMarquee />
+
       <Hero2 data={heroData} pageSource={"Java_Full_Stack_Developer_meta"} />
       <ProfessionalMarqueeForSimpleText />
-      <StudentCarousel
+      <Student2
+        title="Struggling to start your IT career?"
+        paragraph="Join over 12,000+ people who’ve kickstarted their careers with great salary packages."
+        bgColor="#ffffff"
+      />
+      {/* <StudentCarousel
         title={
           <span className="text-[#163123]">
             Struggling to start your IT career?
@@ -337,7 +350,7 @@ export default function Full_stack() {
           "Join over 12,000+ people who’ve kickstarted their careers with great salary packages."
         }
         students={profiles}
-      />
+      /> */}
       <Partner_slider />
       <ITStruggleSection data={itStruggleData} />
       <CyberSecurityBenefits

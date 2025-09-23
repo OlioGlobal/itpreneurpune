@@ -31,7 +31,7 @@ const ProfessionalMarqueeForSimpleText = () => {
           >
             {/* Star separator */}
             <motion.div
-              className="text-green-400 mx-3 sm:mx-4 md:mx-6"
+              className="text-white mx-3 sm:mx-4 md:mx-6"
               animate={{
                 rotate: [0, 360],
                 scale: [1, 1.2, 1],
@@ -63,8 +63,12 @@ const ProfessionalMarqueeForSimpleText = () => {
   };
 
   return (
-    <div className="z-[50] w-full bg-gradient-to-r from-slate-900 via-green-900 to-slate-900 border-b border-green-500/20 shadow-lg backdrop-blur-sm overflow-hidden">
-      {/* Responsive height */}
+    <div
+      className="z-[50] w-full border-b border-green-500/20 shadow-lg backdrop-blur-sm overflow-hidden"
+      style={{
+        background: "#121c72",
+      }}
+    >
       <div className="h-10 sm:h-12 md:h-13 flex items-center">
         <div className="w-full overflow-hidden relative">
           <motion.div
@@ -86,7 +90,6 @@ const ProfessionalMarqueeForSimpleText = () => {
           </motion.div>
         </div>
       </div>
-
       {/* Mobile optimization */}
       <style jsx>{`
         @media (max-width: 640px) {

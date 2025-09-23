@@ -6,7 +6,11 @@ import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-export default function EmblaCarousel() {
+export default function EmblaCarousel({
+  title = "Over 12000+ Careers Launched with Impressive Salary Packages",
+  paragraph = "100% PLACEMENT",
+  bgColor = "#EDF2E4",
+}) {
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
@@ -29,17 +33,19 @@ export default function EmblaCarousel() {
   }));
 
   return (
-    <div className="bg-[#EDF2E4] ">
-      <div className="text-center  py-16 max flex flex-col gap-8  px-[5%]">
+    <div className={`w-full`} style={{ backgroundColor: bgColor }}>
+      <div className="text-center py-16 max flex flex-col gap-8 px-[5%]">
+        {/* Heading Section */}
         <div data-aos="fade-up">
           <p className="text-[#26784e] mb-2 text-[18px] md:text-[22px] font-bold">
-            100% PLACEMENT
+            {paragraph}
           </p>
-          <h2 className="text-[#0a1f14] font-bold text-[24px]  sm:text-[32px] md:text-[35px] lg:text-[40px]  leading-[1.2]">
-            Over <span className="text-[#246a3e]">12000+</span> Careers Launched
-            with Impressive <br /> Salary Packages
+          <h2 className="text-[#0a1f14] font-bold text-[24px] sm:text-[32px] md:text-[35px] lg:text-[40px] leading-[1.2]">
+            {title}
           </h2>
         </div>
+
+        {/* Carousel Section */}
         <div className="relative w-full overflow-hidden" data-aos="fade-up">
           <div className="embla" ref={emblaRef}>
             <div className="embla__container flex">

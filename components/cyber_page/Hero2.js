@@ -17,22 +17,54 @@ export default function Hero2({ pageSource, data }) {
   return (
     <>
       <div className="relative bg-[#26784E] flex lg:h-[680px] text-white overflow-hidden">
-        <div className="absolute inset-0 z-0">
+        {/* Desktop & Tablet Background */}
+        <div className="absolute inset-0 z-0 hidden md:block">
           <div
             className="w-full h-full bg-cover bg-center bg-no-repeat"
             style={{
-              backgroundImage: `linear-gradient(233.41deg, rgba(20, 47, 33, 0) 28.7%, #142F21 63.37%), url('${backgroundImage}')`,
+              backgroundImage: `linear-gradient(293.16deg, #017D3E 5.94%, #16228E 46.95%), url('${backgroundImage}')`,
             }}
           />
         </div>
 
-        <div className="relative z-10 flex flex-col lg:flex-row px-[5%] py-10 gap-12 w-full max">
+        {/* Mobile Background */}
+        <div className="absolute inset-0 z-0 block md:hidden">
+          <div
+            className="w-full h-full bg-cover bg-center bg-no-repeat"
+            style={{
+              backgroundImage: `linear-gradient(189.5deg, #16228E 57.9%, #017D3E 76.71%), url('${backgroundImage}')`,
+            }}
+          />
+        </div>
+
+        <div className="relative z-10 flex flex-col lg:flex-row px-[5%] py-10 md:py-10 gap-12 w-full max">
           <div className="lg:w-[80%] flex flex-col gap-6 justify-center">
-            <h1 className="text-[30px] sm:text-[50px] md:text-[58px] lg:text-[px] leading-[1.1] font-bold">
+            <div>
+              <div className="inline-flex items-center gap-1 rounded-full bg-white px-3 py-1 shadow-md">
+                {/* Google "G" logo */}
+                <div className="flex gap-2 items-center">
+                  <img
+                    src="/icon/google.png"
+                    alt="Google"
+                    className="h-6 w-6 "
+                  />
+
+                  {/* Rating */}
+                  <p className="text-black text-[20px] font-bold">4.6</p>
+                </div>
+
+                {/* Star */}
+                <span className="text-yellow-500 text-[24px] pl-1">★</span>
+
+                {/* Reviews */}
+                <span className="text-black text-sm">( 2,087 Reviews)</span>
+              </div>
+            </div>
+            <h1 className="text-[30px] sm:text-[50px] md:text-[58px] lg:text-[px] max-w-3xl leading-[1.1] font-bold">
               <span>{title}</span>
             </h1>
             {subtitle && (
-              <p className="text-[22px] md:text-[24px] leading-[30px] font-bold">
+              <p className="text-[22px] md:text-[24px] leading-[30px]  ">
                 {subtitle}
               </p>
             )}
@@ -43,7 +75,7 @@ export default function Hero2({ pageSource, data }) {
             )}
 
             {section && (
-              <div className="flex w-full py-5 divide-x divide-gray-500/40">
+              <div className="flex w-full py-5 divide-x  md:gap-4 divide-gray-500/40">
                 {section.map((item, idx) => (
                   <div
                     key={idx}
@@ -62,7 +94,7 @@ export default function Hero2({ pageSource, data }) {
                       <div className="text-xl font-bold text-white mb-1">
                         {item.main}
                       </div>
-                      <div className="text-md text-emerald-100 font-medium">
+                      <div className="text-md text-[#FFFFFFCC] font-medium">
                         {item.sub}
                       </div>
                     </div>
@@ -70,26 +102,7 @@ export default function Hero2({ pageSource, data }) {
                 ))}
               </div>
             )}
-
-            {/* {notice && (
-              <div>
-                <p className="text-[18px] font-bold flex items-center gap-2 animate-floatText">
-                  <span className="relative flex h-3 w-3">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-3 w-3 bg-green-600"></span>
-                  </span>
-                  {notice}
-                </p>
-                <p className="pl-5">{noticePara}</p>
-              </div>
-            )} */}
           </div>
-
-          {/* {noticePara && (
-            <p className="text-[18px] font-bold flex items-center gap-2 ">
-              {noticePara}
-            </p>
-          )} */}
 
           <div className="lg:w-[50%] flex justify-end items-center">
             <Form2 pageSource={pageSource} />
@@ -97,7 +110,7 @@ export default function Hero2({ pageSource, data }) {
         </div>
       </div>
 
-      <div className="bg-[#F1F3EF]">
+      <div className="bg-[#F1F3EF] py-5">
         <div className="flex flex-col gap-4 justify-center items-center py-6 px-[5%] max-w-screen-2xl mx-auto">
           {/* Institute Note Section */}
           <div className="text-center mb-3">
@@ -124,7 +137,7 @@ export default function Hero2({ pageSource, data }) {
                   />
                 </div>
 
-                <span className="text-center text-[12px] md:text-[14px] font-medium mt-2">
+                <span className="text-center text-[12px] md:text-[15px] font-medium mt-2">
                   {logo.name}
                 </span>
               </div>

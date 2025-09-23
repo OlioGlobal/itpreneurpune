@@ -70,13 +70,11 @@ export default function Form2({ idPrefix = "top", pageSource = "itpm_25" }) {
     return newErrors;
   };
 
-  // Function to detect traffic source
   const getTrafficSource = () => {
     if (typeof window === "undefined") return "direct";
 
     const urlParams = new URLSearchParams(window.location.search);
 
-    // Check UTM parameters
     if (urlParams.get("utm_source")) return urlParams.get("utm_source");
     if (urlParams.get("source")) return urlParams.get("source");
 
@@ -92,7 +90,6 @@ export default function Form2({ idPrefix = "top", pageSource = "itpm_25" }) {
     } else {
       setLoading(true);
       try {
-        // Get the full current URL with all UTM parameters
         const fullUrl = window.location.href;
         const source = getTrafficSource();
 
@@ -146,7 +143,10 @@ export default function Form2({ idPrefix = "top", pageSource = "itpm_25" }) {
 
   return (
     <div className="flex items-center justify-center w-full">
-      <div className="bg-white p-4 sm:p-6 rounded-[10px] shadow-md w-full">
+      <div
+        style={{ background: "#eceff5" }}
+        className="bg-[] p-4 sm:p-6 rounded-[5px] shadow-md w-full"
+      >
         <div className="mb-5">
           <h2 className="text-[22px] leading-[30px] font-bold text-[#0a1f14]">
             Register For Free
@@ -156,106 +156,113 @@ export default function Form2({ idPrefix = "top", pageSource = "itpm_25" }) {
           </p>
         </div>
         <form className="space-y-4" onSubmit={handleSubmit}>
-          {/* Name Field */}
-          <div className="relative">
-            <input
-              type="text"
-              name="name"
-              id={`${idPrefix}name`}
-              value={formData.name}
-              onChange={handleChange}
-              className="w-full border text-black border-[#26784E] px-4 pt-5 pb-2 focus:outline-none focus:ring-1 focus:ring-green-600 peer"
-              placeholder=""
-            />
-            <label
-              htmlFor={`${idPrefix}name`}
-              className="absolute text-[16px] text-gray-500 duration-300 transform -translate-y-4 scale-75 top-4 z-10 origin-[0] left-4 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4"
-            >
-              Name
-            </label>
-            {errors.name && (
-              <p className="text-red-600 text-[16px] mt-1">{errors.name}</p>
-            )}
+          {/* First Row: Name and City */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {/* Name Field */}
+            <div className="relative">
+              <input
+                type="text"
+                name="name"
+                id={`${idPrefix}name`}
+                value={formData.name}
+                onChange={handleChange}
+                className="w-full border text-black border-[#B8D0C4] rounded-[5px] px-3 pt-4 pb-2 focus:outline-none focus:ring-1 focus:ring-green-600 peer"
+                placeholder=" "
+              />
+              <label
+                htmlFor={`${idPrefix}name`}
+                className="absolute text-[16px] text-gray-500 duration-300 transform -translate-y-4 scale-75 top-3 z-10 origin-[0] left-4 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4"
+              >
+                Enter Full Name
+              </label>
+              {errors.name && (
+                <p className="text-red-600 text-[14px] mt-1">{errors.name}</p>
+              )}
+            </div>
+
+            {/* City Field */}
+            <div className="relative">
+              <input
+                type="text"
+                name="city"
+                id={`${idPrefix}city`}
+                value={formData.city}
+                onChange={handleChange}
+                className="w-full border text-black border-[#B8D0C4] rounded-[5px] px-3 pt-4 pb-2 focus:outline-none focus:ring-1 focus:ring-green-600 peer"
+                placeholder=" "
+              />
+              <label
+                htmlFor={`${idPrefix}city`}
+                className="absolute text-[16px] text-gray-500 duration-300 transform -translate-y-4 scale-75 top-3 z-10 origin-[0] left-4 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4"
+              >
+                Enter City
+              </label>
+              {errors.city && (
+                <p className="text-red-600 text-[14px] mt-1">{errors.city}</p>
+              )}
+            </div>
           </div>
 
-          {/* Mobile Field */}
-          <div className="relative">
-            <input
-              type="text"
-              name="mobile"
-              id={`${idPrefix}mobile`}
-              maxLength={10}
-              value={formData.mobile}
-              onChange={handleChange}
-              className="w-full border text-black border-[#26784E] px-4 pt-5 pb-2 focus:outline-none focus:ring-1 focus:ring-green-600 peer"
-              placeholder=""
-            />
-            <label
-              htmlFor={`${idPrefix}mobile`}
-              className="absolute text-[16px] text-gray-500 duration-300 transform -translate-y-4 scale-75 top-4 z-10 origin-[0] left-4 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4"
-            >
-              Mobile
-            </label>
-            {errors.mobile && (
-              <p className="text-red-600 text-[16px] mt-1">{errors.mobile}</p>
-            )}
+          {/* Second Row: Mobile and Email */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {/* Mobile Field */}
+            <div className="relative">
+              <input
+                type="text"
+                name="mobile"
+                id={`${idPrefix}mobile`}
+                maxLength={10}
+                value={formData.mobile}
+                onChange={handleChange}
+                className="w-full border text-black border-[#B8D0C4] rounded-[5px] px-3 pt-4 pb-2 focus:outline-none focus:ring-1 focus:ring-green-600 peer"
+                placeholder=" "
+              />
+              <label
+                htmlFor={`${idPrefix}mobile`}
+                className="absolute text-[16px] text-gray-500 duration-300 transform -translate-y-4 scale-75 top-3 z-10 origin-[0] left-4 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4"
+              >
+                Enter Mobile
+              </label>
+              {errors.mobile && (
+                <p className="text-red-600 text-[14px] mt-1">{errors.mobile}</p>
+              )}
+            </div>
+
+            {/* Email Field */}
+            <div className="relative">
+              <input
+                type="email"
+                name="email"
+                id={`${idPrefix}email`}
+                value={formData.email}
+                onChange={handleChange}
+                className="w-full border text-black border-[#B8D0C4] rounded-[5px] px-3 pt-4 pb-2 focus:outline-none focus:ring-1 focus:ring-green-600 peer"
+                placeholder=" "
+              />
+              <label
+                htmlFor={`${idPrefix}email`}
+                className="absolute text-[16px] text-gray-500 duration-300 transform -translate-y-4 scale-75 top-3 z-10 origin-[0] left-4 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4"
+              >
+                Enter Email Address
+              </label>
+              {errors.email && (
+                <p className="text-red-600 text-[14px] mt-1">{errors.email}</p>
+              )}
+            </div>
           </div>
 
-          {/* Email Field */}
-          <div className="relative">
-            <input
-              type="email"
-              name="email"
-              id={`${idPrefix}email`}
-              value={formData.email}
-              onChange={handleChange}
-              className="w-full border text-black border-[#26784E] px-4 pt-5 pb-2 focus:outline-none focus:ring-1 focus:ring-green-600 peer"
-              placeholder=" "
-            />
-            <label
-              htmlFor={`${idPrefix}email`}
-              className="absolute text-[16px] text-gray-500 duration-300 transform -translate-y-4 scale-75 top-4 z-10 origin-[0] left-4 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4"
-            >
-              Email
-            </label>
-            {errors.email && (
-              <p className="text-red-600 text-[16px] mt-1">{errors.email}</p>
-            )}
-          </div>
-
-          {/* City Field */}
-          <div className="relative">
-            <input
-              type="text"
-              name="city"
-              id={`${idPrefix}city`}
-              value={formData.city}
-              onChange={handleChange}
-              className="w-full border text-black border-[#26784E] px-4 pt-5 pb-2 focus:outline-none focus:ring-1 focus:ring-green-600 peer"
-              placeholder=""
-            />
-            <label
-              htmlFor={`${idPrefix}city`}
-              className="absolute text-[16px] text-gray-500 duration-300 transform -translate-y-4 scale-75 top-4 z-10 origin-[0] left-4 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4"
-            >
-              City
-            </label>
-            {errors.city && (
-              <p className="text-red-600 text-[16px] mt-1">{errors.city}</p>
-            )}
-          </div>
-
-          {/* Education Dropdown */}
+          {/* Education Dropdown - Full Width */}
           <div className="relative">
             <select
               name="education"
               id={`${idPrefix}education`}
               value={formData.education}
               onChange={handleChange}
-              className="w-full border text-black border-[#26784E] px-4 py-3 focus:outline-none focus:ring-1 focus:ring-green-600 bg-white appearance-none"
+              className="w-full border text-gray-500 border-[#B8D0C4] rounded-[5px] px-4 py-3 focus:outline-none focus:ring-1 focus:ring-green-600  appearance-none"
+              style={{ background: "#eceff5" }}
             >
               <option value="" disabled>
-                Select Your Highest Education*
+                Select Your Highest Education
               </option>
               {educationOptions.map((option, index) => (
                 <option key={index} value={option}>
@@ -273,7 +280,7 @@ export default function Form2({ idPrefix = "top", pageSource = "itpm_25" }) {
               </svg>
             </div>
             {errors.education && (
-              <p className="text-red-600 text-[16px] mt-1">
+              <p className="text-red-600 text-[14px] mt-1">
                 {errors.education}
               </p>
             )}
@@ -294,34 +301,34 @@ export default function Form2({ idPrefix = "top", pageSource = "itpm_25" }) {
           </p>
         )}
 
-        <div className="flex items-center rounded-md bg-gray-200 px-3 py-2 w-full mt-2 animate-floatText">
-          {/* Avatars group */}
+        <div className="flex items-center rounded-md bg-white px-3 py-2 w-full mt-4 animate-floatText">
           <div className="flex -space-x-3 flex-shrink-0">
             <img
               src="/icon/student-1.png"
               alt="Student 1"
-              className="w-10 h-10 rounded-full border-2 border-white object-cover"
+              className="w-8 h-8 rounded-full border-2 border-white object-cover"
             />
             <img
               src="/icon/student-2.png"
               alt="Student 2"
-              className="w-10 h-10 rounded-full border-2 border-white object-cover"
+              className="w-8 h-8 rounded-full border-2 border-white object-cover"
             />
             <img
               src="/icon/student-3.png"
               alt="Student 3"
-              className="w-10 h-10 rounded-full border-2 border-white object-cover"
+              className="w-8 h-8 rounded-full border-2 border-white object-cover"
             />
           </div>
-          <span className="ml-4 text-[15px] font-bold text-[#133522] ">
-            2735 Students Have Registered So Far!
+          <span className="ml-4 text-[15px] font-bold text-[#133522]">
+            <span className="text-[#017D3E]">2735</span> Students Have
+            Registered So Far!
           </span>
         </div>
 
-        <div className="text-black text-center mt-2">
-          Limited Seats. Register your interest for FREE.
+        <div className="text-black text-center mt-2 font-inter italic text-[14px] leading-[161%]">
+          Limited Seats.{" "}
+          <span className="font-bold not-italic">Register now.</span>
         </div>
-
       </div>
     </div>
   );

@@ -19,7 +19,7 @@ html {
   animation: floatText 1s ease-in-out infinite;
 }
 .rm {
-  @apply py-8 sm:py-10 md:py-12 lg:py-14;
+  @apply py-8 sm:py-10 md:py-9 lg:py-10;
 }
 .h2t {
   @apply text-[24px] sm:text-[32px] md:text-[35px] lg:text-[40px];

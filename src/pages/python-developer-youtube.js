@@ -235,8 +235,8 @@ export default function Full_stack() {
 
   return (
     <>
-      <ProfessionalMarquee />
       <Header2 />
+      <ProfessionalMarquee />
       <Hero2 data={heroData} pageSource={"Python_Developer_youtube"} />
       <ProfessionalMarqueeForSimpleText />
       <StudentCarousel
