@@ -84,7 +84,7 @@ const ITStruggleSection = ({
         {/* Right side - Video */}
         <div className="w-full lg:w-[35%]">
           {/* Step 3: Create the relative container */}
-          <div className="relative overflow-hidden rounded-xl bg-black h-[400px] md:h-[500px] lg:h-[600px]">
+          <div className="relative overflow-hidden rounded-xl bg-black h-[460px] md:h-[500px] lg:h-[550px]">
             <video
               ref={videoRef}
               src={videoSrc}
