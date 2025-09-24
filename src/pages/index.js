@@ -431,22 +431,22 @@ export default function Full_stack() {
             Tools and Technologies <br /> That You Will Learn
           </span>
         }
-        description="With this IT course, you’ll gain hands-on mastery of the tools and technologies step by step."
+        description="With this IT course, you'll gain hands-on mastery of the tools and technologies step by step."
       />
       <WhyChooseITpreneur
-        title={"Shaping Tomorrow’s Tech Workforce"}
+        title={"Shaping Tomorrow&apos;s Tech Workforce"}
         subtitle={"We Are iTpreneur"}
         para={
           <span>
             iTpreneur is one of the Best IT Training Institutes in Pune, India,
-            dedicated to introducing new skills and talent into India's IT
+            dedicated to introducing new skills and talent into India&apos;s IT
             sector. We take pride in offering comprehensive services that span
             IT recruitment and skill development, helping over 4000 individuals
             launch their careers in tech while simultaneously supporting their
             professional growth through expert training and strategic placement.
             <br />
             <br />
-            With a global outlook and a deep-rooted focus on India's IT
+            With a global outlook and a deep-rooted focus on India&apos;s IT
             ecosystem, iTpreneur aims to bridge the skills gap by preparing
             candidates for the workforce of tomorrow. Our mission is clear: To
             drive IT growth, both locally and globally, for the benefit of our
