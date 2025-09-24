@@ -1,19 +1,27 @@
 import React from "react";
 import Image from "next/image";
 
-export default function ProgramHighlights({ title, data }) {
+export default function ProgramHighlights({ title, data, subtitle }) {
   return (
-    <section className="px-[5%] rm bg-white max">
-      <h2 className="font-bold mb-8 text-[#163123] text-center h2t leading-[1.2]">
-        {title}
-      </h2>
+    <section id="Highlights" className="px-[5%] rm bg-white max">
+      <div className="mb-4">
+        {" "}
+        <h2 className="font-bold mb-2 text-[#163123] text-center h2t leading-[1.2]">
+          {title}
+        </h2>
+        {subtitle && (
+          <p className="text-[#4D5C54] text-[15px] md:text-[16px]  text-center ">
+            {subtitle}
+          </p>
+        )}
+      </div>
 
-      <div className="flex flex-wrap cursor-default justify-center">
+      <div className="flex flex-wrap cursor-default justify-between">
         {data.map((service, index) => (
           <div
             key={service.id}
             data-aos="zoom-in"
-            className={`w-full md:w-1/2 lg:w-1/3 sm:px-4 py-3 md:py-5 ${
+            className={`w-full md:w-1/2 lg:w-1/5 sm:px-2 py-3 md:py-5 ${
               index > 2 ? "lg:w-1/2" : ""
             }`}
           >

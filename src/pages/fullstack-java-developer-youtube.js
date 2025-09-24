@@ -18,10 +18,12 @@ import ProfessionalMarquee from "../../components/ProfessionalMarquee";
 import ITStruggleSection from "../../components/main/ITStruggleSection";
 import ProfessionalMarqueeForSimpleText from "../../components/ProfessionalMarqueeForSimpleText";
 import Student2 from "../../components/cyber_page/student2";
+import Testimonials from "../../components/main/Reviews";
 
 export default function Full_stack() {
   const heroData = {
     title: "Step Into the World of High-Paying IT Careers",
+    Partnertitle: "Our Accreditations",
     subtitle: (
       <span className="text-[#FFFFFFCC]">
         Become a{" "}
@@ -64,27 +66,47 @@ export default function Full_stack() {
       {
         src: "/icon/aicte.png",
         alt: "AICTE",
-        name: "All India Council for Technical Education",
+        name: (
+          <span>
+            All India Council <br /> for Technical <br /> Education
+          </span>
+        ),
       },
       {
         src: "/icon/nsdc-logo.png",
         alt: "NSDC",
-        name: "National Skill Development Corporation (NSDC)",
+        name: (
+          <span>
+            National Skill <br /> Development Corporation (NSDC)
+          </span>
+        ),
       },
       {
         src: "/icon/aictsd-logo.png",
         alt: "AICSTD",
-        name: "All India Council for Technical Skill Development",
+        name: (
+          <spna>
+            All India Council <br /> for Technical Skill Development
+          </spna>
+        ),
       },
       {
         src: "/icon/skill-india-logo.png",
         alt: "Skill India",
-        name: "National Skills Development Mission of India",
+        name: (
+          <span>
+            National Skills Development Mission <br /> of India
+          </span>
+        ),
       },
       {
         src: "/icon/iso.png",
         alt: "ISO",
-        name: "International Organization for Standardization",
+        name: (
+          <span>
+            International <br /> Organization <br /> for Standardization
+          </span>
+        ),
       },
     ],
   };
@@ -180,7 +202,7 @@ export default function Full_stack() {
     },
     {
       id: 3,
-      title: "Hands-On Labs",
+      title: "Hands-On experience",
       description: "Build real-world projects and showcase them on GitHub",
       image: "/icon/h3.webp",
     },
@@ -296,10 +318,10 @@ export default function Full_stack() {
     { title: "Core Java", icon: "/tech/java-1.png" },
     { title: "Spring", icon: "/tech/java-2.png" },
     { title: "Spring Boot", icon: "/tech/java-3.png" },
-    { title: "Spring Security", icon: "/tech/java-4.png" },
     { title: "Maven", icon: "/tech/java-5.png" },
     { title: "J-Unit 5", icon: "/tech/java-6.png" },
     { title: "Mockito", icon: "/tech/java-7.png" },
+    { title: "Spring Security", icon: "/tech/java-4.png" },
     { title: "HTML - CSS - JS", icon: "/tech/java-8.png" },
     { title: "Angular", icon: "/tech/java-9.png" },
     { title: "My SQL", icon: "/tech/java-10.png" },
@@ -406,12 +428,28 @@ export default function Full_stack() {
         description="With Full Stack Java Development, you'll master these tools step-by-step."
       />
       <WhyChooseITpreneur
-        title={"Why Choose iTpreneur?"}
+        title={"Shaping Tomorrow’s Tech Workforce"}
+        subtitle={"We Are iTpreneur"}
         para={
-          "At iTpreneur, we prioritize not only delivering cutting-edge technical knowledge but also building a strong, career-oriented profile for each student. With personalized mentorship and dedicated support, our goal is to make every student job-ready."
+          <span>
+            iTpreneur is one of the Best IT Training Institutes in Pune, India,
+            dedicated to introducing new skills and talent into India's IT
+            sector. We take pride in offering comprehensive services that span
+            IT recruitment and skill development, helping over 4000 individuals
+            launch their careers in tech while simultaneously supporting their
+            professional growth through expert training and strategic placement.
+            <br />
+            <br />
+            With a global outlook and a deep-rooted focus on India's IT
+            ecosystem, iTpreneur aims to bridge the skills gap by preparing
+            candidates for the workforce of tomorrow. Our mission is clear: To
+            drive IT growth, both locally and globally, for the benefit of our
+            candidates, clients, and the ever-expanding IT sector.
+          </span>
         }
       />
-      <HearformStud />
+      {/* <HearformStud /> */}
+      <Testimonials title="Hear It From Our Students" subtitle={null} />
       <CareerSuccessComponents />
       <FaqSection faqData={faqData} />
       <Enroll2

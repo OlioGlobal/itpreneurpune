@@ -12,6 +12,7 @@ export default function Hero2({ pageSource, data }) {
     backgroundImage,
     instituteNote,
     partnerLogos,
+    Partnertitle,
   } = data;
 
   return (
@@ -64,9 +65,9 @@ export default function Hero2({ pageSource, data }) {
               <span>{title}</span>
             </h1>
             {subtitle && (
-              <p className="text-[22px] md:text-[24px] leading-[30px]  ">
+              <span className="text-[22px] md:text-[24px] leading-[30px]  ">
                 {subtitle}
-              </p>
+              </span>
             )}
             {description && (
               <div className="text-[18px] md:text-[20px] md:max-w-xl font-normal">
@@ -110,11 +111,14 @@ export default function Hero2({ pageSource, data }) {
         </div>
       </div>
 
-      <div className="bg-[#F1F3EF] py-5">
-        <div className="flex flex-col gap-4 justify-center items-center py-6 px-[5%] max-w-screen-2xl mx-auto">
+      <div className="bg-[#F1F3EF] py-5 ">
+        <div className="flex  flex-col gap-4 justify-center items-center py-6 px-[5%] max-w-7xl mx-auto">
           {/* Institute Note Section */}
           <div className="text-center mb-3">
-            <p className="text-[#0A1F14] text-[16px] font-semibold md:text-[24px]">
+            <h2 className="h2t font-bold text-[#163123] leading-[1.3]">
+              {Partnertitle}
+            </h2>
+            <p className="text-[16px] text-[#4D5C54] mt-2">
               {instituteNote?.split("\n").map((line, i) => (
                 <span key={i}>{line}</span>
               ))}

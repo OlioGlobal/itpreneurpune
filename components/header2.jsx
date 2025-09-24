@@ -42,14 +42,14 @@ export default function Header2() {
           <div className="flex text-[18px] text-[#0A1F14] items-center gap-8">
             <div className="hidden lg:flex text-[18px] text-[#0A1F14] items-center gap-8">
               <Link href="#about" className="hover:text-green-700 transition">
-                About Us
+                About iTpreneur
               </Link>
-              <Link
+              {/* <Link
                 href="#testimonials"
                 className="hover:text-green-700 transition"
               >
                 Testimonials
-              </Link>
+              </Link> */}
               <Link
                 href="#placements"
                 className="hover:text-green-700 transition"
@@ -57,10 +57,16 @@ export default function Header2() {
                 Our Placements
               </Link>
               <Link
-                href="#benefits"
+                href="#Partners"
                 className="hover:text-green-700 transition"
               >
-                Benefits
+                Placement Partners
+              </Link>
+              <Link
+                href="#Highlights"
+                className="hover:text-green-700 transition"
+              >
+                Program Highlights
               </Link>
             </div>
 
@@ -73,7 +79,7 @@ export default function Header2() {
              hover:bg-white hover:text-[#017D3E] hover:shadow-[#017D3E]/20 overflow-hidden"
             >
               <span className="relative z-10 flex items-center gap-2">
-                Apply Now
+                Request Call Back
                 <img
                   src="/icon/chat-box.png"
                   alt=""

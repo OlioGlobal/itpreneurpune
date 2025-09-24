@@ -42,7 +42,7 @@ export default function WhyChoose({ data, heading, subheading }) {
             {heading}
           </h2>
           {subheading && (
-            <p className="text-[#4D5C54] text-[15px] md:text-[16px] mt-2">
+            <p className="text-[#4D5C54] text-[15px] md:text-[16px] mt-2 max-w-3xl mx-auto ">
               {subheading}
             </p>
           )}
@@ -68,7 +68,7 @@ export default function WhyChoose({ data, heading, subheading }) {
                     <h3 className="text-[20px] font-bold text-white mb-2">
                       {card.title}
                     </h3>
-                    <span className="text-white text-[16px] font-normal">
+                    <span className="text-white text-[16px] font-normal ">
                       {card.description}
                     </span>
                   </div>

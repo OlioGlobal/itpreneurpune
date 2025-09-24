@@ -80,7 +80,10 @@ const reviews = [
   },
 ];
 
-export default function EmblaCarousel() {
+export default function Testimonials({
+  title = "Hear It From Our Students",
+  subtitle = "TESTIMONIALS",
+}) {
   const [emblaRef, emblaApi] = useEmblaCarousel(
     {
       loop: true,
@@ -117,12 +120,18 @@ export default function EmblaCarousel() {
   return (
     <div className="px-[5%] py-16 text-center max">
       <div className="mb-8">
-        <p className="text-[#26784e] mb-2 text-[18px] md:text-[22px] font-bold">
-          TESTIMONIALS
-        </p>
-        <h2 className="text-[#0a1f14] font-bold text-[24px]  sm:text-[32px] md:text-[35px] lg:text-[40px]  leading-[1.2]">
-          Hear It From Our Students
-        </h2>
+        {subtitle && (
+          <p className="text-[#26784e] mb-2 text-[18px] md:text-[22px] font-bold">
+            {subtitle}
+          </p>
+        )}
+
+        {/* Show title only if provided */}
+        {title && (
+          <h2 className="text-[#0a1f14] font-bold text-[24px] sm:text-[32px] md:text-[35px] lg:text-[40px] leading-[1.2] mb-8">
+            {title}
+          </h2>
+        )}
       </div>
       <div className="flex flex-col lg:flex-row gap:5 sm:gap-10 ">
         <div className="lg:w-[20%] flex flex-col justify-center items-center">

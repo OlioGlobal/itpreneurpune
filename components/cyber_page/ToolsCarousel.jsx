@@ -52,7 +52,7 @@ export default function ToolsGrid({ tools, title, description }) {
 
   return (
     <section className="px-[5%] mb-8 max bg-white">
-      <div className="flex flex-col items-center text-center gap-3 mb-8 leading-[1.2]">
+      <div className="flex flex-col items-center text-center gap-3 mb-12 leading-[1.2]">
         <div>
           <h2 className="h2t font-bold text-[#163123]">{title}</h2>
           <p className="text-[16px] text-[#4D5C54] mt-2">{description}</p>

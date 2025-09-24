@@ -3,8 +3,17 @@ import nodemailer from "nodemailer";
 export default async function handler(req, res) {
   if (req.method !== "POST") return res.status(405).end();
 
-  const { name, email, mobile, city, education, pageSource, fullUrl, source } =
-    req.body;
+  const {
+    name,
+    email,
+    mobile,
+    city,
+    education,
+    pageSource,
+    fullUrl,
+    source,
+    program,
+  } = req.body;
 
   if (!name || !email || !mobile) {
     return res.status(400).json({ message: "Missing fields" });
@@ -51,6 +60,7 @@ export default async function handler(req, res) {
         education,
         pageName: pageSource,
         fullUrl,
+        program,
       }),
     });
 
