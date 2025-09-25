@@ -51,7 +51,7 @@ export default function About_us({ title, para, subtitle }) {
           <video
             ref={videoRef}
             src="/videos/about_us.mp4"
-            poster="/thumbnails/full-stack-java-thumnail.png"
+            poster="/thumbnails/about_us.png"
             className="absolute top-0 left-0 w-full h-full object-cover"
             controls={isPlaying}
             onPause={() => setIsPlaying(false)}

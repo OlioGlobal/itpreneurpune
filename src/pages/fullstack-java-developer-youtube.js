@@ -428,7 +428,7 @@ export default function Full_stack() {
         description="With Full Stack Java Development, you'll master these tools step-by-step."
       />
       <WhyChooseITpreneur
-        title={"Shaping Tomorrow&apos;s Tech Workforce"}
+        title={"Shaping Tomorrow's Tech Workforce"}
         subtitle={"We Are iTpreneur"}
         para={
           <span>

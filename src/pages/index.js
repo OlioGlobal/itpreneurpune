@@ -504,7 +504,7 @@ export default function Full_stack() {
 
       <StickyFooter2
         message={
-          "Register yourself for Full Stack Java Development Program with 100% Job Guarantee Assurance"
+          "Join 5000+ successful students with 100% Job Guarantee. Register now!"
         }
       />
     </>

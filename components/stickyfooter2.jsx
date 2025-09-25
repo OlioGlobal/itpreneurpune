@@ -17,11 +17,6 @@ const StickyFooter2 = ({ message }) => {
       <span className="animate-blink-green font-bold relative z-10">
         {message || "Register Now & 100% Guaranteed IT Job Placement Offer"}
       </span>
-
-      <span
-        className="absolute top-0 left-[-50%] w-[50%] h-full bg-white/20 skew-x-12 
-    animate-[shine_3s_linear_infinite]"
-      ></span>
     </div>
   );
 };
