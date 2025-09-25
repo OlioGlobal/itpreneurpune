@@ -68,7 +68,7 @@ const ProfessionalMarquee = () => {
 
   return (
     <div
-      className="sticky top-22 z-[500] w-full    overflow-hidden"
+      className="sticky top-20 z-[500] w-full    overflow-hidden"
       style={{
         background: "#121c72",
       }}

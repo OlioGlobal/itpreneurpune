@@ -1,7 +1,7 @@
 import Image from "next/image";
 import CountUp from "../utils/CountUp";
 
-export default function WhyChooseITpreneur({ title, para, subtitle }) {
+export default function WhyChooseITpreneur({ title, para }) {
   const stats = [
     {
       to: 12000,
@@ -44,11 +44,6 @@ export default function WhyChooseITpreneur({ title, para, subtitle }) {
       {/* Right Content */}
       <div className="w-full md:w-[60%] flex gap-5 md:gap-10 flex-col">
         <div>
-          {subtitle && (
-            <p className="text-[#26784e]  text-[18px] md:text-[22px] font-bold">
-              {subtitle}
-            </p>
-          )}
           <h2 className="h2t font-bold text-[#163123] leading-[1.3]">
             {title}
           </h2>

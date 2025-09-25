@@ -59,3 +59,16 @@ html {
 .text-shine {
   animation: textShine 2.5s linear infinite;
 }
+/* Green blink */
+@keyframes blink-green {
+  0%,
+  100% {
+    color: #22c55e;
+  } /* Tailwind green-500 */
+  50% {
+    color: #ffffff;
+  }
+}
+.animate-blink-green {
+  animation: blink-green 1.2s infinite;
+}
