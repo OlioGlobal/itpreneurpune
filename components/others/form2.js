@@ -258,7 +258,9 @@ export default function Form2({ idPrefix = "top", pageSource = "itpm_25" }) {
               id={`${idPrefix}education`}
               value={formData.education}
               onChange={handleChange}
-              className="w-full border text-gray-500 border-[#B8D0C4] rounded-[5px] px-4 py-3 focus:outline-none focus:ring-1 focus:ring-green-600  appearance-none"
+              className={`w-full border border-[#B8D0C4] rounded-[5px] px-4 py-3 focus:outline-none focus:ring-1 focus:ring-green-600 appearance-none ${
+                formData.education ? "text-black" : "text-gray-500"
+              }`}
               style={{ background: "#eceff5" }}
             >
               <option value="" disabled>
@@ -270,6 +272,7 @@ export default function Form2({ idPrefix = "top", pageSource = "itpm_25" }) {
                 </option>
               ))}
             </select>
+
             <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
               <svg
                 className="fill-current h-4 w-4"

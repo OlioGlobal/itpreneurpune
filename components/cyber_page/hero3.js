@@ -107,7 +107,8 @@ export default function Hero3({ pageSource, data }) {
           </div>
 
           <div className="lg:w-[50%] flex justify-end items-center">
-            <Form3 pageSource={pageSource} />
+            {/* <Form3 pageSource={pageSource} /> */}
+            <Form2 pageSource={pageSource} />
           </div>
         </div>
       </div>

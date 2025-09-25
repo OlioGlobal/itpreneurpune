@@ -37,7 +37,8 @@ export default function Enroll3({ pageSource, title, para }) {
             <p className="text-[15px] md:text-[16px]">{para}</p>
           </div>
           <div className="lg:w-[40%]">
-            <Form3 idPrefix="bottom" pageSource={pageSource} />
+            {/* <Form3 idPrefix="bottom" pageSource={pageSource} /> */}
+            <Form2 idPrefix="bottom" pageSource={pageSource} />
           </div>
         </div>
       </div>
