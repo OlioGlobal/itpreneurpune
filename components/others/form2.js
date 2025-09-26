@@ -21,7 +21,6 @@ export default function Form2({ idPrefix = "top", pageSource = "itpm_25" }) {
     "Bachelor of Commerce",
     "Bachelor of Arts",
     "Diploma Holder",
-    "12th Pass",
     "Other",
   ];
 
@@ -290,13 +289,18 @@ export default function Form2({ idPrefix = "top", pageSource = "itpm_25" }) {
           </div>
 
           {/* Submit Button */}
-          <button
-            type="submit"
-            disabled={loading}
-            className="w-full text-[15px] text-white sm:text-[16px] cursor-pointer bg-[#017D3E] hover:bg-[#076b39] font-medium py-3 rounded-[5px]"
-          >
-            {loading ? "Sending..." : "Register Now"}
-          </button>
+          <div>
+            <button
+              type="submit"
+              disabled={loading}
+              className="w-full text-[15px] text-white sm:text-[16px] cursor-pointer bg-[#017D3E] hover:bg-[#076b39] font-medium py-3 rounded-[5px]"
+            >
+              {loading ? "Sending..." : "Register Now"}
+            </button>
+            <div className="flex items-center gap-2   border-red-300 text-red-500 text-sm ">
+              <span>*Only Undergraduates can apply.</span>
+            </div>
+          </div>
         </form>
         {success && (
           <p className="text-green-600 text-center mt-4 font-medium">
