@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/7q4ny9N4Ita0z647yn20H/_buildManifest.js",
-    "static/7q4ny9N4Ita0z647yn20H/_ssgManifest.js"
+    "static/_ZPx_zQ8iyZd7FjcQ2HIi/_buildManifest.js",
+    "static/_ZPx_zQ8iyZd7FjcQ2HIi/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "rootMainFilesTree": {},
@@ -133,7 +133,8 @@
       "static/chunks/105-f59883aba1555dcf.js",
       "static/chunks/512-4cfa4a758fcde806.js",
       "static/chunks/217-d6e94ce569d96a94.js",
-      "static/chunks/pages/python-developer-b022019adce15bde.js"
+      "static/chunks/532-1e06014ba3d5e21a.js",
+      "static/chunks/pages/python-developer-f453aa25405511a8.js"
     ],
     "/python-developer-meta": [
       "static/chunks/webpack-f5c9bbb7127d32ec.js",
@@ -143,7 +144,8 @@
       "static/chunks/105-f59883aba1555dcf.js",
       "static/chunks/512-4cfa4a758fcde806.js",
       "static/chunks/217-d6e94ce569d96a94.js",
-      "static/chunks/pages/python-developer-meta-725d7509f9b72c68.js"
+      "static/chunks/532-1e06014ba3d5e21a.js",
+      "static/chunks/pages/python-developer-meta-23eb6bc715ccda41.js"
     ],
     "/python-developer-youtube": [
       "static/chunks/webpack-f5c9bbb7127d32ec.js",
@@ -153,7 +155,8 @@
       "static/chunks/105-f59883aba1555dcf.js",
       "static/chunks/512-4cfa4a758fcde806.js",
       "static/chunks/217-d6e94ce569d96a94.js",
-      "static/chunks/pages/python-developer-youtube-f52a3971b4a139e8.js"
+      "static/chunks/532-1e06014ba3d5e21a.js",
+      "static/chunks/pages/python-developer-youtube-6cbe30ab8faf41e5.js"
     ],
     "/software-testing": [
       "static/chunks/webpack-f5c9bbb7127d32ec.js",

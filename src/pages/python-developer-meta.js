@@ -16,11 +16,52 @@ import StickyFooter2 from "../../components/stickyfooter2";
 import Enroll2 from "../../components/cyber_page/Enroll2";
 import ProfessionalMarquee from "../../components/ProfessionalMarquee";
 import ProfessionalMarqueeForSimpleText from "../../components/ProfessionalMarqueeForSimpleText";
+import Student2 from "../../components/cyber_page/student2";
+import Testimonials from "../../components/main/Reviews";
 
 export default function Full_stack() {
+  // const heroData = {
+  //   title: "Master Python Web Development + Data Analytics",
+  //   subtitle: "100% Job Guarantee with Day 1 Offer Letter",
+  //   description:
+  //     "Become a certified Python Web Developer and Data Analyst in just 120 days with hands-on training, real-world projects, and personalized career support. Whether you're a student, fresh graduate, or working professional, this program is designed to help you switch careers with confidence and secure a high-paying job in the IT industry.",
+  //   notice: "Reserve Your Spot — Next Batch Filling Fast",
+  //   backgroundImage: "/icon/python.webp",
+  //   instituteNote:
+  //     "iTpreneur is a hallmark of quality and a highly regarded IT Training & Job Placement institute in India",
+  //   partnerLogos: [
+  //     {
+  //       src: "/icon/aicte.png",
+  //       alt: "AICTE",
+  //       name: "All India Council for Technical Education",
+  //     },
+  //     {
+  //       src: "/icon/nsdc-logo.png",
+  //       alt: "NSDC",
+  //       name: "National Skill Development Corporation (NSDC)",
+  //     },
+  //     {
+  //       src: "/icon/aictsd-logo.png",
+  //       alt: "AICSTD",
+  //       name: "All India Council for Technical Skill Development",
+  //     },
+  //     {
+  //       src: "/icon/skill-india-logo.png",
+  //       alt: "Skill India",
+  //       name: "National Skills Development Mission of India",
+  //     },
+  //     {
+  //       src: "/icon/iso.png",
+  //       alt: "ISO",
+  //       name: "International Organization for Standardization",
+  //     },
+  //   ],
+  // };
+
   const heroData = {
     title: "Step Into the World of High-Paying IT Careers",
     subtitle: "Become a Master of Python Web Development + Data Analytics",
+    Partnertitle: "Our Accreditations",
 
     // description: (
     //   <ul className="list-disc pl-5 text-[18px] md:text-[20px] md:max-w-xl font-normal space-y-2">
@@ -239,7 +280,12 @@ export default function Full_stack() {
       <ProfessionalMarquee />
       <Hero2 data={heroData} pageSource={"Python_Developer_meta"} />
       <ProfessionalMarqueeForSimpleText />
-      <StudentCarousel
+      <Student2
+        title="Struggling to start your IT career?"
+        paragraph="Join over 12,000+ people who’ve kickstarted their careers with great salary packages."
+        bgColor="#ffffff"
+      />
+      {/* <StudentCarousel
         title={
           <span className="text-[#163123]">
             Over <span className="text-[#26784E]">12000+</span> Careers Launched
@@ -247,7 +293,7 @@ export default function Full_stack() {
           </span>
         }
         students={profiles}
-      />
+      /> */}
       <Partner_slider />
       <CyberSecurityBenefits
         reasons={reasons}
@@ -313,7 +359,8 @@ export default function Full_stack() {
           "Python is one of the most versatile and in-demand programming languages in the IT industry. With this course, you’ll gain the expertise to build scalable web applications and analyze data, making you a valuable asset to any organization."
         }
       />
-      <HearformStud />
+      {/* <HearformStud /> */}
+      <Testimonials title="Hear It From Our Students" subtitle={null} />
       <CareerSuccessComponents />
       <FaqSection faqData={faqData} />
       <Enroll2
