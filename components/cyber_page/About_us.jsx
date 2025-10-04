@@ -121,7 +121,7 @@ export default function About_us({ title, para, subtitle }) {
             hover:bg-white hover:text-[#017D3E] hover:shadow-[#017D3E]/20 overflow-hidden"
           >
             <span className="relative z-10 flex items-center gap-2">
-              Get Free Career Consultation
+              Get Career Consultation
             </span>
             <span
               className="absolute top-0 left-[-75%] w-1/2 h-full bg-white/30 skew-x-12 

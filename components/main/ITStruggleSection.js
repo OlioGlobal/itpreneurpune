@@ -25,7 +25,7 @@ const ITStruggleSection = ({
       "Don't know which IT skill to focus on?",
       "Unsure where to start your IT career?",
     ],
-    ctaText: "Get Free Career Consultation",
+    ctaText: "Get Career Consultation",
   },
 }) => {
   const { videoSrc, posterSrc, title, description, struggles, ctaText } = data;

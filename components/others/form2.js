@@ -148,10 +148,10 @@ export default function Form2({ idPrefix = "top", pageSource = "itpm_25" }) {
       >
         <div className="mb-5">
           <h2 className="text-[22px] leading-[30px] font-bold text-[#0a1f14]">
-            Register For Free
+            Get In Touch
           </h2>
           <p className="text-[#0a1f14]">
-            Register yourself to get Free IT Career Counselling
+            Register yourself to get IT Career Counselling
           </p>
         </div>
         <form className="space-y-4" onSubmit={handleSubmit}>

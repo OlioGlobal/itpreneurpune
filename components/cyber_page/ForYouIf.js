@@ -187,7 +187,7 @@ export default function CyberSecurityBenefits({ reasons, title, subtitle }) {
         >
           {/* Text + Icons */}
           <span className="relative z-10 flex items-center gap-2">
-            Get Free Career Consultation
+            Get Career Consultation
           </span>
 
           {/* Shine sweep */}

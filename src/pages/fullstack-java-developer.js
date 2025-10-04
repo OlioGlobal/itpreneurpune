@@ -347,7 +347,7 @@ export default function Full_stack() {
       "Don't know which IT skill to focus on?",
       "Unsure where to start your IT career?",
     ],
-    ctaText: "Get Free Career Consultation",
+    ctaText: "Get Career Consultation",
   };
 
   return (
