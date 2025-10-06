@@ -116,6 +116,20 @@ export default function Form2({ idPrefix = "top", pageSource = "itpm_25" }) {
             education: formData.education,
           });
 
+          await trackDataFastGoal({
+            name: "ITPM_Lead",
+            metadata: {
+              form_type: "popup_form",
+              name: formData.name,
+              email: formData.email,
+              mobile: formData.mobile,
+              city: formData.city,
+              education: formData.education,
+              page_source: pageSource,
+              traffic_source: source,
+            },
+          });
+
           setFormData({
             name: "",
             email: "",
@@ -123,6 +137,7 @@ export default function Form2({ idPrefix = "top", pageSource = "itpm_25" }) {
             city: "",
             education: "",
           });
+
           setTimeout(() => {
             router.push("/thank-you");
           }, 2000);

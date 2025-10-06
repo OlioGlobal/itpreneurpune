@@ -33,7 +33,11 @@ export default function Student2({
   }));
 
   return (
-    <div className={`w-full`} style={{ backgroundColor: bgColor }}>
+    <div
+      id="placements"
+      className={`w-full`}
+      style={{ backgroundColor: bgColor }}
+    >
       <div className="text-center pt-12 pb-8 max flex flex-col gap-2 px-[5%]">
         {/* Heading Section */}
         <div className="text-center mb-8">
