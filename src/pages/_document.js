@@ -7,11 +7,10 @@ export default function Document() {
       <Head>
         <Script
           id="datafast-analytics"
-          defer
           data-website-id="68e0cf37958b1650d69ab6d7"
           data-domain="itpm.itpreneurpune.com"
           src="https://datafa.st/js/script.js"
-          strategy="afterInteractive"
+          strategy="beforeInteractive"
         />
 
         <Script id="gtm-init" strategy="afterInteractive">

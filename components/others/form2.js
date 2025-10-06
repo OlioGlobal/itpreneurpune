@@ -116,6 +116,26 @@ export default function Form2({ idPrefix = "top", pageSource = "itpm_25" }) {
             education: formData.education,
           });
 
+          console.log(typeof window.datafast);
+
+          try {
+            if (typeof window.datafast === "function") {
+              window.datafast("ITMP_LEAD", {
+                name: formData.name,
+                email: formData.email,
+                mobile: formData.mobile,
+                city: formData.city,
+                education: formData.education,
+                page_source: pageSource,
+                traffic_source: source,
+              });
+            } else {
+              console.warn("DataFast not loaded yet");
+            }
+          } catch (trackingError) {
+            console.error("DataFast tracking error:", trackingError);
+          }
+
           setFormData({
             name: "",
             email: "",
