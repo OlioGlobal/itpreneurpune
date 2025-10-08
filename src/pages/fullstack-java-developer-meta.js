@@ -192,31 +192,31 @@ export default function Full_stack() {
       id: 1,
       title: "120 Days of Intensive Training",
       description: "85% practical, 15% theory",
-      image: "/icon/h1.webp",
+      image: "/icon/h1.jpg",
     },
     {
       id: 2,
       title: "Live Sessions + Video Lectures",
       description: "Learn at your own pace",
-      image: "/icon/h2.webp",
+      image: "/icon/h2.jpg",
     },
     {
       id: 3,
       title: "Hands-On experience",
       description: "Build real-world projects and showcase them on GitHub",
-      image: "/icon/h3.webp",
+      image: "/icon/h3.jpg",
     },
     {
       id: 4,
       title: "Mock Interviews",
       description: "Prepare for technical and HR rounds with confidence",
-      image: "/icon/h4.webp",
+      image: "/icon/h4.jpg",
     },
     {
       id: 5,
       title: "Placement Assistance",
       description: "100% job guarantee with access to 300+ hiring partners",
-      image: "/icon/h5.webp",
+      image: "/icon/h5.jpg",
     },
   ];
   const faqData = [
@@ -426,6 +426,7 @@ export default function Full_stack() {
           </span>
         }
         description="With Full Stack Java Development, you'll master these tools step-by-step."
+        hideSecondRow={true}
       />
       <WhyChooseITpreneur
         title={"Shaping Tomorrow's Tech Workforce"}

@@ -2,7 +2,12 @@ import Image from "next/image";
 import { useEffect, useRef } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 
-export default function ToolsGrid({ tools, title, description }) {
+export default function ToolsGrid({
+  tools,
+  title,
+  description,
+  hideSecondRow = false,
+}) {
   const [emblaRef1, emblaApi1] = useEmblaCarousel({
     loop: true,
     align: "start",
@@ -85,7 +90,12 @@ export default function ToolsGrid({ tools, title, description }) {
       </div>
 
       {/* Second Carousel - Scrolling Left */}
-      <div className="embla overflow-hidden mt-5" ref={emblaRef2}>
+      <div
+        className={`embla overflow-hidden mt-5 ${
+          hideSecondRow ? "sm:hidden" : ""
+        }`}
+        ref={emblaRef2}
+      >
         <div className="embla__container flex">
           {tools.map((tool, index) => (
             <div
