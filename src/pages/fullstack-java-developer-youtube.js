@@ -46,14 +46,14 @@ export default function Full_stack() {
         sub: "Job Guarantee",
       },
       {
-        imgSrc: "/icon/s5.png",
-        main: "300+",
-        sub: "Placement Partners",
-      },
-      {
         imgSrc: "/icon/s6.png",
         main: "Master",
         sub: "Coding Skills",
+      },
+      {
+        imgSrc: "/icon/s5.png",
+        main: "300+",
+        sub: "Placement Partners",
       },
     ],
 
