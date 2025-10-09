@@ -8,6 +8,7 @@ export default function Form2({ idPrefix = "top", pageSource = "itpm_25" }) {
     email: "",
     city: "",
     education: "",
+    itpCenter: "",
   });
 
   const [errors, setErrors] = useState({});
@@ -23,6 +24,8 @@ export default function Form2({ idPrefix = "top", pageSource = "itpm_25" }) {
     "Diploma Holder",
     "Other",
   ];
+
+  const itpCenters = ["Shivajinagar, Pune", "Akurdi, PCMC"];
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -64,6 +67,10 @@ export default function Form2({ idPrefix = "top", pageSource = "itpm_25" }) {
 
     if (!formData.education.trim()) {
       newErrors.education = "Education is required.";
+    }
+
+    if (!formData.itpCenter.trim()) {
+      newErrors.itpCenter = "ITP Center is required.";
     }
 
     return newErrors;
@@ -114,6 +121,7 @@ export default function Form2({ idPrefix = "top", pageSource = "itpm_25" }) {
             mobile: formData.mobile,
             city: formData.city,
             education: formData.education,
+            itpCenter: formData.itpCenter,
           });
 
           console.log(typeof window.datafast);
@@ -126,6 +134,7 @@ export default function Form2({ idPrefix = "top", pageSource = "itpm_25" }) {
                 mobile: formData.mobile,
                 city: formData.city,
                 education: formData.education,
+                itpCenter: formData.itpCenter,
                 page_source: pageSource,
                 traffic_source: source,
               });
@@ -142,6 +151,7 @@ export default function Form2({ idPrefix = "top", pageSource = "itpm_25" }) {
             mobile: "",
             city: "",
             education: "",
+            itpCenter: "",
           });
 
           setTimeout(() => {
@@ -271,42 +281,83 @@ export default function Form2({ idPrefix = "top", pageSource = "itpm_25" }) {
             </div>
           </div>
 
-          {/* Education Dropdown - Full Width */}
-          <div className="relative">
-            <select
-              name="education"
-              id={`${idPrefix}education`}
-              value={formData.education}
-              onChange={handleChange}
-              className={`w-full border border-[#B8D0C4] rounded-[5px] px-4 py-3 focus:outline-none focus:ring-1 focus:ring-green-600 appearance-none ${
-                formData.education ? "text-black" : "text-gray-500"
-              }`}
-              style={{ background: "#eceff5" }}
-            >
-              <option value="" disabled>
-                Select Your Highest Education
-              </option>
-              {educationOptions.map((option, index) => (
-                <option key={index} value={option}>
-                  {option}
-                </option>
-              ))}
-            </select>
-
-            <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-              <svg
-                className="fill-current h-4 w-4"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
+          {/* Third Row: Highest Education and ITP Centers */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {/* Education Dropdown */}
+            <div className="relative">
+              <select
+                name="education"
+                id={`${idPrefix}education`}
+                value={formData.education}
+                onChange={handleChange}
+                className={`w-full border border-[#B8D0C4] rounded-[5px] px-4 py-3 focus:outline-none focus:ring-1 focus:ring-green-600 appearance-none ${
+                  formData.education ? "text-black" : "text-gray-500"
+                }`}
+                style={{ background: "#eceff5" }}
               >
-                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-              </svg>
+                <option value="" disabled>
+                  Education Level
+                </option>
+                {educationOptions.map((option, index) => (
+                  <option key={index} value={option}>
+                    {option}
+                  </option>
+                ))}
+              </select>
+
+              <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                <svg
+                  className="fill-current h-4 w-4"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                >
+                  <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                </svg>
+              </div>
+              {errors.education && (
+                <p className="text-red-600 text-[14px] mt-1">
+                  {errors.education}
+                </p>
+              )}
             </div>
-            {errors.education && (
-              <p className="text-red-600 text-[14px] mt-1">
-                {errors.education}
-              </p>
-            )}
+
+            {/* ITP Centers Dropdown */}
+            <div className="relative">
+              <select
+                name="itpCenter"
+                id={`${idPrefix}itpCenter`}
+                value={formData.itpCenter}
+                onChange={handleChange}
+                className={`w-full border border-[#B8D0C4] rounded-[5px] px-4 py-3 focus:outline-none focus:ring-1 focus:ring-green-600 appearance-none ${
+                  formData.itpCenter ? "text-black" : "text-gray-500"
+                }`}
+                style={{ background: "#eceff5" }}
+              >
+                <option value="" disabled>
+                  Select ITP Center
+                </option>
+                {itpCenters.map((center, index) => (
+                  <option key={index} value={center}>
+                    {center}
+                  </option>
+                ))}
+              </select>
+
+              <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                <svg
+                  className="fill-current h-4 w-4"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                >
+                  <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                </svg>
+              </div>
+              {errors.itpCenter && (
+                <p className="text-red-600 text-[14px] mt-1">
+                  {errors.itpCenter}
+                </p>
+              )}
+            </div>
           </div>
 
           {/* Submit Button */}

@@ -121,6 +121,7 @@ export default async function handler(req, res) {
     fullUrl,
     source,
     program,
+    itpCenter,
   } = req.body;
 
   if (!name || !email || !mobile) {
@@ -145,6 +146,7 @@ export default async function handler(req, res) {
           pageName: pageSource,
           fullUrl,
           program,
+          itpCenter,
         }),
       }),
 
@@ -165,6 +167,7 @@ export default async function handler(req, res) {
           education,
           state: "Maharashtra",
           source: source || "direct",
+          itpCenter,
         }),
       }),
     ];
