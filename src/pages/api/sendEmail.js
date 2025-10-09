@@ -164,10 +164,10 @@ export default async function handler(req, res) {
           country_dial_code: "+91",
           mobile,
           city,
-          education,
           state: "Maharashtra",
           source: source || "direct",
-          itpCenter,
+          cf_itp_center: itpCenter,
+          field_qualification: education,
         }),
       }),
     ];

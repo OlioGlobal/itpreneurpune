@@ -59,14 +59,14 @@ export default function Full_stack() {
         sub: "Job Guarantee",
       },
       {
-        imgSrc: "/icon/s5.png",
-        main: "300+",
-        sub: "Placement Partners",
-      },
-      {
         imgSrc: "/icon/s6.png",
         main: "Master",
         sub: "Coding Skills",
+      },
+      {
+        imgSrc: "/icon/s5.png",
+        main: "300+",
+        sub: "Placement Partners",
       },
     ],
 
@@ -435,6 +435,7 @@ export default function Full_stack() {
           </span>
         }
         description="With this IT course, you'll gain hands-on mastery of the tools and technologies step by step."
+        hideSecondRow={true}
       />
       {/* <WhyChooseITpreneur
         title={"Shaping Tomorrow's Tech Workforce"}
