@@ -370,7 +370,7 @@ export default function Form2({ idPrefix = "top", pageSource = "itpm_25" }) {
               {loading ? "Sending..." : "Register Now"}
             </button>
             <div className="flex items-center gap-2   border-red-300 text-red-500 text-sm ">
-              <span>*Only Undergraduates can apply.</span>
+              <span>*Program designed for graduate-level candidates only.</span>
             </div>
           </div>
         </form>
