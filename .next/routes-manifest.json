@@ -58,6 +58,12 @@
       "namedRegex": "^/fullstack\\-java\\-developer\\-youtube(?:/)?$"
     },
     {
+      "page": "/hr",
+      "regex": "^/hr(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/hr(?:/)?$"
+    },
+    {
       "page": "/index1",
       "regex": "^/index1(?:/)?$",
       "routeKeys": {},

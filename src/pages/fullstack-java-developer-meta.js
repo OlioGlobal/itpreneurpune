@@ -52,7 +52,7 @@ export default function Full_stack() {
       },
       {
         imgSrc: "/icon/s5.png",
-        main: "300+",
+        main: "1,200+",
         sub: "Placement Partners",
       },
     ],
@@ -155,7 +155,7 @@ export default function Full_stack() {
           <li>Mock interviews and grooming sessions</li>
           <li>Resume building and LinkedIn optimization</li>
           <li>
-            Access to 300+ hiring partners, including top MNCs and startups
+            Access to 1,200+ hiring partners, including top MNCs and startups
           </li>
         </ul>
       ),
@@ -215,7 +215,7 @@ export default function Full_stack() {
     {
       id: 5,
       title: "Placement Assistance",
-      description: "100% job guarantee with access to 300+ hiring partners",
+      description: "100% job guarantee with access to 1,200+ hiring partners",
       image: "/icon/h5.jpg",
     },
   ];

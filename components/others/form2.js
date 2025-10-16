@@ -399,7 +399,7 @@ export default function Form2({ idPrefix = "top", pageSource = "itpm_25" }) {
             />
           </div>
           <span className="ml-4 text-[15px] font-bold text-[#133522]">
-            <span className="text-[#017D3E]">2735</span> Students Have
+            <span className="text-[#017D3E]">12000+</span> Students Have
             Registered So Far!
           </span>
         </div>

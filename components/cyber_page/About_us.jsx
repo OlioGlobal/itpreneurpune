@@ -13,7 +13,7 @@ export default function About_us({ title, para, subtitle }) {
       img: "/icon/happystud.png",
     },
     {
-      to: 13,
+      to: 14,
       label: "Years of Experience",
       img: "/icon/yearsexp.png",
     },

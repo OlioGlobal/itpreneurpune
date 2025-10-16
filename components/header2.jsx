@@ -29,10 +29,11 @@ export default function Header2() {
         <div className="text-xl font-bold text-blue-600">
           <Link href={""}>
             <Image
-              src="/itpreneur-pune-logo-img.png"
+              src="/itpreneur-pune-logo.png"
               alt="Logo"
-              width={150}
-              height={150}
+              width={500}
+              height={500}
+              className="w-auto h-12 sm:h-13 md:h-14 lg:h-15"
             />
           </Link>
         </div>

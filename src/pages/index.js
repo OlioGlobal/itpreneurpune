@@ -65,7 +65,7 @@ export default function Full_stack() {
       },
       {
         imgSrc: "/icon/s5.png",
-        main: "300+",
+        main: "1,200+",
         sub: "Placement Partners",
       },
     ],
