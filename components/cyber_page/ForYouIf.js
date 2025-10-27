@@ -55,7 +55,7 @@ export default function CyberSecurityBenefits({ reasons, title, subtitle }) {
     <div className="px-[5%] rm max" data-aos="zoom-in">
       <div className="text-center mb-8">
         <h2 className="font-bold text-[#163123] h2t leading-[1.2]">{title}</h2>
-        <p className="text-[#4D5C54] text-[15px] md:text-[16px] mt-2">
+        <p className="text-[#4D5C54] text-[15px] md:text-[16px] mt-2 max-w-5xl mx-auto">
           {subtitle}
         </p>
       </div>

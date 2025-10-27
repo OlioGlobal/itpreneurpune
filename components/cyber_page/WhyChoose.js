@@ -9,7 +9,7 @@ export default function WhyChooseITpreneur({ title, para }) {
       img: "/icon/happystud.png",
     },
     {
-      to: 13,
+      to: 14,
       label: "Years of Experience",
       img: "/icon/yearsexp.png",
     },
