@@ -1,72 +1,130 @@
-import { useState } from "react";
-import Image from "next/image";
+import React from "react";
 
-export default function CareerTransformation({
-  roles,
-  salaryData,
-  title,
-  subtitle,
-}) {
-  const [hoveredRole, setHoveredRole] = useState(null);
+const CareerTransformation_2 = () => {
+  const headerData = {
+    title: (
+      <span>
+        Your Career Transformation <br /> Starts Here.
+      </span>
+    ),
+    buttonText: "Get Free Career Consultation",
+  };
+
+  const transformationSteps = [
+    { id: 1, title: "Training", icon: "/icon/T1.png" },
+    { id: 2, title: "Projects", icon: "/icon/T2.png" },
+    { id: 3, title: "Interviews", icon: "/icon/T3.png" },
+    { id: 4, title: "Placement", icon: "/icon/T4.png" },
+  ];
 
   return (
-    <section className="px-[5%] rm max">
-      <div className="mx-auto">
-        <div className="text-center mb-8">
-          <h2 className="font-bold text-[#163123] text-center h2t leading-[1.2]">
-            {title}
-          </h2>
-          <p className="text-[#4D5C54] text-[15px] md:text-[16px] mt-2">
-            {subtitle}
-          </p>
-        </div>
-
-        <div className="flex flex-wrap justify-center gap-3 mb-10 md:px-[20%]">
-          {roles.map((role, idx) => (
-            <div
-              key={idx}
-              className="flex transition-all duration-200 hover:bg-[#E8F5EF] hover:scale-[1.03] items-center gap-2 border border-[#26784E] cursor-default rounded-full px-3 py-2 text-[15px] md:text-[16px] text-[#163123]"
-              onMouseEnter={() => setHoveredRole(idx)}
-              onMouseLeave={() => setHoveredRole(null)}
+    <div className="w-full rm">
+      <div className="bg-[#1C7B3E] rounded-[22px] mx-4 sm:mx-6 lg:mx-8 xl:mx-auto xl:max-w-7xl p-6 sm:p-8 lg:p-12">
+        {/* Header */}
+        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 lg:gap-8 mb-8 lg:mb-12">
+          <div className="flex-1">
+            <h2 className="h2t font-bold text-white leading-tight">
+              {headerData.title}
+            </h2>
+          </div>
+          <div className="flex-shrink-0">
+            <button
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              className="bg-white cursor-pointer text-[#017D3E] font-semibold px-6 py-3 sm:px-8 sm:py-4 rounded-[5px] hover:bg-gray-50 transition-colors duration-200 text-sm sm:text-base lg:text-lg whitespace-nowrap w-full sm:w-auto"
             >
-              <Image
-                src={
-                  hoveredRole === idx ? "/icon/check2.png" : "/icon/check.png"
-                }
-                alt="check"
-                width={35}
-                height={35}
-              />
-              {role}
-            </div>
-          ))}
+              {headerData.buttonText}
+            </button>
+          </div>
         </div>
 
-        <div className="flex justify-evenly flex-wrap gap-10 mt-8">
-          {salaryData.map((item, idx) => (
-            <div key={idx} className="flex flex-col items-center">
-              <h3
-                className={`relative inline-block text-[24px] font-medium sm:text-[32px] text-center 
-  md:text-[35px] lg:text-[40px] leading-[1.2] overflow-hidden ${item.color}`}
-              >
-                {item.range}
-                {/* Shine sweep */}
-                <span
-                  className="absolute top-0 left-[-75%] w-1/2 h-full bg-white/30 
-     skew-x-12 animate-[shine_2.5s_linear_infinite]"
-                ></span>
-              </h3>
-
-              <div
-                className={`h-[2px] w-10 mt-2 mb-2 ${item.color} bg-current rounded-full`}
-              />
-              <p className="text-[#163123] text-[16px] font-bold">
-                {item.level}
-              </p>
+        {/* Transformation Flow */}
+        <div className="bg-[#359965] bg-opacity-50 rounded-[12px] p-4 sm:p-4 lg:p-6">
+          {/* Mobile */}
+          <div className="block sm:hidden">
+            <div className="space-y-6">
+              {transformationSteps.map((step, index) => (
+                <div key={step.id} className="flex items-center space-x-4">
+                  <div className="flex-shrink-0 w-12 h-12 bg-opacity-20 rounded-lg flex items-center justify-center text-white">
+                    <img
+                      src={step.icon}
+                      alt={step.title}
+                      className="w-12 h-12 object-contain"
+                    />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-lg font-semibold text-white">
+                      {step.title}
+                    </h3>
+                  </div>
+                  {index < transformationSteps.length - 1 && (
+                    <div className="text-white text-xl">↓</div>
+                  )}
+                </div>
+              ))}
             </div>
-          ))}
+          </div>
+
+          {/* Tablet */}
+          <div className="hidden sm:block lg:hidden">
+            <div className="grid grid-cols-2 gap-6">
+              {transformationSteps.map((step, index) => (
+                <div key={step.id} className="flex items-center space-x-4">
+                  <div className="flex-shrink-0 w-12 h-12  bg-opacity-20 rounded-lg flex items-center justify-center text-white">
+                    <img
+                      src={step.icon}
+                      alt={step.title}
+                      className="w-12 h-12 object-contain"
+                    />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-lg font-semibold text-white">
+                      {step.title}
+                    </h3>
+                  </div>
+                  {index < 2 && <div className="text-white text-xl">→</div>}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Desktop */}
+          {/* Desktop */}
+          <div className="hidden lg:flex items-center justify-between">
+            {transformationSteps.map((step, index) => (
+              <React.Fragment key={step.id}>
+                <div className="flex items-center space-x-4 flex-1 justify-center">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-lg flex items-center justify-center text-white">
+                    <img
+                      src={step.icon}
+                      alt={step.title}
+                      className="w-12 h-12 object-contain"
+                    />
+                  </div>
+                  <div>
+                    <h3 className="text-[28px] font-semibold text-white">
+                      {step.title}
+                    </h3>
+                  </div>
+                </div>
+
+                {index < transformationSteps.length - 1 && (
+                  <div className="flex-shrink-0 flex items-center justify-center mx-6">
+                    <svg
+                      className="w-8 h-8 text-white"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12l-4.58 4.59z" />
+                    </svg>
+                  </div>
+                )}
+              </React.Fragment>
+            ))}
+          </div>
         </div>
       </div>
-    </section>
+    </div>
   );
-}
+};
+
+export default CareerTransformation_2;

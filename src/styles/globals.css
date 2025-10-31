@@ -27,6 +27,14 @@ html {
 .max {
   @apply max-w-screen-2xl mx-auto;
 }
+
+.pad {
+  @apply px-[5%];
+}
+
+.para {
+  @apply text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px];
+}
 @keyframes shine {
   0% {
     left: -75%;

@@ -1,4 +1,3 @@
-import CareerTransformation from "../../components/cyber_page/CareerTransformation";
 import FaqSection from "../../components/cyber_page/Faq";
 import CyberSecurityBenefits from "../../components/cyber_page/ForYouIf";
 import Hero2 from "../../components/cyber_page/Hero2";
@@ -19,11 +18,18 @@ import ITStruggleSection from "../../components/main/ITStruggleSection";
 import ProfessionalMarqueeForSimpleText from "../../components/ProfessionalMarqueeForSimpleText";
 import Student2 from "../../components/cyber_page/student2";
 import Testimonials from "../../components/main/Reviews";
+import MythBuster from "../../components/HR/MythBuster";
+import ProgramComparison from "../../components/HR/ProgramComparison";
+import WhoIsThisProgramFor from "../../components/HR/WhoIsThisProgramFor";
+import CareerJourney from "../../components/HR/CareerJourney";
+import CareerTransformation_2 from "../../components/cyber_page/CareerTransformation";
+import CareerTransformation from "../../components/HR/CareerTransformation";
+import PlacementStats from "../../components/HR/PlacementStats";
 
 export default function Full_stack() {
   const heroData = {
     title: (
-      <span>
+      <span className="text-[28px] sm:text-[36px] md:text-[42px] lg:text-[52px] leading-1.3">
         Launch Your HR Career in 90 Days - 100% Job Guarantee for Any Graduates
       </span>
     ),
@@ -45,28 +51,33 @@ export default function Full_stack() {
 
     section: [
       {
-        imgSrc: "/icon/s7.png",
-        main: "100% Job Guarantee",
+        imgSrc: "/icon/s.png",
+        main: (
+          <span>
+            12000 + <br />
+            students
+          </span>
+        ),
         sub: "",
       },
       {
-        imgSrc: "/icon/s6.png",
-        main: "No HR Degree Needed",
+        imgSrc: "/icon/g.png",
+        main: (
+          <span>
+            4.6 ★ <br />
+            Google Rated
+          </span>
+        ),
         sub: "",
       },
+
       {
-        imgSrc: "/icon/s5.png",
-        main: "90-Day Transformation",
-        sub: "",
-      },
-      {
-        imgSrc: "/icon/s7.png",
-        main: "500+ Hiring Partners",
-        sub: "",
-      },
-      {
-        imgSrc: "/icon/s6.png",
-        main: "Industry Ready Skills",
+        imgSrc: "/icon/pp.png",
+        main: (
+          <span>
+            1200+ <br /> placement partner
+          </span>
+        ),
         sub: "",
       },
     ],
@@ -204,124 +215,93 @@ export default function Full_stack() {
   const services = [
     {
       id: 1,
-      title: "120 Days of Intensive Training",
-      description: "85% practical, 15% theory",
-      image: "/icon/h1.jpg",
+      title: " 10+ Years Industry Experience",
+      description:
+        "Our trainers currently work in HR departments of leading companies",
+      image: "/icon/HR1.png",
     },
     {
       id: 2,
-      title: "Live Sessions + Video Lectures",
-      description: "Learn at your own pace",
-      image: "/icon/h2.jpg",
+      title: "Real-World Curriculum",
+      description:
+        "Learn actual HR practices used in MNCs today, not outdated textbook theory",
+      image: "/icon/HR@.png",
     },
     {
       id: 3,
-      title: "Hands-On experience",
-      description: "Build real-world projects and showcase them on GitHub",
-      image: "/icon/h3.jpg",
+      title: "1-to-1 Mentorship",
+      description:
+        "Personal doubt-clearing sessions, career guidance, and placement counseling",
+      image: "/icon/HR3.png",
     },
     {
       id: 4,
-      title: "Mock Interviews",
-      description: "Prepare for technical and HR rounds with confidence",
-      image: "/icon/h4.jpg",
-    },
-    {
-      id: 5,
-      title: "Placement Assistance",
-      description: "100% job guarantee with access to 300+ hiring partners",
-      image: "/icon/h5.jpg",
+      title: "Industry Connections",
+      description:
+        "Direct access to HR networks and hiring managers through trainer connections",
+      image: "/icon/HR4.png",
     },
   ];
   const faqData = [
     {
       id: 1,
-      question: "What makes this course different from other IT courses?",
+      question:
+        "I'm a B.Com/B.Sc graduate with no HR background. Can I really become an HR professional?",
       answer:
-        "Our course combines hands-on projects, expert-led training, and job placement support, ensuring you're not just learning, but ready to start your IT career with real-world experience.",
+        "Absolutely! This program is DESIGNED for non-HR graduates. We start from basics and teach you everything needed for HR roles. 70% of our placed students came from non-HR backgrounds.",
     },
     {
       id: 2,
-      question: "Do I need prior experience to join this course?",
+      question:
+        'What exactly does "100% Job Guarantee" mean? What if I don’t get placed?',
       answer:
-        "No prior experience is needed. This course is designed for freshers and anyone looking to make a career switch, giving you the skills and confidence you need to succeed in IT.",
+        "We commit to providing you minimum 15-20 interview opportunities with our 300+ hiring partners. We continue scheduling interviews until you're placed. This is valid for 12 months post-completion, provided you meet attendance and project completion requirements.",
     },
     {
       id: 3,
-      question: "How soon will I get a job after completing the course?",
+      question: "How is this different from an HR MBA?",
       answer:
-        "Our course includes job placement assistance, helping you connect with top companies. While job timelines vary, our students have successfully secured positions soon after completing the course.",
+        "MBA takes 2 years and costs ₹5-10 lakhs. Our 90-day program costs a fraction, focuses 70% on practical skills, and gets you job-ready faster. Placement opportunities are comparable to MBA graduates in entry-level HR roles.",
     },
     {
       id: 4,
-      question: "Who can join this program?",
+      question: "What HR roles will I qualify for after this program?",
       answer:
-        "Final-year students, fresh graduates, and working professionals looking to upskill or switch careers.",
+        "You’ll be eligible for roles such as HR Generalist, Talent Acquisition Specialist, HR Coordinator, Recruiter, HR Executive, HRBP, HR Operations, Payroll Specialist, and Training Coordinator.",
     },
     {
       id: 5,
-      question: "Will I get hands-on experience during the course?",
+      question: "Do I need to be in Pune? Is this online or offline?",
       answer:
-        "Yes! You'll work on real-world projects, giving you practical experience and the chance to showcase your skills to potential employers.",
+        "Hybrid model - You can attend live online sessions from anywhere OR come to our Pune center. Internship can be done remotely or locally based on availability.",
     },
     {
       id: 6,
-      question: "What is the duration of the course?",
+      question: "What's the typical salary for freshers in HR?",
       answer:
-        "The program is designed to be completed in 180 days, with flexible learning options.",
+        "Entry-level HR roles range from ₹3-5 LPA. With good communication skills and our training, our students get ₹3.5-8 LPA depending on company, location, and interview performance.",
     },
-
+    {
+      id: 7,
+      question:
+        "What if I can’t attend classes daily due to my current job or college?",
+      answer:
+        "We offer flexible batch timings (morning/evening/weekend). All sessions are recorded for lifetime access. However, you must maintain 85% attendance for placement guarantee.",
+    },
     {
       id: 8,
-      question: "Is there a job guarantee?",
+      question: "Will I get a certificate?",
       answer:
-        "Yes, we offer a 100% job guarantee with a Day 1 offer letter or a refund policy.",
+        "Yes, you receive iTpreneur HR Generalist Certification upon successful completion of training, projects, and internship. This is recognized by our 300+ hiring partners.",
     },
     {
       id: 9,
-      question: "What if I don't get placed after completing the course?",
+      question: "How much does the program cost? Are there EMI options?",
       answer:
-        "We are committed to your success. If you face challenges finding a job, we'll continue to support you with extra career coaching and job search assistance until you secure a role.",
-    },
-    {
-      id: 10,
-      question: "How flexible is the course schedule?",
-      answer:
-        "Our courses are designed to be flexible, with options to learn at your own pace while still receiving support from instructors and peers.",
-    },
-    {
-      id: 11,
-      question:
-        "What kind of job roles can I expect after completing this course?",
-      answer:
-        "You can expect to qualify for roles like Java Full Stack Developer, Front-End Developer, Back-End Developer, and other high-demand IT positions.",
-    },
-    {
-      id: 12,
-      question: "Is financial support available for the course?",
-      answer:
-        "We offer flexible payment plans and financing options, making it easier for you to start your career in IT without financial stress.",
-    },
-    {
-      id: 13,
-      question: "What kind of salary can I expect after completing the course?",
-      answer:
-        "Graduates of this course have gone on to secure jobs with competitive salary packages in the IT industry. Salaries vary depending on the role and location but can range from ₹2.5 LPA to ₹10 LPA for entry-level positions.",
-    },
-    {
-      id: 14,
-      question: "What kind of projects will I work on?",
-      answer:
-        "Real-world projects like e-commerce platforms, library management systems, and more, using tools like Git, JIRA, and Jenkins.",
-    },
-    {
-      id: 15,
-      question:
-        "How will this course help me transition from a non-technical background?",
-      answer:
-        "This course is designed to make the transition smooth for non-technical individuals. You'll learn step-by-step, from basic concepts to advanced skills, so you can confidently enter the IT field.",
+        "Program fee is shared during free counseling sessions based on current offers. Yes, we have 0% EMI options and education loan assistance available.",
     },
   ];
+
   const reasons = [
     "You're An Engineering Graduate But Still Job Hunting.",
     "You're Exhausted By The MPSC/UPSC Grind.",
@@ -368,14 +348,49 @@ export default function Full_stack() {
     <>
       <Header2 />
       <ProfessionalMarquee />
+      <Hero2 data={heroData} pageSource={"hr-course-with-placement"} />
+      <MythBuster />
+      <Partner_slider />
+      <PlacementStats />
+      <ProgramComparison />
+      <WhoIsThisProgramFor />
+      <Testimonials title="Hear It From Our Students" subtitle={null} />
+      <CareerTransformation_2 />
+      <CareerJourney />
+      <ProgramHighlights
+        data={services}
+        title={<span>Trained by Active HR Leaders, Not Just Trainers</span>}
+      />
+      <FaqSection faqData={faqData} />
+      <Enroll2
+        title={
+          <span>
+            Your HR Career Starts Here. <br className="hidden md:block" /> Take
+            the First Step.
+          </span>
+        }
+        para={
+          <span>
+            Join 30,000+ graduates who transformed their careers with
+            <br className="hidden md:block" /> iTpreneur&apos;s 100% Job
+            Guarantee
+          </span>
+        }
+        pageSource={"hr-course-with-placement"}
+      />
 
-      <Hero2 data={heroData} pageSource={"Java_Full_Stack_Developer"} />
-      <ProfessionalMarqueeForSimpleText />
-      <Student2
+      <StickyFooter2
+        message={
+          "Register yourself for Full Stack Java Development Program with 100% Job Guarantee Assurance"
+        }
+      />
+
+      {/* <ProfessionalMarqueeForSimpleText /> */}
+      {/* <Student2
         title="Struggling to start your IT career?"
         paragraph="Join over 12,000+ people who’ve kickstarted their careers with great salary packages."
         bgColor="#ffffff"
-      />
+      /> */}
       {/* <StudentCarousel
         title={
           <span className="text-[#163123]">
@@ -387,25 +402,25 @@ export default function Full_stack() {
         }
         students={profiles}
       /> */}
-      <Partner_slider />
-      <ITStruggleSection data={itStruggleData} />
-      <CyberSecurityBenefits
+
+      {/* <ITStruggleSection data={itStruggleData} /> */}
+      {/* <CyberSecurityBenefits
         reasons={reasons}
         title={"Java Full Stack Course Is For You If..."}
         subtitle={
           "This Java Full Stack Journey Is Designed For Individuals Who"
         }
-      />
+      /> */}
 
-      <CareerTransformation
+      {/* <CareerTransformation
         title={"Your Career Transformation Starts Here"}
         subtitle={
           "With Java Full Stack Development skills, you can unlock roles like"
         }
         roles={roles}
         salaryData={salaryData}
-      />
-      <WhyChoose
+      /> */}
+      {/* <WhyChoose
         data={cards}
         heading={
           <>
@@ -421,18 +436,9 @@ export default function Full_stack() {
             developers who can build complete applications from front to back.
           </>
         }
-      />
+      /> */}
 
-      <ProgramHighlights
-        data={services}
-        title={
-          <span>
-            Java Full Stack Development <br className="hidden md:block" />{" "}
-            Program Highlights
-          </span>
-        }
-      />
-      <ToolsGrid
+      {/* <ToolsGrid
         tools={tools}
         title={
           <span>
@@ -441,8 +447,8 @@ export default function Full_stack() {
         }
         description="With Full Stack Java Development, you'll master these tools step-by-step."
         hideSecondRow={true}
-      />
-      <WhyChooseITpreneur
+      /> */}
+      {/* <WhyChooseITpreneur
         title={"Shaping Tomorrow's Tech Workforce"}
         subtitle={"We Are iTpreneur"}
         para={
@@ -462,36 +468,10 @@ export default function Full_stack() {
             candidates, clients, and the ever-expanding IT sector.
           </span>
         }
-      />
+      /> */}
       {/* <HearformStud /> */}
-      <Testimonials title="Hear It From Our Students" subtitle={null} />
-      <CareerSuccessComponents />
-      <FaqSection faqData={faqData} />
-      <Enroll2
-        title={
-          <span>
-            Take the First Step Toward <br className="hidden md:block" /> Your
-            Java Full Stack Developer
-            <br className="hidden md:block" /> Career
-          </span>
-        }
-        para={
-          <span>
-            Fill out the form below to get started. One of our career counselors
-            will <br className="hidden md:block" /> get in touch with you to
-            help you choose the right course and guide{" "}
-            <br className="hidden md:block" /> you through the enrollment
-            process.
-          </span>
-        }
-        pageSource={"Java_Full_Stack_Developer"}
-      />
-
-      <StickyFooter2
-        message={
-          "Register yourself for Full Stack Java Development Program with 100% Job Guarantee Assurance"
-        }
-      />
+      {/* <Testimonials title="Hear It From Our Students" subtitle={null} />
+      <CareerSuccessComponents /> */}
     </>
   );
 }

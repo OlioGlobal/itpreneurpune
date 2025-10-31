@@ -21,9 +21,9 @@ export default function ProgramHighlights({ title, data, subtitle }) {
           <div
             key={service.id}
             data-aos="zoom-in"
-            className={`w-full md:w-1/2 lg:w-1/5 sm:px-2 py-3 md:py-5 ${
-              index > 2 ? "lg:w-1/2" : ""
-            }`}
+            className={`w-full md:w-1/2 lg:w-1/${
+              data.length
+            } sm:px-2 py-3 md:py-5 ${index > 2 ? "lg:w-1/2" : ""}`}
           >
             <div className="bg-white rounded-lg overflow-hidden border border-[#D7D7D7] hover:shadow-lg transition-shadow duration-300 h-full">
               <div className="relative h-44 w-full">
