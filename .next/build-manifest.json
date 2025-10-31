@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/fp4iAV5AAPkBC9AGq2GAZ/_buildManifest.js",
-    "static/fp4iAV5AAPkBC9AGq2GAZ/_ssgManifest.js"
+    "static/U9cJrYhyvKFueWfrPdQxn/_buildManifest.js",
+    "static/U9cJrYhyvKFueWfrPdQxn/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "rootMainFilesTree": {},
@@ -20,7 +20,7 @@
       "static/chunks/512-4cfa4a758fcde806.js",
       "static/chunks/598-d7bcbdb3d6117f55.js",
       "static/chunks/532-a15e3375de61079e.js",
-      "static/chunks/777-62c97de11be6ceb5.js",
+      "static/chunks/777-3599b4ec17e38696.js",
       "static/chunks/pages/index-75732a65f527339b.js"
     ],
     "/_app": [
@@ -72,7 +72,7 @@
       "static/chunks/512-4cfa4a758fcde806.js",
       "static/chunks/598-d7bcbdb3d6117f55.js",
       "static/chunks/532-a15e3375de61079e.js",
-      "static/chunks/pages/fullstack-dotnet-developer-14bb28d78db48c94.js"
+      "static/chunks/pages/fullstack-dotnet-developer-d013075793bf7926.js"
     ],
     "/fullstack-dotnet-developer-meta": [
       "static/chunks/webpack-f5c9bbb7127d32ec.js",
@@ -83,7 +83,7 @@
       "static/chunks/512-4cfa4a758fcde806.js",
       "static/chunks/598-d7bcbdb3d6117f55.js",
       "static/chunks/532-a15e3375de61079e.js",
-      "static/chunks/pages/fullstack-dotnet-developer-meta-7dcce3324f366cff.js"
+      "static/chunks/pages/fullstack-dotnet-developer-meta-01f7e259a91b754e.js"
     ],
     "/fullstack-dotnet-developer-youtube": [
       "static/chunks/webpack-f5c9bbb7127d32ec.js",
@@ -94,7 +94,7 @@
       "static/chunks/512-4cfa4a758fcde806.js",
       "static/chunks/598-d7bcbdb3d6117f55.js",
       "static/chunks/532-a15e3375de61079e.js",
-      "static/chunks/pages/fullstack-dotnet-developer-youtube-6e7df40d121a427d.js"
+      "static/chunks/pages/fullstack-dotnet-developer-youtube-a30e8486c39ee3fe.js"
     ],
     "/fullstack-java-developer": [
       "static/chunks/webpack-f5c9bbb7127d32ec.js",
@@ -105,7 +105,7 @@
       "static/chunks/512-4cfa4a758fcde806.js",
       "static/chunks/598-d7bcbdb3d6117f55.js",
       "static/chunks/532-a15e3375de61079e.js",
-      "static/chunks/777-62c97de11be6ceb5.js",
+      "static/chunks/777-3599b4ec17e38696.js",
       "static/chunks/pages/fullstack-java-developer-de260d54fc7b7043.js"
     ],
     "/fullstack-java-developer-meta": [
@@ -117,7 +117,7 @@
       "static/chunks/512-4cfa4a758fcde806.js",
       "static/chunks/598-d7bcbdb3d6117f55.js",
       "static/chunks/532-a15e3375de61079e.js",
-      "static/chunks/777-62c97de11be6ceb5.js",
+      "static/chunks/777-3599b4ec17e38696.js",
       "static/chunks/pages/fullstack-java-developer-meta-3bf33e2f6bb0657a.js"
     ],
     "/fullstack-java-developer-youtube": [
@@ -129,7 +129,7 @@
       "static/chunks/512-4cfa4a758fcde806.js",
       "static/chunks/598-d7bcbdb3d6117f55.js",
       "static/chunks/532-a15e3375de61079e.js",
-      "static/chunks/777-62c97de11be6ceb5.js",
+      "static/chunks/777-3599b4ec17e38696.js",
       "static/chunks/pages/fullstack-java-developer-youtube-f72919270c87e997.js"
     ],
     "/hr-course-with-placement": [
@@ -141,7 +141,7 @@
       "static/chunks/512-4cfa4a758fcde806.js",
       "static/chunks/598-d7bcbdb3d6117f55.js",
       "static/chunks/532-a15e3375de61079e.js",
-      "static/chunks/777-62c97de11be6ceb5.js",
+      "static/chunks/777-3599b4ec17e38696.js",
       "static/chunks/pages/hr-course-with-placement-3a7c064b6e90df9b.js"
     ],
     "/index1": [
@@ -179,7 +179,7 @@
       "static/chunks/512-4cfa4a758fcde806.js",
       "static/chunks/598-d7bcbdb3d6117f55.js",
       "static/chunks/532-a15e3375de61079e.js",
-      "static/chunks/pages/python-developer-3e0798116130174d.js"
+      "static/chunks/pages/python-developer-f4d9301051e2f2ee.js"
     ],
     "/python-developer-meta": [
       "static/chunks/webpack-f5c9bbb7127d32ec.js",
@@ -190,7 +190,7 @@
       "static/chunks/512-4cfa4a758fcde806.js",
       "static/chunks/598-d7bcbdb3d6117f55.js",
       "static/chunks/532-a15e3375de61079e.js",
-      "static/chunks/pages/python-developer-meta-e4f183c1677e4853.js"
+      "static/chunks/pages/python-developer-meta-d08f37428ba761e5.js"
     ],
     "/python-developer-youtube": [
       "static/chunks/webpack-f5c9bbb7127d32ec.js",
@@ -201,7 +201,7 @@
       "static/chunks/512-4cfa4a758fcde806.js",
       "static/chunks/598-d7bcbdb3d6117f55.js",
       "static/chunks/532-a15e3375de61079e.js",
-      "static/chunks/pages/python-developer-youtube-5ea7b1c2fe8378e2.js"
+      "static/chunks/pages/python-developer-youtube-acf119a9077e5375.js"
     ],
     "/software-testing": [
       "static/chunks/webpack-f5c9bbb7127d32ec.js",

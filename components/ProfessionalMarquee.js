@@ -9,7 +9,7 @@ const ProfessionalMarquee = () => {
     "100% Job Guarantee",
     "Over 12,000 Freshers Placed",
     "Live Projects & On-Site Internship",
-    "13+ Years of Placement Excellence",
+    "14+ Years of Placement Excellence",
   ];
 
   // Reset animation every 40 seconds
