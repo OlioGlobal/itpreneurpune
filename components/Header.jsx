@@ -8,7 +8,7 @@ export default function Header() {
         <div className="text-xl font-bold text-blue-600">
           <Link href={""}>
             <Image
-              src="/itpreneur-pune-logo-img.png"
+              src="/itpreneur-pune-logo.png"
               alt="Logo"
               width={180}
               height={180}

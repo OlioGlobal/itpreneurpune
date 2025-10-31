@@ -362,7 +362,13 @@ export default function Full_stack() {
         pageSource={"hr-course-with-placement"}
       />
       <MythBuster />
-      <Partner_slider />
+      <Partner_slider
+        title={
+          <span>
+            1,200+ Companies Trust <br /> Our Graduates
+          </span>
+        }
+      />
       <PlacementStats />
       <ProgramComparison />
       <WhoIsThisProgramFor />
@@ -392,7 +398,7 @@ export default function Full_stack() {
       />
       <StickyFooter2
         message={
-          "Register yourself for Full Stack Java Development Program with 100% Job Guarantee Assurance"
+          "Register yourself for HR Program with 100% Job Guarantee Assurance"
         }
       />
       {/* <ProfessionalMarqueeForSimpleText /> */}

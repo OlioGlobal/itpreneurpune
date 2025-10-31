@@ -103,17 +103,21 @@ const LogoCarouselRow1 = ({ logos, reverse = false }) => {
   );
 };
 
-export default function Partner_slider() {
+export default function Partner_slider({
+  title = (
+    <span>
+      India’s Leading IT Companies <br /> Recruit from iTpreneur
+    </span>
+  ),
+  para = "Our industry designed curriculum and hands-on experience prepare you for immediate employment.",
+}) {
   return (
     <div id="Partners" className="rm space-y-6 px-4  max px-[5%] ">
       <div className="text-center mb-8">
         <h2 className="font-bold  text-[#163123] h2t text-center  leading-[1.2] ">
-          India’s Leading IT Companies <br /> Recruit from iTpreneur
+          {title}
         </h2>
-        <p className="text-[#4D5C54] text-[15px] md:text-[16px] mt-2">
-          Our industry designed curriculum and hands-on experience prepare you
-          for immediate employment.
-        </p>
+        <p className="text-[#4D5C54] text-[15px] md:text-[16px] mt-2">{para}</p>
       </div>
       <LogoCarouselRow1 logos={topLogos} reverse={true} />
       <LogoCarouselRow1 logos={bottomLogos} reverse={false} />
