@@ -10,7 +10,11 @@ const WhoIsThisProgramFor = () => {
   const programCards = [
     {
       id: 1,
-      title: "Fresh Graduates",
+      title: (
+        <span>
+          Fresh <br /> Graduates
+        </span>
+      ),
       subtitle: "(B.Com / B.Sc / BA / BBA)",
 
       bulletPoint: ["Want to start HR career", "Any stream, any college"],
@@ -19,7 +23,11 @@ const WhoIsThisProgramFor = () => {
     },
     {
       id: 2,
-      title: "Career Switchers",
+      title: (
+        <span>
+          Career <br /> Switchers
+        </span>
+      ),
       subtitle: "Working in different field",
 
       bulletPoints: ["Want to transition to HR", "Looking for growth"],
@@ -28,7 +36,11 @@ const WhoIsThisProgramFor = () => {
     },
     {
       id: 3,
-      title: "Strong Communicators",
+      title: (
+        <span>
+          Strong <br /> Communicators
+        </span>
+      ),
       subtitle: "Good at conversations",
       bulletPoints: ["People-oriented person", "Enjoy working with teams"],
       backgroundImage: "/thumbnails/stock3.png", // Replace with actual image path
@@ -36,7 +48,11 @@ const WhoIsThisProgramFor = () => {
     },
     {
       id: 4,
-      title: "Job Seekers",
+      title: (
+        <span>
+          Job <br /> Seekers
+        </span>
+      ),
       subtitle: "Unemployed graduates",
       bulletPoints: ["Completed education", "Need guaranteed career start"],
       backgroundImage: "/thumbnails/stock4.png", // Replace with actual image path

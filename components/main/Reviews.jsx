@@ -118,7 +118,7 @@ export default function Testimonials({
   };
 
   return (
-    <div className="px-[5%] py-16 text-center max">
+    <div id="Reviews" className="px-[5%] py-16 text-center max">
       <div className="mb-8">
         {subtitle && (
           <p className="text-[#26784e] mb-2 text-[18px] md:text-[22px] font-bold">

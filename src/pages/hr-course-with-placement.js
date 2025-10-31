@@ -51,16 +51,6 @@ export default function Full_stack() {
 
     section: [
       {
-        imgSrc: "/icon/s.png",
-        main: (
-          <span>
-            12000 + <br />
-            students
-          </span>
-        ),
-        sub: "",
-      },
-      {
         imgSrc: "/icon/g.png",
         main: (
           <span>
@@ -70,12 +60,22 @@ export default function Full_stack() {
         ),
         sub: "",
       },
+      {
+        imgSrc: "/icon/s.png",
+        main: (
+          <span>
+            12000 + <br />
+            Students
+          </span>
+        ),
+        sub: "",
+      },
 
       {
         imgSrc: "/icon/pp.png",
         main: (
           <span>
-            1200+ <br /> placement partner
+            1200+ <br /> Placement Partner
           </span>
         ),
         sub: "",
@@ -346,9 +346,21 @@ export default function Full_stack() {
 
   return (
     <>
-      <Header2 />
+      <Header2
+        links={[
+          { href: "#Partners", label: "Placement Partners" },
+          { href: "#why-itpm", label: "Why iTpreneur" },
+          { href: "#Reviews", label: "Testimonials" },
+          { href: "#FAQ", label: "FAQs" },
+        ]}
+      />
+
       <ProfessionalMarquee />
-      <Hero2 data={heroData} pageSource={"hr-course-with-placement"} />
+      <Hero2
+        data={heroData}
+        showAccreditations={false}
+        pageSource={"hr-course-with-placement"}
+      />
       <MythBuster />
       <Partner_slider />
       <PlacementStats />
@@ -378,13 +390,11 @@ export default function Full_stack() {
         }
         pageSource={"hr-course-with-placement"}
       />
-
       <StickyFooter2
         message={
           "Register yourself for Full Stack Java Development Program with 100% Job Guarantee Assurance"
         }
       />
-
       {/* <ProfessionalMarqueeForSimpleText /> */}
       {/* <Student2
         title="Struggling to start your IT career?"
@@ -402,7 +412,6 @@ export default function Full_stack() {
         }
         students={profiles}
       /> */}
-
       {/* <ITStruggleSection data={itStruggleData} /> */}
       {/* <CyberSecurityBenefits
         reasons={reasons}
@@ -411,7 +420,6 @@ export default function Full_stack() {
           "This Java Full Stack Journey Is Designed For Individuals Who"
         }
       /> */}
-
       {/* <CareerTransformation
         title={"Your Career Transformation Starts Here"}
         subtitle={
@@ -437,7 +445,6 @@ export default function Full_stack() {
           </>
         }
       /> */}
-
       {/* <ToolsGrid
         tools={tools}
         title={

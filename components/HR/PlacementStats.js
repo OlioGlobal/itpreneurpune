@@ -55,7 +55,7 @@ const PlacementStats = () => {
               <div className="flex-1 text-center px-4 lg:px-8 py-6 lg:py-0">
                 {/* Main Statistic */}
                 <div
-                  className={`text-3xl sm:text-4xl lg:text-5xl font-bold ${stat.color} mb-3`}
+                  className={`text-[22px] sm:text-[24px] lg:text-[34px] font-bold ${stat.color} mb-3`}
                 >
                   {stat.mainText}
                 </div>

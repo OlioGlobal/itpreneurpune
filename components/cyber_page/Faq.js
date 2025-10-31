@@ -71,7 +71,7 @@ const FaqSection = ({ faqData }) => {
   );
 
   return (
-    <div className="max flex flex-col gap-5 rm px-[5%]">
+    <div id="FAQ" className="max flex flex-col gap-5 rm px-[5%]">
       {/* Title Section */}
       <div className="text-center mb-8">
         <h2 className="font-bold text-[#163123] h2t leading-[1.2]">

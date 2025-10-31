@@ -39,7 +39,7 @@ const ProgramComparison = () => {
   };
 
   return (
-    <div className="max-w-6xl mx-auto rm pad bg-white">
+    <div id="why-itpm" className="max-w-6xl mx-auto rm pad bg-white">
       {/* Header Section */}
       <div className="text-center mb-12">
         <h2 className="h2t leading-[120%] font-bold">{headerData.title}</h2>
