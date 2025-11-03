@@ -82,6 +82,18 @@
       "namedRegex": "^/hr\\-course\\-with\\-placement(?:/)?$"
     },
     {
+      "page": "/hr-course-with-placement-meta",
+      "regex": "^/hr\\-course\\-with\\-placement\\-meta(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/hr\\-course\\-with\\-placement\\-meta(?:/)?$"
+    },
+    {
+      "page": "/hr-course-with-placement-youtube",
+      "regex": "^/hr\\-course\\-with\\-placement\\-youtube(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/hr\\-course\\-with\\-placement\\-youtube(?:/)?$"
+    },
+    {
       "page": "/index1",
       "regex": "^/index1(?:/)?$",
       "routeKeys": {},

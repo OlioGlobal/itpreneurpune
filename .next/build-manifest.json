@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/RgNcP_uz7Z0xeQqJhi-mB/_buildManifest.js",
-    "static/RgNcP_uz7Z0xeQqJhi-mB/_ssgManifest.js"
+    "static/uuOmQDyRB2pJfSGoK4xkg/_buildManifest.js",
+    "static/uuOmQDyRB2pJfSGoK4xkg/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "rootMainFilesTree": {},
@@ -142,7 +142,34 @@
       "static/chunks/598-d7bcbdb3d6117f55.js",
       "static/chunks/532-a15e3375de61079e.js",
       "static/chunks/777-3599b4ec17e38696.js",
-      "static/chunks/pages/hr-course-with-placement-e57eead704adc851.js"
+      "static/chunks/149-c82008e50e2c2da3.js",
+      "static/chunks/pages/hr-course-with-placement-95691057c4b2610f.js"
+    ],
+    "/hr-course-with-placement-meta": [
+      "static/chunks/webpack-f5c9bbb7127d32ec.js",
+      "static/chunks/framework-2f335d22a7318891.js",
+      "static/chunks/main-701dbc27ca0a5778.js",
+      "static/chunks/981-1fd64ddac04e317e.js",
+      "static/chunks/105-f59883aba1555dcf.js",
+      "static/chunks/512-4cfa4a758fcde806.js",
+      "static/chunks/598-d7bcbdb3d6117f55.js",
+      "static/chunks/532-a15e3375de61079e.js",
+      "static/chunks/777-3599b4ec17e38696.js",
+      "static/chunks/149-c82008e50e2c2da3.js",
+      "static/chunks/pages/hr-course-with-placement-meta-c8d145b681e01477.js"
+    ],
+    "/hr-course-with-placement-youtube": [
+      "static/chunks/webpack-f5c9bbb7127d32ec.js",
+      "static/chunks/framework-2f335d22a7318891.js",
+      "static/chunks/main-701dbc27ca0a5778.js",
+      "static/chunks/981-1fd64ddac04e317e.js",
+      "static/chunks/105-f59883aba1555dcf.js",
+      "static/chunks/512-4cfa4a758fcde806.js",
+      "static/chunks/598-d7bcbdb3d6117f55.js",
+      "static/chunks/532-a15e3375de61079e.js",
+      "static/chunks/777-3599b4ec17e38696.js",
+      "static/chunks/149-c82008e50e2c2da3.js",
+      "static/chunks/pages/hr-course-with-placement-youtube-57c835fffccbffc3.js"
     ],
     "/index1": [
       "static/chunks/webpack-f5c9bbb7127d32ec.js",
