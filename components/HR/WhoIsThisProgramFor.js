@@ -17,7 +17,7 @@ const WhoIsThisProgramFor = () => {
       ),
       subtitle: "(B.Com / B.Sc / BA / BBA)",
 
-      bulletPoint: ["Want to start HR career", "Any stream, any college"],
+      bulletPoint: ["Want to start HR career", " Any stream, any college"],
       backgroundImage: "/thumbnails/stock1.png", // Replace with actual image path
       bgColor: "bg-green-700",
     },

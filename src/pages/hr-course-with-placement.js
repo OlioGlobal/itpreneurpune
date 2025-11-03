@@ -273,7 +273,7 @@ export default function Full_stack() {
       id: 5,
       question: "Do I need to be in Pune? Is this online or offline?",
       answer:
-        "Hybrid model - You can attend live online sessions from anywhere OR come to our Pune center. Internship can be done remotely or locally based on availability.",
+        "Hybrid model - You can attend live online sessions from any where OR come to our Pune center. Internship can be done remotely or locally based on availability.",
     },
     {
       id: 6,

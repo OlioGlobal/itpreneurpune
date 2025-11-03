@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/U9cJrYhyvKFueWfrPdQxn/_buildManifest.js",
-    "static/U9cJrYhyvKFueWfrPdQxn/_ssgManifest.js"
+    "static/RgNcP_uz7Z0xeQqJhi-mB/_buildManifest.js",
+    "static/RgNcP_uz7Z0xeQqJhi-mB/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "rootMainFilesTree": {},
@@ -142,7 +142,7 @@
       "static/chunks/598-d7bcbdb3d6117f55.js",
       "static/chunks/532-a15e3375de61079e.js",
       "static/chunks/777-3599b4ec17e38696.js",
-      "static/chunks/pages/hr-course-with-placement-3a7c064b6e90df9b.js"
+      "static/chunks/pages/hr-course-with-placement-e57eead704adc851.js"
     ],
     "/index1": [
       "static/chunks/webpack-f5c9bbb7127d32ec.js",
