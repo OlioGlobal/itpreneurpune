@@ -107,7 +107,6 @@ export default function Hero2({ pageSource, data, showAccreditations = true }) {
         </div>
       </div>
 
-      {/* ✅ Toggle Accreditations Section */}
       {showAccreditations && (
         <div className="bg-[#F1F3EF] py-5">
           <div className="flex flex-col gap-4 justify-center items-center py-6 px-[5%] max-w-7xl mx-auto">

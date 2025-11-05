@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/uuOmQDyRB2pJfSGoK4xkg/_buildManifest.js",
-    "static/uuOmQDyRB2pJfSGoK4xkg/_ssgManifest.js"
+    "static/5_Px7xzgyUwZ0zhUOYQ4B/_buildManifest.js",
+    "static/5_Px7xzgyUwZ0zhUOYQ4B/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "rootMainFilesTree": {},
@@ -18,7 +18,7 @@
       "static/chunks/981-1fd64ddac04e317e.js",
       "static/chunks/105-f59883aba1555dcf.js",
       "static/chunks/512-4cfa4a758fcde806.js",
-      "static/chunks/598-d7bcbdb3d6117f55.js",
+      "static/chunks/598-069aa5c8cbdcd399.js",
       "static/chunks/532-a15e3375de61079e.js",
       "static/chunks/777-3599b4ec17e38696.js",
       "static/chunks/pages/index-75732a65f527339b.js"
@@ -27,7 +27,7 @@
       "static/chunks/webpack-f5c9bbb7127d32ec.js",
       "static/chunks/framework-2f335d22a7318891.js",
       "static/chunks/main-701dbc27ca0a5778.js",
-      "static/css/b590e6b6f32ea060.css",
+      "static/css/15386b7b6caf6173.css",
       "static/chunks/pages/_app-7765761dc455e7fd.js"
     ],
     "/_error": [
@@ -42,8 +42,11 @@
       "static/chunks/main-701dbc27ca0a5778.js",
       "static/chunks/981-1fd64ddac04e317e.js",
       "static/chunks/105-f59883aba1555dcf.js",
-      "static/chunks/598-d7bcbdb3d6117f55.js",
-      "static/chunks/pages/bussiness-and-data-analytics-b2e5addcd23b8949.js"
+      "static/chunks/512-4cfa4a758fcde806.js",
+      "static/chunks/598-069aa5c8cbdcd399.js",
+      "static/chunks/532-a15e3375de61079e.js",
+      "static/chunks/777-3599b4ec17e38696.js",
+      "static/chunks/pages/bussiness-and-data-analytics-b820a7f4fb7a453d.js"
     ],
     "/cyber-security": [
       "static/chunks/webpack-f5c9bbb7127d32ec.js",
@@ -51,7 +54,7 @@
       "static/chunks/main-701dbc27ca0a5778.js",
       "static/chunks/981-1fd64ddac04e317e.js",
       "static/chunks/105-f59883aba1555dcf.js",
-      "static/chunks/598-d7bcbdb3d6117f55.js",
+      "static/chunks/598-069aa5c8cbdcd399.js",
       "static/chunks/pages/cyber-security-81357ae6aa9f616b.js"
     ],
     "/dot-net-developer": [
@@ -60,7 +63,7 @@
       "static/chunks/main-701dbc27ca0a5778.js",
       "static/chunks/981-1fd64ddac04e317e.js",
       "static/chunks/105-f59883aba1555dcf.js",
-      "static/chunks/598-d7bcbdb3d6117f55.js",
+      "static/chunks/598-069aa5c8cbdcd399.js",
       "static/chunks/pages/dot-net-developer-8cc3cb4ae1174b58.js"
     ],
     "/fullstack-dotnet-developer": [
@@ -70,7 +73,7 @@
       "static/chunks/981-1fd64ddac04e317e.js",
       "static/chunks/105-f59883aba1555dcf.js",
       "static/chunks/512-4cfa4a758fcde806.js",
-      "static/chunks/598-d7bcbdb3d6117f55.js",
+      "static/chunks/598-069aa5c8cbdcd399.js",
       "static/chunks/532-a15e3375de61079e.js",
       "static/chunks/pages/fullstack-dotnet-developer-d013075793bf7926.js"
     ],
@@ -81,7 +84,7 @@
       "static/chunks/981-1fd64ddac04e317e.js",
       "static/chunks/105-f59883aba1555dcf.js",
       "static/chunks/512-4cfa4a758fcde806.js",
-      "static/chunks/598-d7bcbdb3d6117f55.js",
+      "static/chunks/598-069aa5c8cbdcd399.js",
       "static/chunks/532-a15e3375de61079e.js",
       "static/chunks/pages/fullstack-dotnet-developer-meta-01f7e259a91b754e.js"
     ],
@@ -92,7 +95,7 @@
       "static/chunks/981-1fd64ddac04e317e.js",
       "static/chunks/105-f59883aba1555dcf.js",
       "static/chunks/512-4cfa4a758fcde806.js",
-      "static/chunks/598-d7bcbdb3d6117f55.js",
+      "static/chunks/598-069aa5c8cbdcd399.js",
       "static/chunks/532-a15e3375de61079e.js",
       "static/chunks/pages/fullstack-dotnet-developer-youtube-a30e8486c39ee3fe.js"
     ],
@@ -103,7 +106,7 @@
       "static/chunks/981-1fd64ddac04e317e.js",
       "static/chunks/105-f59883aba1555dcf.js",
       "static/chunks/512-4cfa4a758fcde806.js",
-      "static/chunks/598-d7bcbdb3d6117f55.js",
+      "static/chunks/598-069aa5c8cbdcd399.js",
       "static/chunks/532-a15e3375de61079e.js",
       "static/chunks/777-3599b4ec17e38696.js",
       "static/chunks/pages/fullstack-java-developer-de260d54fc7b7043.js"
@@ -115,7 +118,7 @@
       "static/chunks/981-1fd64ddac04e317e.js",
       "static/chunks/105-f59883aba1555dcf.js",
       "static/chunks/512-4cfa4a758fcde806.js",
-      "static/chunks/598-d7bcbdb3d6117f55.js",
+      "static/chunks/598-069aa5c8cbdcd399.js",
       "static/chunks/532-a15e3375de61079e.js",
       "static/chunks/777-3599b4ec17e38696.js",
       "static/chunks/pages/fullstack-java-developer-meta-3bf33e2f6bb0657a.js"
@@ -127,7 +130,7 @@
       "static/chunks/981-1fd64ddac04e317e.js",
       "static/chunks/105-f59883aba1555dcf.js",
       "static/chunks/512-4cfa4a758fcde806.js",
-      "static/chunks/598-d7bcbdb3d6117f55.js",
+      "static/chunks/598-069aa5c8cbdcd399.js",
       "static/chunks/532-a15e3375de61079e.js",
       "static/chunks/777-3599b4ec17e38696.js",
       "static/chunks/pages/fullstack-java-developer-youtube-f72919270c87e997.js"
@@ -139,11 +142,11 @@
       "static/chunks/981-1fd64ddac04e317e.js",
       "static/chunks/105-f59883aba1555dcf.js",
       "static/chunks/512-4cfa4a758fcde806.js",
-      "static/chunks/598-d7bcbdb3d6117f55.js",
+      "static/chunks/598-069aa5c8cbdcd399.js",
       "static/chunks/532-a15e3375de61079e.js",
       "static/chunks/777-3599b4ec17e38696.js",
-      "static/chunks/149-c82008e50e2c2da3.js",
-      "static/chunks/pages/hr-course-with-placement-95691057c4b2610f.js"
+      "static/chunks/107-6a4b6405584462d6.js",
+      "static/chunks/pages/hr-course-with-placement-5d6141efe961d019.js"
     ],
     "/hr-course-with-placement-meta": [
       "static/chunks/webpack-f5c9bbb7127d32ec.js",
@@ -152,11 +155,11 @@
       "static/chunks/981-1fd64ddac04e317e.js",
       "static/chunks/105-f59883aba1555dcf.js",
       "static/chunks/512-4cfa4a758fcde806.js",
-      "static/chunks/598-d7bcbdb3d6117f55.js",
+      "static/chunks/598-069aa5c8cbdcd399.js",
       "static/chunks/532-a15e3375de61079e.js",
       "static/chunks/777-3599b4ec17e38696.js",
-      "static/chunks/149-c82008e50e2c2da3.js",
-      "static/chunks/pages/hr-course-with-placement-meta-c8d145b681e01477.js"
+      "static/chunks/107-6a4b6405584462d6.js",
+      "static/chunks/pages/hr-course-with-placement-meta-89f929361bcaeb3b.js"
     ],
     "/hr-course-with-placement-youtube": [
       "static/chunks/webpack-f5c9bbb7127d32ec.js",
@@ -165,11 +168,11 @@
       "static/chunks/981-1fd64ddac04e317e.js",
       "static/chunks/105-f59883aba1555dcf.js",
       "static/chunks/512-4cfa4a758fcde806.js",
-      "static/chunks/598-d7bcbdb3d6117f55.js",
+      "static/chunks/598-069aa5c8cbdcd399.js",
       "static/chunks/532-a15e3375de61079e.js",
       "static/chunks/777-3599b4ec17e38696.js",
-      "static/chunks/149-c82008e50e2c2da3.js",
-      "static/chunks/pages/hr-course-with-placement-youtube-57c835fffccbffc3.js"
+      "static/chunks/107-6a4b6405584462d6.js",
+      "static/chunks/pages/hr-course-with-placement-youtube-e657599b60cf84a4.js"
     ],
     "/index1": [
       "static/chunks/webpack-f5c9bbb7127d32ec.js",
@@ -185,7 +188,7 @@
       "static/chunks/main-701dbc27ca0a5778.js",
       "static/chunks/981-1fd64ddac04e317e.js",
       "static/chunks/105-f59883aba1555dcf.js",
-      "static/chunks/598-d7bcbdb3d6117f55.js",
+      "static/chunks/598-069aa5c8cbdcd399.js",
       "static/chunks/pages/mean-stack-developer-063db1ef0b6a8842.js"
     ],
     "/mern-stack-developer": [
@@ -194,7 +197,7 @@
       "static/chunks/main-701dbc27ca0a5778.js",
       "static/chunks/981-1fd64ddac04e317e.js",
       "static/chunks/105-f59883aba1555dcf.js",
-      "static/chunks/598-d7bcbdb3d6117f55.js",
+      "static/chunks/598-069aa5c8cbdcd399.js",
       "static/chunks/pages/mern-stack-developer-36fcf8fdd3ed6a06.js"
     ],
     "/python-developer": [
@@ -204,7 +207,7 @@
       "static/chunks/981-1fd64ddac04e317e.js",
       "static/chunks/105-f59883aba1555dcf.js",
       "static/chunks/512-4cfa4a758fcde806.js",
-      "static/chunks/598-d7bcbdb3d6117f55.js",
+      "static/chunks/598-069aa5c8cbdcd399.js",
       "static/chunks/532-a15e3375de61079e.js",
       "static/chunks/pages/python-developer-f4d9301051e2f2ee.js"
     ],
@@ -215,7 +218,7 @@
       "static/chunks/981-1fd64ddac04e317e.js",
       "static/chunks/105-f59883aba1555dcf.js",
       "static/chunks/512-4cfa4a758fcde806.js",
-      "static/chunks/598-d7bcbdb3d6117f55.js",
+      "static/chunks/598-069aa5c8cbdcd399.js",
       "static/chunks/532-a15e3375de61079e.js",
       "static/chunks/pages/python-developer-meta-d08f37428ba761e5.js"
     ],
@@ -226,7 +229,7 @@
       "static/chunks/981-1fd64ddac04e317e.js",
       "static/chunks/105-f59883aba1555dcf.js",
       "static/chunks/512-4cfa4a758fcde806.js",
-      "static/chunks/598-d7bcbdb3d6117f55.js",
+      "static/chunks/598-069aa5c8cbdcd399.js",
       "static/chunks/532-a15e3375de61079e.js",
       "static/chunks/pages/python-developer-youtube-acf119a9077e5375.js"
     ],
@@ -236,7 +239,7 @@
       "static/chunks/main-701dbc27ca0a5778.js",
       "static/chunks/981-1fd64ddac04e317e.js",
       "static/chunks/105-f59883aba1555dcf.js",
-      "static/chunks/598-d7bcbdb3d6117f55.js",
+      "static/chunks/598-069aa5c8cbdcd399.js",
       "static/chunks/pages/software-testing-929dc7942b86a7c7.js"
     ],
     "/thank-you": [
@@ -244,6 +247,18 @@
       "static/chunks/framework-2f335d22a7318891.js",
       "static/chunks/main-701dbc27ca0a5778.js",
       "static/chunks/pages/thank-you-2839175739489fdf.js"
+    ],
+    "/ui-ux-design-development": [
+      "static/chunks/webpack-f5c9bbb7127d32ec.js",
+      "static/chunks/framework-2f335d22a7318891.js",
+      "static/chunks/main-701dbc27ca0a5778.js",
+      "static/chunks/981-1fd64ddac04e317e.js",
+      "static/chunks/105-f59883aba1555dcf.js",
+      "static/chunks/512-4cfa4a758fcde806.js",
+      "static/chunks/598-069aa5c8cbdcd399.js",
+      "static/chunks/532-a15e3375de61079e.js",
+      "static/chunks/777-3599b4ec17e38696.js",
+      "static/chunks/pages/ui-ux-design-development-0acfbb65c0b67f22.js"
     ]
   },
   "ampFirstPages": []

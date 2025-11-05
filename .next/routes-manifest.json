@@ -140,6 +140,12 @@
       "regex": "^/thank\\-you(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/thank\\-you(?:/)?$"
+    },
+    {
+      "page": "/ui-ux-design-development",
+      "regex": "^/ui\\-ux\\-design\\-development(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/ui\\-ux\\-design\\-development(?:/)?$"
     }
   ],
   "dataRoutes": [],

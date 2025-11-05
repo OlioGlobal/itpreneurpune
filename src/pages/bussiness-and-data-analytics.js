@@ -14,24 +14,104 @@ import HearformStud from "../../components/cyber_page/HearformStud";
 import CareerSuccessComponents from "../../components/cyber_page/CareerSuccess";
 import StickyFooter2 from "../../components/stickyfooter2";
 import Enroll2 from "../../components/cyber_page/Enroll2";
+import ProfessionalMarquee from "../../components/ProfessionalMarquee";
+import ITStruggleSection from "../../components/main/ITStruggleSection";
+import ProfessionalMarqueeForSimpleText from "../../components/ProfessionalMarqueeForSimpleText";
+import Student2 from "../../components/cyber_page/student2";
+import Testimonials from "../../components/main/Reviews";
 
 export default function Full_stack() {
   const heroData = {
-    title: "Become a Certified Business Analyst + Data Analytics Professional",
-    subtitle: "Master In 180 Days and Secure Your Dream Job!",
-    description:
-      "Ready to transform your career? Join iTpreneur’s Business Analyst + Data Analytics program and gain dual certifications, hands-on experience, and personalized career support to switch careers with confidence.",
-    notice: "Reserve Your Spot — Next Batch Filling Fast",
-    backgroundImage: "/icon/da_bg.webp",
+    title: "Start Your Journey in Business Analysis & Data Analytics Today!",
+    Partnertitle: "Our Accreditations",
+    subtitle: (
+      <span className="text-[#FFFFFFCC] text-[22px]">
+        Master the essential skills needed for high-demand roles in{" "}
+        <br className="hidden md:block" /> Business Analysis and Data Analytics
+        with hands-on training <br className="hidden md:block" /> and a
+        <span className="text-white font-bold"> guaranteed job offer.</span>
+      </span>
+    ),
+
+    // description: (
+    //   <ul className="list-disc pl-5 text-[18px] md:text-[20px] md:max-w-xl font-normal space-y-2">
+    //     <li>100% Job Guarantee</li>
+    //     <li>1,200+ Placement Partners</li>
+    //     <li>Master Coding Skills</li>
+    //   </ul>
+    // ),
+
+    section: [
+      {
+        imgSrc: "/icon/s7.png",
+        main: "100%",
+        sub: "Job Guarantee",
+      },
+
+      {
+        imgSrc: "/icon/s5.png",
+        main: " 1,200+",
+        sub: "Placement Partners",
+      },
+      {
+        imgSrc: "/icon/s5.png",
+        main: "12000+",
+        sub: "Students Placed",
+      },
+    ],
+
+    notice: "2735 Students Have Registered So Far!",
+    noticePara: "Limited Seats. Register your interest for FREE.",
+    backgroundImage: "/icon/java_bg.webp",
     instituteNote:
-      "Global certifications from along with iTpreneur course \n completion certificate certified by",
-      partnerLogos: [
-        { src: "/icon/aicte.png", alt: "AICTE", name: "All India Council for Technical Education" },
-        { src: "/icon/nsdc-logo.png", alt: "NSDC", name: "National Skill Development Corporation (NSDC)" },
-        { src: "/icon/aictsd-logo.png", alt: "AICSTD", name: "All India Council for Technical Skill Development"   },
-        { src: "/icon/skill-india-logo.png", alt: "Skill India", name: "National Skills Development Mission of India" },
-        { src: "/icon/iso.png", alt: "ISO", name: "International Organization for Standardization" },
-      ],
+      "iTpreneur is an ISO-certified institute offering industry-recognized, job-oriented training and placement programs.",
+    partnerLogos: [
+      {
+        src: "/icon/aicte.png",
+        alt: "AICTE",
+        name: (
+          <span>
+            All India Council <br /> for Technical <br /> Education
+          </span>
+        ),
+      },
+      {
+        src: "/icon/nsdc-logo.png",
+        alt: "NSDC",
+        name: (
+          <span>
+            National Skill <br /> Development Corporation (NSDC)
+          </span>
+        ),
+      },
+      {
+        src: "/icon/aictsd-logo.png",
+        alt: "AICSTD",
+        name: (
+          <spna>
+            All India Council <br /> for Technical Skill Development
+          </spna>
+        ),
+      },
+      {
+        src: "/icon/skill-india-logo.png",
+        alt: "Skill India",
+        name: (
+          <span>
+            National Skills Development Mission <br /> of India
+          </span>
+        ),
+      },
+      {
+        src: "/icon/iso.png",
+        alt: "ISO",
+        name: (
+          <span>
+            International <br /> Organization <br /> for Standardization
+          </span>
+        ),
+      },
+    ],
   };
   const profiles = [
     {
@@ -50,55 +130,62 @@ export default function Full_stack() {
     {
       title: "100% Job Guarantee",
       description:
-        "Your success is our commitment. With a Day 1 Offer Letter or a refund policy, we ensure you land a high-paying job in the IT industry.",
+        "We don’t just train you; we ensure you land your dream job. With a Day 1 offer letter or a refund policy, your success is our priority.",
       icon: "/icon/gd1.png",
     },
     {
       title: "Hands-On Training",
       description:
-        "Work on real-world projects like e-commerce dashboards, sales analytics, and attendance management systems using tools like Tableau and Excel.",
+        "Work on live projects like penetration testing, digital forensics, and web application security. Gain practical experience that employers value.",
       icon: "/icon/gd2.png",
     },
     {
       title: "Flexible Learning Options",
       description:
-        "Choose from online, offline, or hybrid batches. Weekend and self-paced modules are designed to fit your schedule, whether you’re a student or a working professional.",
+        "Choose from online, offline, or hybrid batches. Weekend and self-paced modules are available to fit your schedule.",
       icon: "/icon/gd3.png",
     },
     {
       title: "Expert Mentorship",
       description:
-        "Learn from industry experts with over 10 years of experience. Get 1-on-1 guidance, doubt resolution, and career coaching to excel in Business Analysis and Data Analytics.",
+        "Learn from industry veterans with 10+ years of experience. Get personalized guidance, 1-on-1 doubt resolution, and career coaching.",
       icon: "/icon/gd4.png",
     },
     {
       title: "Comprehensive Career Support",
-      description:
-        "From mock interviews to resume building and LinkedIn optimization, we’ve got you covered. Access 300+ hiring partners, including top MNCs and startups, to secure your dream role.",
+      description: (
+        <ul className="list-disc list-inside ">
+          <li>Mock interviews and grooming sessions</li>
+          <li>Resume building and LinkedIn optimization</li>
+          <li>
+            Access to 1,200+ hiring partners, including top MNCs and startups
+          </li>
+        </ul>
+      ),
       icon: "/icon/gd5.png",
     },
   ];
   const roles = [
     "Business Analyst",
-    "Data Analyst",
-    "Functional Business Analyst",
-    "Product Owner",
-    "Technical Business Analyst",
+    "Business Analyst",
+    "Data Scientist",
+    "Business Intelligence Analyst",
+    "Data Visualization Specialist",
   ];
 
   const salaryData = [
     {
-      range: "₹3 to 5 LPA",
-      level: "Entry-level Job",
+      range: "₹2.5 to 5 LPA",
+      level: "Junior level",
       color: "text-[#0E75A9] border-[#0E75A9]",
     },
     {
-      range: "₹8 to 12 LPA",
+      range: "₹6 to 10 LPA",
       level: "Mid-level Job",
       color: "text-[#C07B19] border-[#C07B19]",
     },
     {
-      range: "₹15+ LPA",
+      range: "₹14+ LPA",
       level: "Senior-level Job",
       color: "text-[#6726D9] border-[#6726D9]",
     },
@@ -108,110 +195,142 @@ export default function Full_stack() {
       id: 1,
       title: "120 Days of Intensive Training",
       description: "85% practical, 15% theory",
-      image: "/icon/h1.webp",
+      image: "/icon/h1.jpg",
     },
     {
       id: 2,
       title: "Live Sessions + Video Lectures",
       description: "Learn at your own pace",
-      image: "/icon/h2.webp",
+      image: "/icon/h2.jpg",
     },
     {
       id: 3,
-      title: "Hands-On Labs",
+      title: "Hands-On experience",
       description: "Build real-world projects and showcase them on GitHub",
-      image: "/icon/h3.webp",
+      image: "/icon/h3.jpg",
     },
     {
       id: 4,
       title: "Mock Interviews",
       description: "Prepare for technical and HR rounds with confidence",
-      image: "/icon/h4.webp",
+      image: "/icon/h4.jpg",
     },
     {
       id: 5,
       title: "Placement Assistance",
-      description: "100% job guarantee with access to 300+ hiring partners",
-      image: "/icon/h5.webp",
+      description: "100% job guarantee with access to 1,200+ hiring partners",
+      image: "/icon/h5.jpg",
     },
   ];
   const faqData = [
     {
       id: 1,
-      question: "Who can join this program?",
+      question: "Do I need prior technical knowledge to join this program?",
       answer:
-        "This course is ideal for final-year students, fresh graduates, and working professionals looking to upskill or switch careers in Business Analysis and Data Analytics.",
+        "No, this program is designed for beginners. We’ll start with the basics and take you through advanced concepts.",
     },
     {
       id: 2,
-      question: "What is the duration of the course?",
+      question: "How is the job assistance provided?",
       answer:
-        "The program is designed to be completed in just 180 days, with flexible learning options to suit your needs.",
+        "We provide 100% job guarantee support, including mock interviews, resume building, and direct placement opportunities with our 300+ partners.",
     },
     {
       id: 3,
-      question: "Is there a job guarantee?",
+      question: "Is the program available online?",
       answer:
-        "Absolutely! We offer a 100% job guarantee with a Day 1 offer letter or a refund policy for peace of mind.",
+        "Yes, we offer both online and offline modes to cater to your learning preferences.",
     },
     {
       id: 4,
-      question: "What kind of projects will I work on?",
+      question: "What roles will I qualify for after completing this course?",
       answer:
-        "You’ll build real-world projects like e-commerce dashboards, sales analytics, and attendance management systems using tools like Tableau, Power BI, and Excel.",
+        "You will be prepared for various roles, including Business Analyst, Data Analyst, Data Scientist, and more.",
     },
   ];
+
   const reasons = [
-    "You're An Engineering Graduate But Still Job Hunting.",
-    "You're Exhausted By The MPSC/UPSC Grind.",
-    "You're Looking To Switch Into A Stable, High-Demand IT Career.",
-    "You Want A Future-Proof Skill With Global Demand.",
+    "You’re eager to analyze and interpret data to make informed business decisions.",
+    "You want to learn how to gather, clean, and visualize data for actionable insights.",
+    "You want to shift to an in-demand role in the data-driven business world, even with a non-IT background.",
+    "You seek a future-proof career with global opportunities in business and data analytics.",
   ];
   const tools = [
-    { title: "Python", icon: "/tech/data-science-1.png" },
-    { title: "NumPy", icon: "/tech/data-science-2.png" },
-    { title: "Matplotlib", icon: "/tech/data-science-3.png" },
-    { title: "Streamlit", icon: "/tech/data-science-4.png" },
-    { title: "Burp Suite", icon: "/tech/data-science-5.png" },
-    { title: "SQL", icon: "/tech/data-science-7.png" },
+    { title: "Excel", icon: "/tech/Excel.png" },
+    { title: "Informatica", icon: "/tech/Informatica.png" },
+    { title: "MySQL", icon: "/tech/MySQL.png" },
+    { title: "NoSQL", icon: "/tech/NoSQL.png" },
+    { title: "Power BI", icon: "/tech/Power BI.png" },
+    { title: "Python", icon: "/tech/Python.png" },
+    { title: "SQL", icon: "/tech/SQL.png" },
+    { title: "Tableau", icon: "/tech/Tableau.png" },
+    { title: "ChatGPT", icon: "/tech/ChatGPT.png" },
+    { title: "AWS", icon: "/tech/AWS.png" },
+    { title: "AI", icon: "/tech/AI.png" },
   ];
+
+  const itStruggleData = {
+    videoSrc: "/videos/Java.mp4",
+    posterSrc: "/thumbnails/full-stack-java-thumnail.png",
+    title: "Struggling to Kick Start a Career in IT?",
+    description:
+      "We understand the struggle of trying to break into the IT industry. The endless job applications, the pressure to have hands-on experience, and the feeling of being overlooked despite your potential.",
+    struggles: [
+      "Struggling to crack interviews?",
+      "Not getting interview calls?",
+      "No hands-on experience?",
+      "Unsure how to bridge your career gap?",
+      "Rejected despite the right qualifications?",
+      "Confused by industry tools and tech?",
+      "Overwhelmed by job market competition?",
+      "Want to switch to IT from another field?",
+      "Lost confidence after rejections?",
+      "Lack the right connections?",
+      "Don't know which IT skill to focus on?",
+      "Unsure where to start your IT career?",
+    ],
+    ctaText: "Get Career Consultation",
+  };
 
   return (
     <>
       <Header2 />
-      <Hero2 data={heroData} pageSource={"Bussiness_and_Data_Analytics"} />
-      <StudentCarousel
+      <ProfessionalMarquee />
+
+      <Hero2 data={heroData} pageSource={"bussiness-and-data-analytics"} />
+      <ProfessionalMarqueeForSimpleText />
+      <Student2
+        title="Struggling to start your IT career?"
+        paragraph="Join over 12,000+ people who’ve kickstarted their careers with great salary packages."
+        bgColor="#ffffff"
+      />
+      {/* <StudentCarousel
         title={
           <span className="text-[#163123]">
-            Over <span className="text-[#26784E]">12000+</span> Careers Launched
-            with Impressive <br /> Salary Packages
+            Struggling to start your IT career?
           </span>
         }
+        subtitle={
+          "Join over 12,000+ people who’ve kickstarted their careers with great salary packages."
+        }
         students={profiles}
-      />
+      /> */}
       <Partner_slider />
+
       <CyberSecurityBenefits
         reasons={reasons}
         title={
           <span>
-            Business Analyst + Data Analytics <br className="hidden md:block" />{" "}
-            Program Is For You If...
+            Business Analysis & Data Analytics <br /> Program Is for You If...
           </span>
         }
-        subtitle={
-          <span>
-            In today&#39;s competitive tech landscape, companies are desperately
-            seeking skilled Business <br className="hidden md:block" /> Analysts
-            with data analytics expertise to drive insights and informed
-            decisions.
-          </span>
-        }
+        subtitle={""}
       />
 
       <CareerTransformation
         title={"Your Career Transformation Starts Here"}
         subtitle={
-          "With expertise in Business Analysis and Data Analytics, you can unlock in-demand roles like:"
+          "Gain hands-on experience and mentorship to unlock roles like:"
         }
         roles={roles}
         salaryData={salaryData}
@@ -220,16 +339,28 @@ export default function Full_stack() {
         data={cards}
         heading={
           <>
-            Why Choose Our Business Analysis and{" "}
-            <br className="hidden md:block" /> Data Analytics Program?
+            Why Choose Our Business Analysis
+            <br className="hidden md:block" />& Data Analytics Program?
           </>
         }
         subheading={
           <>
-            In today&#39;s rapidly evolving tech landscape, our program empowers
-            aspiring Business <br className="hidden md:block" /> and Data
-            Analysts to turn raw data into impactful strategies that drive
-            real-world results.
+            <div className="flex flex-col gap-1">
+              <div>
+                {" "}
+                Our program combines business analysis methodologies with data
+                analytics tools to help you become a well-rounded professional.
+                Whether you&apos;re analyzing business processes or uncovering
+                data-driven insights, you&apos;ll learn the core competencies
+                needed to succeed in these roles.{" "}
+              </div>
+              <div>
+                {" "}
+                With hands-on training, real-world projects, and 1:1 mentorship,
+                you will build a standout portfolio that will open doors to
+                exciting career opportunities.
+              </div>
+            </div>
           </>
         }
       />
@@ -238,46 +369,61 @@ export default function Full_stack() {
         data={services}
         title={
           <span>
-            Business Analysis and Data Analytics{" "}
+            Business Analysis & Data Analytics
             <br className="hidden md:block" /> Program Highlights
           </span>
         }
       />
       <ToolsGrid
         tools={tools}
-        title="Tools and Technologies That You Will Learn"
-        description="With Business Analysis and Data Analytics Program, you'll master these tools step-by-step."
+        title={
+          <span>
+            Tools and Technologies <br /> That You Will Learn
+          </span>
+        }
+        description="With Business Analysis and Data Analytics, you'll master these tools step-by-step."
+        hideSecondRow={true}
       />
       <WhyChooseITpreneur
-        title={"Why Business Analysis and Data Analytics?"}
+        title={"Why Business Analysis & Data Analytics?"}
+        subtitle={"We Are iTpreneur"}
         para={
-          "Business Analysis and Data Analytics are among the most sought-after skills in industries like finance, healthcare, e-commerce, and IT. By mastering these skills, you’ll become a versatile professional ready to tackle real-world challenges and drive business success."
+          <span>
+            Business Analysis and Data Analytics are crucial for driving
+            business strategies. With high demand for data professionals, these
+            roles offer lucrative pay and global opportunities. The field’s
+            rapid evolution ensures continuous learning and career growth.
+          </span>
         }
       />
-      <HearformStud />
+      {/* <HearformStud /> */}
+      <Testimonials title="Hear It From Our Students" subtitle={null} />
       <CareerSuccessComponents />
       <FaqSection faqData={faqData} />
       <Enroll2
         title={
           <span>
-            Take the First Step Toward <br className="hidden md:block" /> Your
-            Business and Data Analytics Program
-            <br className="hidden md:block" /> Career
+            Take the First Step Toward
+            <br className="hidden md:block" /> Your Data Career
           </span>
         }
         para={
           <span>
-            Fill out the form below to get started. One of our career counselors
-            will <br className="hidden md:block" /> get in touch with you to
-            help you choose the right course and guide{" "}
-            <br className="hidden md:block" /> you through the enrollment
-            process.
+            Fill out the form to connect with our career counselor, who will
+            guide <br className="hidden md:block" /> you through the who will{" "}
+            guide you through the program, help you build{" "}
+            <br className="hidden md:block" /> your portfolio, and support you
+            during the placement process.
           </span>
         }
-        pageSource={"Bussiness_and_Data_Analytics"}
+        pageSource={"bussiness-and-data-analytics"}
       />
 
-      <StickyFooter2 />
+      <StickyFooter2
+        message={
+          "Register yourself for Business Analysis and Data Analytics Program with 100% Job Guarantee Assurance"
+        }
+      />
     </>
   );
 }

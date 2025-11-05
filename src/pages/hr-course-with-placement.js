@@ -23,8 +23,9 @@ import ProgramComparison from "../../components/HR/ProgramComparison";
 import WhoIsThisProgramFor from "../../components/HR/WhoIsThisProgramFor";
 import CareerJourney from "../../components/HR/CareerJourney";
 import CareerTransformation_2 from "../../components/cyber_page/CareerTransformation";
-import CareerTransformation from "../../components/HR/CareerTransformation";
+import CareerTransformation from "../../components/HR/CareerPath";
 import PlacementStats from "../../components/HR/PlacementStats";
+import CarrerPath from "../../components/HR/CareerPath";
 
 export default function Full_stack() {
   const heroData = {
@@ -373,7 +374,7 @@ export default function Full_stack() {
       <ProgramComparison />
       <WhoIsThisProgramFor />
       <Testimonials title="Hear It From Our Students" subtitle={null} />
-      <CareerTransformation_2 />
+      <CarrerPath />
       <CareerJourney />
       <ProgramHighlights
         data={services}
