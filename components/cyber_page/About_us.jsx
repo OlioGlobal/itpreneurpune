@@ -18,7 +18,7 @@ export default function About_us({ title, para, subtitle }) {
       img: "/icon/yearsexp.png",
     },
     {
-      to: 4000,
+      to: 1200,
       label: "Hiring Companies",
       img: "/icon/hiringcom.png",
     },

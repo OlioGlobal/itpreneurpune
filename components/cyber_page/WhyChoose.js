@@ -14,7 +14,7 @@ export default function WhyChooseITpreneur({ title, para }) {
       img: "/icon/yearsexp.png",
     },
     {
-      to: 4000,
+      to: 1200,
       label: "Hiring Companies",
       img: "/icon/hiringcom.png",
     },

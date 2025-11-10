@@ -185,7 +185,7 @@ export default function Full_stack() {
       color: "text-[#C07B19] border-[#C07B19]",
     },
     {
-      range: "₹14+ LPA",
+      range: "₹10+ LPA",
       level: "Senior-level Job",
       color: "text-[#6726D9] border-[#6726D9]",
     },
@@ -193,35 +193,40 @@ export default function Full_stack() {
   const services = [
     {
       id: 1,
-      title: "120 Days of Intensive Training",
-      description: "85% practical, 15% theory",
+      title: "High-Demand Skills",
+      description:
+        "Master data-driven insights and essential tools for career growth.",
       image: "/icon/h1.jpg",
     },
     {
       id: 2,
-      title: "Live Sessions + Video Lectures",
-      description: "Learn at your own pace",
+      title: "Hands-on Experience",
+      description:
+        "Work on capstone projects using tools like Advanced Excel, SQL, and Power BI.",
       image: "/icon/h2.jpg",
     },
     {
       id: 3,
-      title: "Hands-On experience",
-      description: "Build real-world projects and showcase them on GitHub",
+      title: "Live Sessions & Video Lectures",
+      description:
+        "Learn at your own pace with interactive sessions and self-paced videos.",
       image: "/icon/h3.jpg",
     },
     {
       id: 4,
       title: "Mock Interviews",
-      description: "Prepare for technical and HR rounds with confidence",
+      description:
+        "Prepare for technical and HR rounds with mock interviews and feedback.",
       image: "/icon/h4.jpg",
     },
     {
       id: 5,
       title: "Placement Assistance",
-      description: "100% job guarantee with access to 1,200+ hiring partners",
+      description: "100% job guarantee with access to 1,200+ hiring companies.",
       image: "/icon/h5.jpg",
     },
   ];
+
   const faqData = [
     {
       id: 1,

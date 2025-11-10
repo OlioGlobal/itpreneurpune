@@ -185,7 +185,7 @@ export default function Full_stack() {
       color: "text-[#C07B19] border-[#C07B19]",
     },
     {
-      range: "₹14+ LPA",
+      range: "₹10+ LPA",
       level: "Senior-level Job",
       color: "text-[#6726D9] border-[#6726D9]",
     },
@@ -193,35 +193,40 @@ export default function Full_stack() {
   const services = [
     {
       id: 1,
-      title: "120 Days of Intensive Training",
-      description: "85% practical, 15% theory",
+      title: "120 Days of Creative Learning",
+      description:
+        "85% practical, 15% conceptual — learn to design intuitive, user-focused interfaces with real-time mentorship.",
       image: "/icon/h1.jpg",
     },
     {
       id: 2,
       title: "Live Sessions + Video Lectures",
-      description: "Learn at your own pace",
+      description:
+        "Learn at your own pace while mastering design tools and techniques.",
       image: "/icon/h2.jpg",
     },
     {
       id: 3,
-      title: "Hands-On experience",
-      description: "Build real-world projects and showcase them on GitHub",
+      title: "Hands-On Experience",
+      description:
+        "Work on real projects — from wireframing to prototyping — and build a professional portfolio on Figma, Adobe XD, and Illustrator.",
       image: "/icon/h3.jpg",
     },
     {
       id: 4,
       title: "Mock Interviews",
-      description: "Prepare for technical and HR rounds with confidence",
+      description:
+        "Gain confidence with design-specific and HR interview prep sessions led by industry mentors.",
       image: "/icon/h4.jpg",
     },
     {
       id: 5,
       title: "Placement Assistance",
-      description: "100% job guarantee with access to 1,200+ hiring partners",
+      description: "100% job guarantee with access to 1,200+ hiring partners.",
       image: "/icon/h5.jpg",
     },
   ];
+
   const faqData = [
     {
       id: 1,
