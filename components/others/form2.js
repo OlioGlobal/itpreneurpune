@@ -36,7 +36,7 @@ export default function Form2WithOTP({
     "Bachelor of Commerce",
     "Bachelor of Arts",
     "Diploma Holder",
-    "Any Graduate",
+    "Any Graduate",
   ];
 
   const itpCenters = ["Shivajinagar, Pune", "Akurdi, PCMC"];
