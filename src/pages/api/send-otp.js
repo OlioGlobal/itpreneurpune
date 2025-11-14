@@ -26,8 +26,6 @@ export default async function handler(req, res) {
       customerId || process.env.MESSAGE_CENTRAL_CUSTOMER_ID
     }&flowType=SMS&mobileNumber=${mobileNumber}`;
 
-    console.log("Send OTP URL:", sendOtpUrl);
-
     const otpResponse = await fetch(sendOtpUrl, {
       method: "POST",
       headers: {
@@ -50,7 +48,6 @@ export default async function handler(req, res) {
 
     // Get response text first to debug
     const responseText = await otpResponse.text();
-    console.log("Raw Response:", responseText);
 
     // Try to parse JSON
     let data;
@@ -62,14 +59,7 @@ export default async function handler(req, res) {
       throw new Error("Invalid response format from Message Central API");
     }
 
-    console.log("OTP Send Response:", data);
-
     if (data.responseCode === 200 && data.data && data.data.verificationId) {
-      // Log successful OTP send
-      console.log(
-        `✅ OTP sent successfully to ${mobileNumber}, VerificationId: ${data.data.verificationId}`
-      );
-
       res.status(200).json({
         success: true,
         verificationId: data.data.verificationId,
@@ -77,14 +67,12 @@ export default async function handler(req, res) {
         mobileNumber: mobileNumber,
       });
     } else {
-      console.error("❌ OTP Send Failed:", data);
       res.status(400).json({
         success: false,
         message: data.message || "Failed to send OTP. Please try again.",
       });
     }
   } catch (error) {
-    console.error("🚨 OTP Send Error:", error);
     res.status(500).json({
       success: false,
       message: "Server error. Please try again later.",

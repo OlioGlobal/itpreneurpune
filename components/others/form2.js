@@ -11,6 +11,7 @@ export default function Form2WithOTP({
     email: "",
     city: "",
     education: "",
+    passoutYear: "",
     itpCenter: "",
   });
 
@@ -35,10 +36,12 @@ export default function Form2WithOTP({
     "Bachelor of Commerce",
     "Bachelor of Arts",
     "Diploma Holder",
-    "Other",
+    "Any Graduate",
   ];
 
   const itpCenters = ["Shivajinagar, Pune", "Akurdi, PCMC"];
+
+  const passoutYears = ["2021", "2022", "2023", "2024", "2025"];
 
   // Timer effect for OTP
   useEffect(() => {
@@ -118,6 +121,10 @@ export default function Form2WithOTP({
 
     if (!formData.education.trim()) {
       newErrors.education = "Education is required.";
+    }
+
+    if (!formData.passoutYear.trim()) {
+      newErrors.passoutYear = "Passout Year is required.";
     }
 
     if (!formData.itpCenter.trim()) {
@@ -474,6 +481,7 @@ export default function Form2WithOTP({
               </div>
 
               {/* Third Row: Education and ITP Centers */}
+              {/* Third Row: Education and Passout Year */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {/* Education Dropdown */}
                 <div className="relative">
@@ -513,8 +521,48 @@ export default function Form2WithOTP({
                   )}
                 </div>
 
-                {/* ITP Centers Dropdown */}
+                {/* Passout Year Dropdown */}
                 <div className="relative">
+                  <select
+                    name="passoutYear"
+                    id={`${idPrefix}passoutYear`}
+                    value={formData.passoutYear || ""}
+                    onChange={handleChange}
+                    className={`w-full border border-[#B8D0C4] rounded-[5px] px-4 py-3 focus:outline-none focus:ring-1 focus:ring-green-600 appearance-none ${
+                      formData.passoutYear ? "text-black" : "text-gray-500"
+                    }`}
+                    style={{ background: "#eceff5" }}
+                  >
+                    <option value="" disabled>
+                      Passout Year
+                    </option>
+                    {passoutYears.map((year) => (
+                      <option key={year} value={year}>
+                        {year}
+                      </option>
+                    ))}
+                  </select>
+
+                  <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                    <svg
+                      className="fill-current h-4 w-4"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                    >
+                      <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                    </svg>
+                  </div>
+                  {errors.passoutYear && (
+                    <p className="text-red-600 text-[16px] mt-1">
+                      {errors.passoutYear}
+                    </p>
+                  )}
+                </div>
+              </div>
+
+              {/* ITP Centers Dropdown (Full Width) */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="relative sm:col-span-2">
                   <select
                     name="itpCenter"
                     id={`${idPrefix}itpCenter`}

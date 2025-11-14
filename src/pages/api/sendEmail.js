@@ -215,6 +215,7 @@ export default async function handler(req, res) {
     source,
     program,
     itpCenter,
+    passoutYear,
     isVerified = false, // New field to track OTP verification
   } = req.body;
 
@@ -241,6 +242,7 @@ export default async function handler(req, res) {
       fullUrl,
       program,
       itpCenter,
+      passoutYear,
       isVerified: isVerified,
       verifiedAt: new Date().toISOString(),
       submissionType: "OTP_Verified_Lead",
@@ -275,6 +277,7 @@ export default async function handler(req, res) {
           source: source || "direct",
           cf_itp_center: itpCenter,
           field_qualification: education,
+          field_passout_year: passoutYear,
           // cf_mobile_verified: "Yes", // Custom field for verification status
           // cf_verification_method: "OTP_SMS",
           // cf_verified_at: new Date().toISOString(),
@@ -284,16 +287,6 @@ export default async function handler(req, res) {
 
     // Wait for all promises to complete (but don't fail if one fails)
     const results = await Promise.allSettled(promises);
-
-    // Enhanced logging for verified leads
-    console.log(`✅ Verified Lead Processed:`, {
-      mobile: mobile,
-      name: name,
-      verificationStatus: isVerified,
-      timestamp: new Date().toISOString(),
-      gsSuccess: results[0].status === "fulfilled",
-      npfSuccess: results[1].status === "fulfilled",
-    });
 
     // Log any failures for debugging (but don't block the response)
     results.forEach((result, index) => {

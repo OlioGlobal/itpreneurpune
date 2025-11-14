@@ -34,16 +34,11 @@ export default async function handler(req, res) {
 
     const data = await validateResponse.json();
 
-    console.log("OTP Validation Response:", data);
-
     if (
       data.responseCode === 200 &&
       data.data &&
       data.data.verificationStatus === "VERIFICATION_COMPLETED"
     ) {
-      // Log successful OTP verification
-      console.log(`OTP verified successfully for ${mobileNumber}`);
-
       res.status(200).json({
         success: true,
         message: "OTP verified successfully",
