@@ -492,27 +492,24 @@ export default function Form2WithOTP({
                 </div>
               </div>
 
-              {/* Third Row: Education and ITP Centers */}
-              {/* Third Row: Education and Passout Year */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {/* Education Dropdown */}
-                <div className="relative">
+                <div className="relative sm:col-span-2">
                   <select
-                    name="itpCenter"
-                    id={`${idPrefix}itpCenter`}
-                    value={formData.itpCenter}
+                    name="education"
+                    id={`${idPrefix}education`}
+                    value={formData.education}
                     onChange={handleChange}
                     className={`w-full border border-[#B8D0C4] rounded-[5px] px-4 py-3 focus:outline-none focus:ring-1 focus:ring-green-600 appearance-none ${
-                      formData.itpCenter ? "text-black" : "text-gray-500"
+                      formData.education ? "text-black" : "text-gray-500"
                     }`}
                     style={{ background: "#eceff5" }}
                   >
                     <option value="" disabled>
-                      Select ITP Center
+                      Education Qualification
                     </option>
-                    {itpCenters.map((center, index) => (
-                      <option key={index} value={center}>
-                        {center}
+                    {educationOptions.map((option) => (
+                      <option key={option.value} value={option.value}>
+                        {option.label}
                       </option>
                     ))}
                   </select>
@@ -526,12 +523,17 @@ export default function Form2WithOTP({
                       <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                     </svg>
                   </div>
-                  {errors.itpCenter && (
+                  {errors.education && (
                     <p className="text-red-600 text-[16px] mt-1">
-                      {errors.itpCenter}
+                      {errors.education}
                     </p>
                   )}
                 </div>
+              </div>
+
+              {/* Third Row: Education and Passout Year */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {/* Education Dropdown */}
 
                 {/* Passout Year Dropdown */}
                 <div className="relative">
@@ -570,27 +572,24 @@ export default function Form2WithOTP({
                     </p>
                   )}
                 </div>
-              </div>
 
-              {/* ITP Centers Dropdown (Full Width) */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div className="relative sm:col-span-2">
+                <div className="relative">
                   <select
-                    name="education"
-                    id={`${idPrefix}education`}
-                    value={formData.education}
+                    name="itpCenter"
+                    id={`${idPrefix}itpCenter`}
+                    value={formData.itpCenter}
                     onChange={handleChange}
                     className={`w-full border border-[#B8D0C4] rounded-[5px] px-4 py-3 focus:outline-none focus:ring-1 focus:ring-green-600 appearance-none ${
-                      formData.education ? "text-black" : "text-gray-500"
+                      formData.itpCenter ? "text-black" : "text-gray-500"
                     }`}
                     style={{ background: "#eceff5" }}
                   >
                     <option value="" disabled>
-                      Education Level
+                      Select ITP Center
                     </option>
-                    {educationOptions.map((option) => (
-                      <option key={option.value} value={option.value}>
-                        {option.label}
+                    {itpCenters.map((center, index) => (
+                      <option key={index} value={center}>
+                        {center}
                       </option>
                     ))}
                   </select>
@@ -604,9 +603,9 @@ export default function Form2WithOTP({
                       <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                     </svg>
                   </div>
-                  {errors.education && (
+                  {errors.itpCenter && (
                     <p className="text-red-600 text-[16px] mt-1">
-                      {errors.education}
+                      {errors.itpCenter}
                     </p>
                   )}
                 </div>

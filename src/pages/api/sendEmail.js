@@ -288,7 +288,7 @@ export default async function handler(req, res) {
     // Wait for all promises to complete (but don't fail if one fails)
     const results = await Promise.allSettled(promises);
 
-    // Log any failures for debugging (but don't block the response)
+    // Log any failures for debugging (but don't block the response)s
     results.forEach((result, index) => {
       if (result.status === "rejected") {
         const apiName = index === 0 ? "Google Sheets" : "NoPaperForms";
