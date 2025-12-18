@@ -182,7 +182,12 @@ export default function Form2WithOTP({
         window.dataLayer = window.dataLayer || [];
         window.dataLayer.push({
           event: "OTP_Sent",
+          name: formData.name,
+          email: formData.email,
           mobile: formData.mobile,
+          city: formData.city,
+          education: formData.education,
+          itpCenter: formData.itpCenter,
           pageSource,
         });
 
@@ -232,6 +237,11 @@ export default function Form2WithOTP({
         window.dataLayer.push({
           event: "OTP_Verified",
           mobile: formData.mobile,
+          name: formData.name,
+          email: formData.email,
+          city: formData.city,
+          education: formData.education,
+          itpCenter: formData.itpCenter,
           pageSource,
         });
 
@@ -252,6 +262,19 @@ export default function Form2WithOTP({
     try {
       const fullUrl = window.location.href;
       const source = getTrafficSource();
+      // Analytics tracking
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: "Lead_Success_ITPM",
+        formId: "leadFormPopup",
+        name: formData.name,
+        email: formData.email,
+        mobile: formData.mobile,
+        city: formData.city,
+        education: formData.education,
+        itpCenter: formData.itpCenter,
+        isVerified: true,
+      });
 
       const res = await fetch("/api/sendEmail", {
         method: "POST",
@@ -267,20 +290,6 @@ export default function Form2WithOTP({
 
       if (res.ok) {
         setSuccess("Registration Successful!");
-
-        // Analytics tracking
-        window.dataLayer = window.dataLayer || [];
-        window.dataLayer.push({
-          event: "Lead_Success_ITPM",
-          formId: "leadFormPopup",
-          name: formData.name,
-          email: formData.email,
-          mobile: formData.mobile,
-          city: formData.city,
-          education: formData.education,
-          itpCenter: formData.itpCenter,
-          isVerified: true,
-        });
 
         try {
           if (typeof window.datafast === "function") {

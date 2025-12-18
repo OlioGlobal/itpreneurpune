@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/dnlis01DcUgh4FNMdCfwu/_buildManifest.js",
-    "static/dnlis01DcUgh4FNMdCfwu/_ssgManifest.js"
+    "static/agXl0CyqMviqzfgC1Qc_A/_buildManifest.js",
+    "static/agXl0CyqMviqzfgC1Qc_A/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "rootMainFilesTree": {},
@@ -18,7 +18,7 @@
       "static/chunks/981-1fd64ddac04e317e.js",
       "static/chunks/105-f59883aba1555dcf.js",
       "static/chunks/512-4cfa4a758fcde806.js",
-      "static/chunks/598-ea9b22ddffb16239.js",
+      "static/chunks/598-9962a0add896799e.js",
       "static/chunks/532-a15e3375de61079e.js",
       "static/chunks/777-3599b4ec17e38696.js",
       "static/chunks/pages/index-11bf4ba39a45119a.js"
@@ -43,7 +43,7 @@
       "static/chunks/981-1fd64ddac04e317e.js",
       "static/chunks/105-f59883aba1555dcf.js",
       "static/chunks/512-4cfa4a758fcde806.js",
-      "static/chunks/598-ea9b22ddffb16239.js",
+      "static/chunks/598-9962a0add896799e.js",
       "static/chunks/532-a15e3375de61079e.js",
       "static/chunks/777-3599b4ec17e38696.js",
       "static/chunks/pages/bussiness-and-data-analytics-6a4abe0a73f3b5c3.js"
@@ -54,7 +54,7 @@
       "static/chunks/main-701dbc27ca0a5778.js",
       "static/chunks/981-1fd64ddac04e317e.js",
       "static/chunks/105-f59883aba1555dcf.js",
-      "static/chunks/598-ea9b22ddffb16239.js",
+      "static/chunks/598-9962a0add896799e.js",
       "static/chunks/pages/cyber-security-81357ae6aa9f616b.js"
     ],
     "/dot-net-developer": [
@@ -63,7 +63,7 @@
       "static/chunks/main-701dbc27ca0a5778.js",
       "static/chunks/981-1fd64ddac04e317e.js",
       "static/chunks/105-f59883aba1555dcf.js",
-      "static/chunks/598-ea9b22ddffb16239.js",
+      "static/chunks/598-9962a0add896799e.js",
       "static/chunks/pages/dot-net-developer-8cc3cb4ae1174b58.js"
     ],
     "/fullstack-dotnet-developer": [
@@ -73,7 +73,7 @@
       "static/chunks/981-1fd64ddac04e317e.js",
       "static/chunks/105-f59883aba1555dcf.js",
       "static/chunks/512-4cfa4a758fcde806.js",
-      "static/chunks/598-ea9b22ddffb16239.js",
+      "static/chunks/598-9962a0add896799e.js",
       "static/chunks/532-a15e3375de61079e.js",
       "static/chunks/pages/fullstack-dotnet-developer-d013075793bf7926.js"
     ],
@@ -84,7 +84,7 @@
       "static/chunks/981-1fd64ddac04e317e.js",
       "static/chunks/105-f59883aba1555dcf.js",
       "static/chunks/512-4cfa4a758fcde806.js",
-      "static/chunks/598-ea9b22ddffb16239.js",
+      "static/chunks/598-9962a0add896799e.js",
       "static/chunks/532-a15e3375de61079e.js",
       "static/chunks/pages/fullstack-dotnet-developer-meta-01f7e259a91b754e.js"
     ],
@@ -95,7 +95,7 @@
       "static/chunks/981-1fd64ddac04e317e.js",
       "static/chunks/105-f59883aba1555dcf.js",
       "static/chunks/512-4cfa4a758fcde806.js",
-      "static/chunks/598-ea9b22ddffb16239.js",
+      "static/chunks/598-9962a0add896799e.js",
       "static/chunks/532-a15e3375de61079e.js",
       "static/chunks/pages/fullstack-dotnet-developer-youtube-a30e8486c39ee3fe.js"
     ],
@@ -106,7 +106,7 @@
       "static/chunks/981-1fd64ddac04e317e.js",
       "static/chunks/105-f59883aba1555dcf.js",
       "static/chunks/512-4cfa4a758fcde806.js",
-      "static/chunks/598-ea9b22ddffb16239.js",
+      "static/chunks/598-9962a0add896799e.js",
       "static/chunks/532-a15e3375de61079e.js",
       "static/chunks/777-3599b4ec17e38696.js",
       "static/chunks/pages/fullstack-java-developer-de260d54fc7b7043.js"
@@ -118,7 +118,7 @@
       "static/chunks/981-1fd64ddac04e317e.js",
       "static/chunks/105-f59883aba1555dcf.js",
       "static/chunks/512-4cfa4a758fcde806.js",
-      "static/chunks/598-ea9b22ddffb16239.js",
+      "static/chunks/598-9962a0add896799e.js",
       "static/chunks/532-a15e3375de61079e.js",
       "static/chunks/777-3599b4ec17e38696.js",
       "static/chunks/pages/fullstack-java-developer-meta-3bf33e2f6bb0657a.js"
@@ -130,7 +130,7 @@
       "static/chunks/981-1fd64ddac04e317e.js",
       "static/chunks/105-f59883aba1555dcf.js",
       "static/chunks/512-4cfa4a758fcde806.js",
-      "static/chunks/598-ea9b22ddffb16239.js",
+      "static/chunks/598-9962a0add896799e.js",
       "static/chunks/532-a15e3375de61079e.js",
       "static/chunks/777-3599b4ec17e38696.js",
       "static/chunks/pages/fullstack-java-developer-youtube-f72919270c87e997.js"
@@ -142,7 +142,7 @@
       "static/chunks/981-1fd64ddac04e317e.js",
       "static/chunks/105-f59883aba1555dcf.js",
       "static/chunks/512-4cfa4a758fcde806.js",
-      "static/chunks/598-ea9b22ddffb16239.js",
+      "static/chunks/598-9962a0add896799e.js",
       "static/chunks/532-a15e3375de61079e.js",
       "static/chunks/777-3599b4ec17e38696.js",
       "static/chunks/107-6a4b6405584462d6.js",
@@ -155,7 +155,7 @@
       "static/chunks/981-1fd64ddac04e317e.js",
       "static/chunks/105-f59883aba1555dcf.js",
       "static/chunks/512-4cfa4a758fcde806.js",
-      "static/chunks/598-ea9b22ddffb16239.js",
+      "static/chunks/598-9962a0add896799e.js",
       "static/chunks/532-a15e3375de61079e.js",
       "static/chunks/777-3599b4ec17e38696.js",
       "static/chunks/107-6a4b6405584462d6.js",
@@ -168,7 +168,7 @@
       "static/chunks/981-1fd64ddac04e317e.js",
       "static/chunks/105-f59883aba1555dcf.js",
       "static/chunks/512-4cfa4a758fcde806.js",
-      "static/chunks/598-ea9b22ddffb16239.js",
+      "static/chunks/598-9962a0add896799e.js",
       "static/chunks/532-a15e3375de61079e.js",
       "static/chunks/777-3599b4ec17e38696.js",
       "static/chunks/107-6a4b6405584462d6.js",
@@ -188,7 +188,7 @@
       "static/chunks/main-701dbc27ca0a5778.js",
       "static/chunks/981-1fd64ddac04e317e.js",
       "static/chunks/105-f59883aba1555dcf.js",
-      "static/chunks/598-ea9b22ddffb16239.js",
+      "static/chunks/598-9962a0add896799e.js",
       "static/chunks/pages/mean-stack-developer-063db1ef0b6a8842.js"
     ],
     "/mern-stack-developer": [
@@ -197,7 +197,7 @@
       "static/chunks/main-701dbc27ca0a5778.js",
       "static/chunks/981-1fd64ddac04e317e.js",
       "static/chunks/105-f59883aba1555dcf.js",
-      "static/chunks/598-ea9b22ddffb16239.js",
+      "static/chunks/598-9962a0add896799e.js",
       "static/chunks/pages/mern-stack-developer-36fcf8fdd3ed6a06.js"
     ],
     "/python-developer": [
@@ -207,7 +207,7 @@
       "static/chunks/981-1fd64ddac04e317e.js",
       "static/chunks/105-f59883aba1555dcf.js",
       "static/chunks/512-4cfa4a758fcde806.js",
-      "static/chunks/598-ea9b22ddffb16239.js",
+      "static/chunks/598-9962a0add896799e.js",
       "static/chunks/532-a15e3375de61079e.js",
       "static/chunks/pages/python-developer-f4d9301051e2f2ee.js"
     ],
@@ -218,7 +218,7 @@
       "static/chunks/981-1fd64ddac04e317e.js",
       "static/chunks/105-f59883aba1555dcf.js",
       "static/chunks/512-4cfa4a758fcde806.js",
-      "static/chunks/598-ea9b22ddffb16239.js",
+      "static/chunks/598-9962a0add896799e.js",
       "static/chunks/532-a15e3375de61079e.js",
       "static/chunks/pages/python-developer-meta-d08f37428ba761e5.js"
     ],
@@ -229,7 +229,7 @@
       "static/chunks/981-1fd64ddac04e317e.js",
       "static/chunks/105-f59883aba1555dcf.js",
       "static/chunks/512-4cfa4a758fcde806.js",
-      "static/chunks/598-ea9b22ddffb16239.js",
+      "static/chunks/598-9962a0add896799e.js",
       "static/chunks/532-a15e3375de61079e.js",
       "static/chunks/pages/python-developer-youtube-acf119a9077e5375.js"
     ],
@@ -239,7 +239,7 @@
       "static/chunks/main-701dbc27ca0a5778.js",
       "static/chunks/981-1fd64ddac04e317e.js",
       "static/chunks/105-f59883aba1555dcf.js",
-      "static/chunks/598-ea9b22ddffb16239.js",
+      "static/chunks/598-9962a0add896799e.js",
       "static/chunks/pages/software-testing-929dc7942b86a7c7.js"
     ],
     "/thank-you": [
@@ -255,7 +255,7 @@
       "static/chunks/981-1fd64ddac04e317e.js",
       "static/chunks/105-f59883aba1555dcf.js",
       "static/chunks/512-4cfa4a758fcde806.js",
-      "static/chunks/598-ea9b22ddffb16239.js",
+      "static/chunks/598-9962a0add896799e.js",
       "static/chunks/532-a15e3375de61079e.js",
       "static/chunks/777-3599b4ec17e38696.js",
       "static/chunks/pages/ui-ux-design-development-7b7b3b64e928c4c0.js"
