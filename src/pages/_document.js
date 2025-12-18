@@ -5,6 +5,22 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
+        {/* Google Ads gtag */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-1027604416"
+          strategy="afterInteractive"
+        />
+
+        <Script id="google-ads-gtag" strategy="afterInteractive">
+          {`
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-1027604416');
+    `}
+        </Script>
+
+        {/* Existing Datafast Analytics */}
         <Script
           id="datafast-analytics"
           defer
@@ -14,14 +30,15 @@ export default function Document() {
           strategy="beforeInteractive"
         />
 
+        {/* Google Tag Manager */}
         <Script id="gtm-init" strategy="afterInteractive">
           {`
-            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-W6LPNVJN');
-          `}
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-W6LPNVJN');
+    `}
         </Script>
 
         <link
