@@ -20,7 +20,7 @@ export default function Document() {
     `}
         </Script>
 
-        {/* Existing Datafast Analytics */}
+        {/* -- Existing Datafast Analytics -- */}
         <Script
           id="datafast-analytics"
           defer
