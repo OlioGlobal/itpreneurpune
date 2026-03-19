@@ -21,15 +21,19 @@ export default function Student2({
       slidesToScroll: 1,
       align: "start",
     },
-    [Autoplay({ delay: 3000, stopOnInteraction: false })]
+    [Autoplay({ delay: 3000, stopOnInteraction: false })],
   );
 
   const scrollPrev = useCallback(() => emblaApi?.scrollPrev(), [emblaApi]);
   const scrollNext = useCallback(() => emblaApi?.scrollNext(), [emblaApi]);
 
-  const slides = Array.from({ length: 37 }, (_, i) => ({
-    id: i + 1,
-    src: `/placement/itpreneurpune-${i + 1}.webp`,
+  const existingIds = [
+    1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 15, 16, 17, 18, 19, 20, 22, 23,
+    24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37,
+  ];
+  const slides = existingIds.map((id) => ({
+    id,
+    src: `/placement/itpreneurpune-${id}.webp`,
   }));
 
   return (

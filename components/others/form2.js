@@ -53,7 +53,15 @@ export default function Form2WithOTP({
 
   const itpCenters = ["Shivajinagar, Pune", "Akurdi, PCMC"];
 
-  const passoutYears = ["2021", "2022", "2023", "2024", "2025", "2026", "Other"];
+  const passoutYears = [
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "Other",
+  ];
 
   // Timer effect for OTP
   useEffect(() => {

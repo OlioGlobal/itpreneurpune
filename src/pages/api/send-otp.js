@@ -21,10 +21,16 @@ export default async function handler(req, res) {
   }
 
   try {
+    console.log("[send-otp] ENV check - AUTH_TOKEN set:", !!process.env.MESSAGE_CENTRAL_AUTH_TOKEN);
+    console.log("[send-otp] ENV check - CUSTOMER_ID:", process.env.MESSAGE_CENTRAL_CUSTOMER_ID || "NOT SET");
+    console.log("[send-otp] Request body:", { mobileNumber, customerId });
+
     // Build URL with query parameters (this is the correct format)
     const sendOtpUrl = `https://cpaas.messagecentral.com/verification/v3/send?countryCode=91&customerId=${
       customerId || process.env.MESSAGE_CENTRAL_CUSTOMER_ID
     }&flowType=SMS&mobileNumber=${mobileNumber}`;
+
+    console.log("[send-otp] Calling Message Central API...");
 
     const otpResponse = await fetch(sendOtpUrl, {
       method: "POST",
@@ -34,12 +40,16 @@ export default async function handler(req, res) {
       },
     });
 
+    console.log("[send-otp] Response status:", otpResponse.status, otpResponse.statusText);
+
     // Check if response is ok first
     if (!otpResponse.ok) {
+      const errorBody = await otpResponse.text();
       console.error(
         "Message Central API Error:",
         otpResponse.status,
-        otpResponse.statusText
+        otpResponse.statusText,
+        "Body:", errorBody
       );
       throw new Error(
         `Message Central API returned ${otpResponse.status}: ${otpResponse.statusText}`
